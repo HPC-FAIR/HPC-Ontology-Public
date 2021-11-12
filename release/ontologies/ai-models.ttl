@@ -1,0 +1,84 @@
+@prefix : <https://hpc-fair.github.io/ontology#> .
+@prefix hpc: <https://hpc-fair.github.io/ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://hpc-fair.github.io/ontology> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://hpc-fair.github.io/ontology/1.0.0> ;
+                                       dc:creator "The HPC-FAIR research team"^^xsd:string ;
+                                       dc:description """The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ datasets and machine learning models used in HPC software analyses
+and optimizations. The goal is to make datasets and AI models FAIR.""" ;
+dc:title "AI Model Ontology" ;        
+                                       dcterms:created "2021-09-23T13:30:00-07:00"^^xsd:dateTime ;
+                                       dcterms:license "the Creative Commons Attribution 4.0"^^xsd:string ;
+                                       vann:preferredNamespacePrefix "hpc" ;
+                                       vann:preferredNamespaceUri hpc: ;
+                                       rdfs:comment "The HPC Ontology describes software, hardware, and artifacts in the domain of High-Performance Computing. It can be used to annotate training datasets and machine learning models used in HPC software analyses and optimizations. The goal is to make datasets and AI models FAIR." ;
+                                       owl:versionIRI "1.0.0" .
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#decisionFeature
+hpc:decisionFeature rdf:type owl:ObjectProperty ;
+                    rdfs:comment "For a decision tree node, the feature used as the left operand of the decision condition." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#decisionLabel
+hpc:decisionLabel rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf hpc:graphLink ;
+                  rdfs:comment "The final decision for a leaf node in a decisiontree" .
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#falseNode
+hpc:falseNode rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf hpc:graphLink ;
+              rdfs:comment "link from a decision tree node to its false child node" .
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#function
+hpc:function rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf hpc:graphLink ;
+             rdfs:comment "a call graph (or other program analysis info object) has a function node." .
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#trueNode
+hpc:trueNode rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf hpc:graphLink ;
+             rdfs:comment "link from a decision tree node to its true child node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#upstreamCallSite
+hpc:upstreamCallSite rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf hpc:graphLink ;
+                     rdfs:comment "Inverse of a call site --> function being called." .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#hasChildNode
+hpc:hasChildNode rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:comment "If a decision tree node has child nodes or not." .
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#treeNodeLevel
+hpc:treeNodeLevel rdf:type owl:DatatypeProperty ;
+                  rdfs:comment "The level of a tree, starting from 0 for the root node" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#relationValue
+hpc:relationValue rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DecisionTree
+hpc:DecisionTree rdf:type owl:Class ;
+                 rdfs:subClassOf hpc:MachineLearningModel .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#DecisionTreeNode
+hpc:DecisionTreeNode rdf:type owl:Class ;
+                     rdfs:subClassOf hpc:Artifact .
+

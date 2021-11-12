@@ -1,0 +1,152 @@
+@prefix : <https://hpc-fair.github.io/ontology#> .
+@prefix hpc: <https://hpc-fair.github.io/ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://hpc-fair.github.io/ontology> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://hpc-fair.github.io/ontology/1.0.0> ;
+                                       dc:creator "The HPC-FAIR research team"^^xsd:string ;
+                                       dc:description """The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ datasets and machine learning models used in HPC software analyses
+and optimizations. The goal is to make datasets and AI models FAIR.""" ;
+dc:title "GPU Ontology" ;
+                                       dcterms:created "2021-09-23T13:30:00-07:00"^^xsd:dateTime ;
+                                       dcterms:license "the Creative Commons Attribution 4.0"^^xsd:string ;
+                                       vann:preferredNamespacePrefix "hpc" ;
+                                       vann:preferredNamespaceUri hpc: ;
+                                       rdfs:comment "The HPC Ontology describes software, hardware, and artifacts in the domain of High-Performance Computing. It can be used to annotate training datasets and machine learning models used in HPC software analyses and optimizations. The goal is to make datasets and AI models FAIR." ;
+                                       owl:versionIRI "1.0.0" .
+
+# GPU related hardware properties, excluding performance metrics
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuArchitecture
+hpc:gpuArchitecture rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuDriverSharedMemorySizePerBlock
+hpc:gpuDriverSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuDynamicSharedMemorySizePerBlock
+hpc:gpuDynamicSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuFrequency
+hpc:gpuFrequency rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf hpc:coprocessorSpeed .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuInterconnect
+hpc:gpuInterconnect rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "bus types connecting CPU and GPUs: NVILINK or others" .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuMemorySizePerNode
+hpc:gpuMemorySizePerNode rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuModel
+hpc:gpuModel rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuNodeCount
+hpc:gpuNodeCount rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf hpc:count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuPeakPerformancePerNode
+hpc:gpuPeakPerformancePerNode rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf hpc:performance .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuSharedMemoryConfigurationSize
+hpc:gpuSharedMemoryConfigurationSize rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuStaticSharedMemorySizePerBlock
+hpc:gpuStaticSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadBlockSize
+hpc:gpuThreadBlockSize rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadCount
+hpc:gpuThreadCount rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf hpc:count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadGridSize
+hpc:gpuThreadGridSize rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuUnifiedMemoryRemoteMapSize
+hpc:gpuUnifiedMemoryRemoteMapSize rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#gpuWavesPerSM
+hpc:gpuWavesPerSM rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf hpc:pageFault .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedByRegister
+hpc:maxGPUThreadBlockSizeLimitedByRegister rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedBySM
+hpc:maxGPUThreadBlockSizeLimitedBySM rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedBySharedMemory
+hpc:maxGPUThreadBlockSizeLimitedBySharedMemory rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedByWarps
+hpc:maxGPUThreadBlockSizeLimitedByWarps rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf hpc:size .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#registersPerThread
+hpc:registersPerThread rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf hpc:count .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#streamingMultiprocessorFrequency
+hpc:streamingMultiprocessorFrequency rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf hpc:frequency .
+
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#theoreticalActiveWarpsPerSM
+hpc:theoreticalActiveWarpsPerSM rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/HPC-FAIR/HPC-Ontology#theoreticalGPUOccupancy
+hpc:theoreticalGPUOccupancy rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf hpc:occupancy .
+

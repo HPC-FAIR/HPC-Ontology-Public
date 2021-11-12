@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HPC-Ontology</title>
+    <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="vocab/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function() 
+		    { 
+		    	$("#tablesorter-demo").tablesorter(); 
+		    	$("#tablesorter-demo").stickyTableHeaders(); 
+		    	$('[data-toggle="tooltip"]').tooltip(); 
+		    } 
+	    ); 
+    </script>
+
+    <!-- Le styles -->
+    <link href="vocab/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="vocab/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Vocabularies</a></li>
+        <li><a href="report.html">Vocabulary report</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+ </div>
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>HPC-Ontology landing page</h1>
+        <p class="lead">Here you can find the list of vocabularies that have been found on HPC-Ontology.</p>
+      </div>
+      <hr>
+<div class="row"> 
+</div>
+<br>
+<table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
+<thead>
+<tr>
+<th class="col-md-2">Ontology</th>
+<th class="col-md-1">Serialization</th>
+<th class="col-md-2">License</th>
+<th class="col-md-1">Language</th>
+<th class="col-md-6">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="tr1">
+<td><a href = "https://hpc-fair.github.io/ontology#" target="_blank">GPU Ontology</a> </td><td>
+<a href="ontologies/gpu.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="the Creative Commons Attribution 4.0" target="_blank"> <span class="label label-success">the Attribution 4.0</span> </a></td>
+<td></td>
+<td>
+<p id="collapse1" data-toggle="collapse" >
+The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ ... <a class="more1">See more</a>
+</p>
+<script>
+$('#collapse1').click(function () {
+if($('a').hasClass('more1'))
+{
+$('#collapse1').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> datasets and machine learning models used in HPC software analyses<br>and optimizations. The goal is to make datasets and AI models FAIR.  <a class="less1">See less<a>'); 
+}
+else
+{      
+$('#collapse1').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> ...  <a  class="more1">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr2">
+<td><a href = "https://hpc-fair.github.io/ontology#" target="_blank">HPC Ontology</a> </td><td>
+<a href="ontologies/allinone.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="the Creative Commons Attribution 4.0" target="_blank"> <span class="label label-success">the Attribution 4.0</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+<p id="collapse2" data-toggle="collapse" >
+The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ ... <a class="more2">See more</a>
+</p>
+<script>
+$('#collapse2').click(function () {
+if($('a').hasClass('more2'))
+{
+$('#collapse2').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> datasets and machine learning models used in HPC software analyses <br>and optimizations. The goal is to make datasets and AI models FAIR.  <a class="less2">See less<a>'); 
+}
+else
+{      
+$('#collapse2').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> ...  <a  class="more2">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr3">
+<td><a href = "https://hpc-fair.github.io/ontology#" target="_blank">Core Ontology</a> </td><td>
+<a href="ontologies/core.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="the Creative Commons Attribution 4.0" target="_blank"> <span class="label label-success">the Attribution 4.0</span> </a></td>
+<td></td>
+<td>
+<p id="collapse3" data-toggle="collapse" >
+The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ ... <a class="more3">See more</a>
+</p>
+<script>
+$('#collapse3').click(function () {
+if($('a').hasClass('more3'))
+{
+$('#collapse3').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> datasets and machine learning models used in HPC software analyses <br>and optimizations. The goal is to make datasets and AI models FAIR.  <a class="less3">See less<a>'); 
+}
+else
+{      
+$('#collapse3').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> ...  <a  class="more3">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr4">
+<td><a href = "https://hpc-fair.github.io/ontology#" target="_blank">AI Model Ontology</a> </td><td>
+<a href="ontologies/ai-models.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="the Creative Commons Attribution 4.0" target="_blank"> <span class="label label-success">the Attribution 4.0</span> </a></td>
+<td></td>
+<td>
+<p id="collapse4" data-toggle="collapse" >
+The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ ... <a class="more4">See more</a>
+</p>
+<script>
+$('#collapse4').click(function () {
+if($('a').hasClass('more4'))
+{
+$('#collapse4').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> datasets and machine learning models used in HPC software analyses<br>and optimizations. The goal is to make datasets and AI models FAIR.  <a class="less4">See less<a>'); 
+}
+else
+{      
+$('#collapse4').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> ...  <a  class="more4">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr5">
+<td><a href = "https://hpc-fair.github.io/ontology#" target="_blank">Program Ontology</a> </td><td>
+<a href="ontologies/program.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="the Creative Commons Attribution 4.0" target="_blank"> <span class="label label-success">the Attribution 4.0</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+<p id="collapse5" data-toggle="collapse" >
+The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ ... <a class="more5">See more</a>
+</p>
+<script>
+$('#collapse5').click(function () {
+if($('a').hasClass('more5'))
+{
+$('#collapse5').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> datasets and machine learning models used in HPC software analyses<br>and optimizations. The goal is to make datasets and AI models FAIR.  <a class="less5">See less<a>'); 
+}
+else
+{      
+$('#collapse5').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> ...  <a  class="more5">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr6">
+<td><a href = "https://hpc-fair.github.io/ontology#" target="_blank">Performance Ontology</a> </td><td>
+<a href="ontologies/performance.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="the Creative Commons Attribution 4.0" target="_blank"> <span class="label label-success">the Attribution 4.0</span> </a></td>
+<td></td>
+<td>
+<p id="collapse6" data-toggle="collapse" >
+The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ ... <a class="more6">See more</a>
+</p>
+<script>
+$('#collapse6').click(function () {
+if($('a').hasClass('more6'))
+{
+$('#collapse6').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> datasets and machine learning models used in HPC software analyses<br>and optimizations. The goal is to make datasets and AI models FAIR.  <a class="less6">See less<a>'); 
+}
+else
+{      
+$('#collapse6').html('The HPC Ontology describes software, hardware, and artifacts in the domain<br>of High-Performance Computing. It can be used to annotate training<br> ...  <a  class="more6">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr></tbody></table>
+<hr>
+      <footer class="footer">
+           <footer class="footer">
+            <div class="row">
+    	<div class="col-md-10">
+    		Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a> (<a href="http://oeg-upm.net/">Ontology Engineering Group</a>)
+	        <br>
+    	Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+ 	        <br>
+	        Latest revision November, 2021
+        </div>
+		<div class="col-md-2">
+			<a href="https://github.com/dgarijo/vocabLite"><img width="140px"src="vocab/logoLite.png"></img></a>
+		</div>
+      </footer>      </div>
+      </footer>
+    </div> <!-- /container -->
