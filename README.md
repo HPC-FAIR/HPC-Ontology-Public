@@ -1,6 +1,6 @@
 # HPC-Ontology
 
-Public release of the HPC ontology source files
+Public release of the HPC ontology source files, LLNL-MI-829145.
 
 
 # Publication
