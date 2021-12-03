@@ -15,8 +15,10 @@ run-sub-performance:
 
 run-sub-program: 
 	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/program/program.ttl -outFolder release/program
+
 development/hpc-ontology.ttl:development/core/core.ttl development/aimodel/ai-models.ttl development/gpu/gpu.ttl development/performance/performance.ttl development/program/program.ttl
-	cat $^ > %@
+	cat $^ > $@
+
 run-allInOne:development/hpc-ontology.ttl
 	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/hpc-ontology.ttl -outFolder release
 
