@@ -1,31 +1,50 @@
 # this will start a GUI interface
-WIDOCO_OPTIONS=-getOntologyMetadata -rewriteAll -htaccess -webVowl -includeAnnotationProperties -excludeIntroduction -uniteSections #-excludeReference
+WIDOCO_OPTIONS=-jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar -getOntologyMetadata -rewriteAll -htaccess -webVowl -includeAnnotationProperties -excludeIntroduction -uniteSections #-excludeReference
 
-all:run-sub-aimodel run-sub-core run-sub-gpu run-sub-performance run-sub-program run-allInOne
 
-run-sub-aimodel: 
-	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/aimodel/ai-models.ttl -outFolder release/aimodel
-run-sub-core: 
-	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/core/core.ttl -outFolder release/core
+# ontology names without directory path
+ONTOLOGY_FILES = \
+aimodel.ttl \
+core.ttl \
+gpu.ttl \
+performance.ttl \
+program.ttl
 
-run-sub-gpu: 
-	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/gpu/gpu.ttl -outFolder release/gpu
-run-sub-performance: 
-	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/performance/performance.ttl -outFolder release/performance
+# Generate web index files like "release/BASENAME/index-en.html"
+ONTOLOGY_WEB_INDEX_FILES=$(addprefix release/, $(addsuffix /index-en.html, $(basename ${ONTOLOGY_FILES})))
+ONTOLOGY_FILES_With_Path=$(addprefix development/, ${ONTOLOGY_FILES})
 
-run-sub-program: 
-	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/program/program.ttl -outFolder release/program
+testvar:
+	echo ${ONTOLOGY_FILES_With_Path}
 
-development/hpc-ontology.ttl:development/core/core.ttl development/aimodel/ai-models.ttl development/gpu/gpu.ttl development/performance/performance.ttl development/program/program.ttl
+# convert release web index file to development ttl source file in the dependency
+# also convert it to output folder in rules 	
+${ONTOLOGY_WEB_INDEX_FILES}:release/%/index-en.html:development/%.ttl
+	java ${WIDOCO_OPTIONS} -ontFile $< -outFolder $(@:%/index-en.html=%)
+#release/aimodel/index-en.html: development/ai-models.ttl
+#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/aimodel
+#
+#release/core/index-en.html: development/core/core.ttl
+#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/core
+#
+#release/gpu/index-en.html: development/gpu.ttl
+#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/gpu
+#
+#release/performance/index-en.html: development/performance/performance.ttl
+#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/performance
+#
+#release/program/index-en.html: development/program.ttl
+#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/program
+
+#development/hpc-ontology.ttl:development/core/core.ttl development/aimodel/ai-models.ttl development/gpu/gpu.ttl development/performance/performance.ttl development/program/program.ttl
+development/hpc-ontology.ttl: $(ONTOLOGY_FILES_With_Path)
 	cat $^ > $@
 
-run-allInOne:development/hpc-ontology.ttl
-	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile development/hpc-ontology.ttl -outFolder release
+release/index-en.html:development/hpc-ontology.ttl
+	java ${WIDOCO_OPTIONS} -ontFile $< -outFolder release
 
-widoco:
-	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar 
+all: ${ONTOLOGY_WEB_INDEX_FILES} release/index-en.html
+
 # this will generate files under release folder
-test:
-	java -jar third-party-tools/vocabLite-1.0.2-jar-with-dependencies.jar -i development -o release -n HPC-Ontology
-le:
-	java -jar third-party-tools/vocabLite-1.0.2-jar-with-dependencies.jar -i linkedEarch/ontology_development -o linkedEarch/test_release -n "Linked Earth Ontology" 
+clean:
+	rm -rf release development/hpc-ontology.ttl
