@@ -1,6 +1,6 @@
 @prefix : <https://hpc-fair.github.io/ontology#> .
-@prefix hpc: <https://hpc-fair.github.io/ontology#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hpc: <https://hpc-fair.github.io/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -11,6 +11,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://hpc-fair.github.io/ontology> .
 
 <https://hpc-fair.github.io/ontology> rdf:type owl:Ontology ;
                                        owl:versionIRI <https://hpc-fair.github.io/ontology/1.0.0> ;
@@ -19,7 +20,7 @@
 of High-Performance Computing. It can be used to annotate training
  datasets and machine learning models used in HPC software analyses
 and optimizations. The goal is to make datasets and AI models FAIR.""" ;
-dc:title "Performance Ontology" ;
+                                       dc:title "Performance Ontology" ;
                                        dcterms:created "2021-09-23T13:30:00-07:00"^^xsd:dateTime ;
                                        dcterms:license "the Creative Commons Attribution 4.0"^^xsd:string ;
                                        vann:preferredNamespacePrefix "hpc" ;
@@ -27,138 +28,186 @@ dc:title "Performance Ontology" ;
                                        rdfs:comment "The HPC Ontology describes software, hardware, and artifacts in the domain of High-Performance Computing. It can be used to annotate training datasets and machine learning models used in HPC software analyses and optimizations. The goal is to make datasets and AI models FAIR." ;
                                        owl:versionIRI "1.0.0" .
 
-# Anything related to performance metrics,either CPU or GPU related
+#################################################################
+#    Annotation properties
+#################################################################
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#achievedActiveWarpsPerSM
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/domainIncludes
+schema:domainIncludes rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://hpc-fair.github.io/ontology#achievedActiveWarpsPerSM
 hpc:achievedActiveWarpsPerSM rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#achievedGPUOccupancy
+###  https://hpc-fair.github.io/ontology#achievedGPUOccupancy
 hpc:achievedGPUOccupancy rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf hpc:occupancy .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#activeCyclesOfStreamingMultiprocessor
+###  https://hpc-fair.github.io/ontology#activeCyclesOfStreamingMultiprocessor
 hpc:activeCyclesOfStreamingMultiprocessor rdf:type owl:DatatypeProperty ;
                                           rdfs:subPropertyOf hpc:cycle .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#averageExecutionTime
+###  https://hpc-fair.github.io/ontology#averageExecutionTime
 hpc:averageExecutionTime rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf hpc:executionTime .
 
 
+###  https://hpc-fair.github.io/ontology#codeVariant
+hpc:codeVariant rdf:type owl:DatatypeProperty .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#cpuPageFault
+
+###  https://hpc-fair.github.io/ontology#cpuPageFault
 hpc:cpuPageFault rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf hpc:pageFault .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#cycle
+
+###  https://hpc-fair.github.io/ontology#cycle
 hpc:cycle rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#dataTransferSize
+###  https://hpc-fair.github.io/ontology#dataTransferSize
 hpc:dataTransferSize rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf hpc:size .
+                     rdfs:subPropertyOf hpc:size ;
+                     schema:domainIncludes hpc:Memory .
 
 
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#deviceToHostTransferSize
+###  https://hpc-fair.github.io/ontology#deviceToHostTransferSize
 hpc:deviceToHostTransferSize rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf hpc:dataTransferSize .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#dramUtilizationRate
+###  https://hpc-fair.github.io/ontology#dramUtilizationRate
 hpc:dramUtilizationRate rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf hpc:percentage .
 
 
-
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#executionTime
+###  https://hpc-fair.github.io/ontology#executionTime
 hpc:executionTime rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#executionTimePercentage
+###  https://hpc-fair.github.io/ontology#executionTimePercentage
 hpc:executionTimePercentage rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf hpc:percentage .
 
 
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuPageFault
+###  https://hpc-fair.github.io/ontology#gpuPageFault
 hpc:gpuPageFault rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf hpc:pageFault .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasRmax
+###  https://hpc-fair.github.io/ontology#hasRmax
 hpc:hasRmax rdf:type owl:DatatypeProperty ;
             rdfs:comment "The maximum achieved performance [TFlop/s]" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasRpeak
+###  https://hpc-fair.github.io/ontology#hasRpeak
 hpc:hasRpeak rdf:type owl:DatatypeProperty ;
              rdfs:comment "The theoretical peak performance [TFlop/s]" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hostToDeviceTransferSize
+###  https://hpc-fair.github.io/ontology#hostToDeviceTransferSize
 hpc:hostToDeviceTransferSize rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf hpc:dataTransferSize .
 
 
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#l1CacheUitlizationRate
+###  https://hpc-fair.github.io/ontology#l1CacheUitlizationRate
 hpc:l1CacheUitlizationRate rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf hpc:percentage .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#l2CacheUtilizationRate
+###  https://hpc-fair.github.io/ontology#l2CacheUtilizationRate
 hpc:l2CacheUtilizationRate rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf hpc:percentage .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#labeledCodeVariant
+###  https://hpc-fair.github.io/ontology#labeledCodeVariant
 hpc:labeledCodeVariant rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf hpc:codeVariant .
 
 
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#maxExecutionTime
+###  https://hpc-fair.github.io/ontology#maxExecutionTime
 hpc:maxExecutionTime rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf hpc:executionTime .
 
 
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#memoryOccupancy
+###  https://hpc-fair.github.io/ontology#memoryOccupancy
 hpc:memoryOccupancy rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf hpc:occupancy .
 
 
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#memoryThroughputRate
+###  https://hpc-fair.github.io/ontology#memoryThroughputRate
 hpc:memoryThroughputRate rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf hpc:percentage .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#minExecutionTime
+###  https://hpc-fair.github.io/ontology#minExecutionTime
 hpc:minExecutionTime rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf hpc:executionTime .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#occupancy
+###  https://hpc-fair.github.io/ontology#occupancy
 hpc:occupancy rdf:type owl:DatatypeProperty .
 
 
-
-###  https://github.com/HPC-FAIR/HPC-Ontology#overhead
+###  https://hpc-fair.github.io/ontology#overhead
 hpc:overhead rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#pageFault
-hpc:pageFault rdf:type owl:DatatypeProperty .
+###  https://hpc-fair.github.io/ontology#pageFault
+hpc:pageFault rdf:type owl:DatatypeProperty ;
+              schema:domainIncludes hpc:Memory .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#streamingProcessorUtilizationRate
+###  https://hpc-fair.github.io/ontology#percentage
+hpc:percentage rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#size
+hpc:size rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#streamingProcessorUtilizationRate
 hpc:streamingProcessorUtilizationRate rdf:type owl:DatatypeProperty ;
                                       rdfs:subPropertyOf hpc:percentage .
 
 
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -24,17 +24,6 @@ ${ONTOLOGY_WEB_INDEX_FILES}:release/%/index-en.html:development/%.ttl
 #release/aimodel/index-en.html: development/ai-models.ttl
 #	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/aimodel
 #
-#release/core/index-en.html: development/core/core.ttl
-#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/core
-#
-#release/gpu/index-en.html: development/gpu.ttl
-#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/gpu
-#
-#release/performance/index-en.html: development/performance/performance.ttl
-#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/performance
-#
-#release/program/index-en.html: development/program.ttl
-#	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/program
 
 #development/hpc-ontology.ttl:development/core/core.ttl development/aimodel/ai-models.ttl development/gpu/gpu.ttl development/performance/performance.ttl development/program/program.ttl
 development/hpc-ontology.ttl: $(ONTOLOGY_FILES_With_Path)
