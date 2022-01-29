@@ -17,121 +17,97 @@
 #    Data properties
 #################################################################
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuArchitecture
 hpc:gpuArchitecture rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuDriverSharedMemorySizePerBlock
 hpc:gpuDriverSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
                                       rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuDynamicSharedMemorySizePerBlock
 hpc:gpuDynamicSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
                                        rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuFrequency
 hpc:gpuFrequency rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf hpc:coprocessorSpeed .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuInterconnect
 hpc:gpuInterconnect rdf:type owl:DatatypeProperty ;
                     rdfs:comment "bus types connecting CPU and GPUs: NVILINK or others" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuMemorySizePerNode
 hpc:gpuMemorySizePerNode rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuModel
 hpc:gpuModel rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuNodeCount
 hpc:gpuNodeCount rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf hpc:count .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuPeakPerformancePerNode
 hpc:gpuPeakPerformancePerNode rdf:type owl:DatatypeProperty ;
                               rdfs:subPropertyOf hpc:performance .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuSharedMemoryConfigurationSize
 hpc:gpuSharedMemoryConfigurationSize rdf:type owl:DatatypeProperty ;
                                      rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuStaticSharedMemorySizePerBlock
 hpc:gpuStaticSharedMemorySizePerBlock rdf:type owl:DatatypeProperty ;
                                       rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadBlockSize
 hpc:gpuThreadBlockSize rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadCount
 hpc:gpuThreadCount rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf hpc:count .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuThreadGridSize
 hpc:gpuThreadGridSize rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuUnifiedMemoryRemoteMapSize
 hpc:gpuUnifiedMemoryRemoteMapSize rdf:type owl:DatatypeProperty ;
                                   rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#gpuWavesPerSM
 hpc:gpuWavesPerSM rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf hpc:pageFault .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedByRegister
 hpc:maxGPUThreadBlockSizeLimitedByRegister rdf:type owl:DatatypeProperty ;
                                            rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedBySM
 hpc:maxGPUThreadBlockSizeLimitedBySM rdf:type owl:DatatypeProperty ;
                                      rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedBySharedMemory
 hpc:maxGPUThreadBlockSizeLimitedBySharedMemory rdf:type owl:DatatypeProperty ;
                                                rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#maxGPUThreadBlockSizeLimitedByWarps
 hpc:maxGPUThreadBlockSizeLimitedByWarps rdf:type owl:DatatypeProperty ;
                                         rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#registersPerThread
 hpc:registersPerThread rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf hpc:count .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#streamingMultiprocessorFrequency
 hpc:streamingMultiprocessorFrequency rdf:type owl:DatatypeProperty ;
                                      rdfs:subPropertyOf hpc:frequency .
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#theoreticalActiveWarpsPerSM
 hpc:theoreticalActiveWarpsPerSM rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#theoreticalGPUOccupancy
 hpc:theoreticalGPUOccupancy rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf hpc:occupancy .
 

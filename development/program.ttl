@@ -20,27 +20,25 @@
 #    Object Properties
 #################################################################
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#access
 hpc:access rdf:type owl:ObjectProperty ;
            owl:inverseOf hpc:accessedBy ;
            rdfs:comment "function relation" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#accessedBy
 hpc:accessedBy rdf:type owl:ObjectProperty ;
                rdfs:comment "variable relation" .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#allocate
 hpc:allocate rdf:type owl:ObjectProperty ;
              owl:inverseOf hpc:allocatedBy .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#allocatedBy
 hpc:allocatedBy rdf:type owl:ObjectProperty ;
                 rdfs:comment "array relation" .
 
+hpc:upstreamCallSite rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf hpc:graphLink ;
+                     rdfs:comment "Inverse of a call site --> function being called." .		
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#callSite
 hpc:callSite rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink ;
              owl:inverseOf hpc:srcFunc ;
@@ -48,207 +46,169 @@ hpc:callSite rdf:type owl:ObjectProperty ;
 This property links a function to its function call sites.""" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#calledBy
 hpc:calledBy rdf:type owl:ObjectProperty ;
              owl:equivalentProperty hpc:caller ;
              rdfs:subPropertyOf hpc:graphLink ;
              owl:inverseOf hpc:calls .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#callee
 hpc:callee rdf:type owl:ObjectProperty ;
            owl:equivalentProperty hpc:calls ;
            rdfs:subPropertyOf hpc:graphLink ;
            owl:inverseOf hpc:caller .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#caller
 hpc:caller rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#calls
 hpc:calls rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf hpc:graphLink ;
           rdfs:comment "a function calls another function" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#deallocatedBy
 hpc:deallocatedBy rdf:type owl:ObjectProperty ;
                   rdfs:comment "array relation" .
 
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#declaredBy
 hpc:declaredBy rdf:type owl:ObjectProperty ;
                rdfs:comment "a variable is declared by a statment" ,
                             "variable relation" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#definedBy
 hpc:definedBy rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#destFunc
 hpc:destFunc rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink ;
              owl:inverseOf hpc:upstreamCallSite ;
              rdfs:comment "linke a call site to the function being called." .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasAlignment
 hpc:hasAlignment rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf hpc:graphLink ;
                  rdfs:comment "AST node to alignment node" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentExpr
 hpc:hasArgumentExpr rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasArgumentList
 hpc:hasArgumentList rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasArrayBaseType
 hpc:hasArrayBaseType rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf hpc:hasType ;
                      rdfs:range hpc:Type .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasArrayRank
 hpc:hasArrayRank rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:comment "?" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasBaseType
 hpc:hasBaseType rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf hpc:hasType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasBody
 hpc:hasBody rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
             rdfs:comment "AST has a body" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasChild
 hpc:hasChild rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink ;
              owl:inverseOf hpc:hasParent .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasCondition
 hpc:hasCondition rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf hpc:graphLink ;
                  rdfs:comment "AST node to its condition node" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasDeclaration
 hpc:hasDeclaration rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf hpc:graphLink ;
                    rdfs:comment "Domain: definition" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasDefinition
 hpc:hasDefinition rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasElseBody
 hpc:hasElseBody rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasExpression
 hpc:hasExpression rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf hpc:graphLink ;
                   rdfs:domain hpc:ExpressionStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasFalseBody
 hpc:hasFalseBody rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasFile
 hpc:hasFile rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
             rdfs:comment "AST node to its file node" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasForIncr
 hpc:hasForIncr rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasForInit
 hpc:hasForInit rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasForTest
 hpc:hasForTest rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasHiddenType
 hpc:hasHiddenType rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf hpc:hasType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasIndexExp
 hpc:hasIndexExp rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasInitStatement
 hpc:hasInitStatement rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasInitialValue
 hpc:hasInitialValue rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasInitializer
 hpc:hasInitializer rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf hpc:graphLink .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasKey
 hpc:hasKey rdf:type owl:ObjectProperty ;
            rdfs:comment "case key:" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasLabelRef
 hpc:hasLabelRef rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasLeftOperand
 hpc:hasLeftOperand rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf hpc:hasChild ;
                    rdfs:domain hpc:BinaryOp .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasOperand
 hpc:hasOperand rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf hpc:hasChild .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasOperator
 hpc:hasOperator rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf hpc:graphLink .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasParameter
 hpc:hasParameter rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasParameterDeclList
 hpc:hasParameterDeclList rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf hpc:graphLink ;
                          rdf:type owl:FunctionalProperty ;
@@ -256,17 +216,14 @@ hpc:hasParameterDeclList rdf:type owl:ObjectProperty ;
                          rdfs:comment "function relation" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasParameterList
 hpc:hasParameterList rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasParent
 hpc:hasParent rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasReturnType
 hpc:hasReturnType rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf hpc:hasType ;
                   rdf:type owl:FunctionalProperty ;
@@ -275,42 +232,34 @@ hpc:hasReturnType rdf:type owl:ObjectProperty ;
                   rdfs:comment "function relation" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasRightOperand
 hpc:hasRightOperand rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf hpc:hasChild ;
                     rdfs:domain hpc:BinaryOp .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasScope
 hpc:hasScope rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasSelector
 hpc:hasSelector rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf hpc:graphLink .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasStatement
 hpc:hasStatement rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasStorageClass
 hpc:hasStorageClass rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf hpc:graphLink ;
                     rdf:type owl:FunctionalProperty ;
                     rdfs:comment "variable relation" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasTarget
 hpc:hasTarget rdf:type owl:ObjectProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasTrueBody
 hpc:hasTrueBody rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasType
 hpc:hasType rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
             rdf:type owl:FunctionalProperty ;
@@ -318,63 +267,51 @@ hpc:hasType rdf:type owl:ObjectProperty ;
             rdfs:comment "variable relation" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasValue
 hpc:hasValue rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#read
 hpc:read rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf hpc:access ;
          owl:inverseOf hpc:readBy .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#readBy
 hpc:readBy rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf hpc:accessedBy .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#referTo
 hpc:referTo rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
             owl:inverseOf hpc:referredBy .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#referredBy
 hpc:referredBy rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf hpc:graphLink .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#relationOp
 hpc:relationOp rdf:type owl:ObjectProperty .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#sourceFile
 hpc:sourceFile rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf hpc:file .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#srcFunc
 hpc:srcFunc rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
             rdfs:comment "Inverse of Function--> CallSite" .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#write
 hpc:write rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf hpc:access ;
           owl:inverseOf hpc:writtenBy .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#writtenBy
 hpc:writtenBy rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf hpc:accessedBy .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#writtenIn
 hpc:writtenIn rdf:type owl:ObjectProperty ;
               rdfs:domain hpc:LanguageConstruct ;
               rdfs:range hpc:ProgrammingModel .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AssignInitializer
 hpc:AssignInitializer rdf:type owl:Class ;
                       rdfs:subClassOf hpc:Initializer ,
                                       [ rdf:type owl:Restriction ;
@@ -386,65 +323,51 @@ hpc:AssignInitializer rdf:type owl:Class ;
 #    Data properties
 #################################################################
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#kernelName
 hpc:kernelName rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf hpc:name .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#hasValue
 hpc:hasValue rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Nth
 hpc:Nth rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#NthArg
 hpc:NthArg rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf hpc:Nth .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#NthPara
 hpc:NthPara rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf hpc:Nth .
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#allocatedDataSize
 hpc:allocatedDataSize rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf hpc:size .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#arrayID
 hpc:arrayID rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf hpc:id .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#arrayName
 hpc:arrayName rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf hpc:name .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#beginMemoryAddress
 hpc:beginMemoryAddress rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf hpc:memoryAddress .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#codeVariant
 hpc:codeVariant rdf:type owl:DatatypeProperty .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#columnNumber
 hpc:columnNumber rdf:type owl:DatatypeProperty ;
                  rdfs:comment "Column number within a file" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#commandLineOption
 hpc:commandLineOption rdf:type owl:DatatypeProperty .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#endMemoryAddress
 hpc:endMemoryAddress rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf hpc:memoryAddress .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#lineNumber
 hpc:lineNumber rdf:type owl:DatatypeProperty ;
                rdfs:comment "line number within a file" .
 
@@ -454,109 +377,88 @@ hpc:lineNumber rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#RegisterStorage
 hpc:RegisterStorage rdf:type owl:Class ;
                     rdfs:subClassOf hpc:StorageClass .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Kernel
 hpc:Kernel rdf:type owl:Class ;
            rdfs:subClassOf hpc:Statement ;
            rdfs:comment "A kernel is a function or subroutine of a program written in any programming languages. A kernel has a defined function body and can be executed on a computer. This is a generic concept used for performance analysis."@en .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LanguageConstruct
 hpc:LanguageConstruct rdf:type owl:Class .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#SizeofOp
 hpc:SizeofOp rdf:type owl:Class ;
              rdfs:subClassOf hpc:UnaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#MainFunction
 hpc:MainFunction rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Function ;
                  rdfs:comment "The main function in C/C++. Or similar entry function in other programming languages." .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ClassDeclaration
 hpc:ClassDeclaration rdf:type owl:Class ;
                      rdfs:subClassOf hpc:Declaration .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CommaOp
 hpc:CommaOp rdf:type owl:Class ;
             rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AddAssignOp
 hpc:AddAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AddOp
 hpc:AddOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AdditiveOp
 hpc:AdditiveOp rdf:type owl:Class ;
                rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AddressOp
 hpc:AddressOp rdf:type owl:Class ;
               rdfs:subClassOf hpc:UnaryOp ;
               rdfs:comment "&" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AndAssignOp
 hpc:AndAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AndOp
 hpc:AndOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ArrayDecl
 hpc:ArrayDecl rdf:type owl:Class ;
               rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ArraySub
 hpc:ArraySub rdf:type owl:Class ;
              rdfs:subClassOf hpc:PostfixOp ;
              rdfs:comment "[]" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ArrayType
 hpc:ArrayType rdf:type owl:Class ;
               rdfs:subClassOf hpc:DerivedType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ArrowExp
 hpc:ArrowExp rdf:type owl:Class ;
              rdfs:subClassOf hpc:MemberRef .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AssignOp
 hpc:AssignOp rdf:type owl:Class ;
              rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AssignStatement
 hpc:AssignStatement rdf:type owl:Class ;
                     rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#AssignmentOp
 hpc:AssignmentOp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Auto
 hpc:Auto rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Class ;
                                owl:oneOf ( hpc:auto
@@ -565,96 +467,78 @@ hpc:Auto rdf:type owl:Class ;
          rdfs:subClassOf hpc:StorageClass .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BasicBlock
 hpc:BasicBlock rdf:type owl:Class ;
                rdfs:subClassOf hpc:ScopeStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BasicType
 hpc:BasicType rdf:type owl:Class ;
               rdfs:subClassOf hpc:Type ;
               rdfs:comment "Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types." .
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BinaryOp
 hpc:BinaryOp rdf:type owl:Class ;
              rdfs:subClassOf hpc:Expression ;
              rdfs:comment "overlap" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseANDOp
 hpc:BitwiseANDOp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseOROp
 hpc:BitwiseOROp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseShiftOp
 hpc:BitwiseShiftOp rdf:type owl:Class ;
                    rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BitwiseXOROp
 hpc:BitwiseXOROp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Block
 hpc:Block rdf:type owl:Class ;
           rdfs:subClassOf hpc:Scope .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BoolType
 hpc:BoolType rdf:type owl:Class ;
              rdfs:subClassOf hpc:BasicType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#BreakStatement
 hpc:BreakStatement rdf:type owl:Class ;
                    rdfs:subClassOf hpc:JumpStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CallGraph
 hpc:CallGraph rdf:type owl:Class ;
               rdfs:subClassOf hpc:Dataset .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CallSite
 hpc:CallSite rdf:type owl:Class ;
              owl:equivalentClass hpc:FunctionCall ;
              rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CaseOptionStatement
 hpc:CaseOptionStatement rdf:type owl:Class ;
                         rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CastOp
 hpc:CastOp rdf:type owl:Class ;
            rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CharConst
 hpc:CharConst rdf:type owl:Class ;
               rdfs:subClassOf hpc:Constant .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CharType
 hpc:CharType rdf:type owl:Class ;
              rdfs:subClassOf hpc:BasicType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ComplexType
 hpc:ComplexType rdf:type owl:Class ;
                 rdfs:subClassOf hpc:BasicType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#CompoundStatement
 hpc:CompoundStatement rdf:type owl:Class ;
                       rdfs:subClassOf hpc:Statement ,
                                       [ rdf:type owl:Restriction ;
@@ -666,181 +550,146 @@ hpc:CompoundStatement rdf:type owl:Class ;
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ConditionalOp
 hpc:ConditionalOp rdf:type owl:Class ;
                   rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Const
 hpc:Const rdf:type owl:Class ;
           rdfs:subClassOf hpc:TypeQualifier .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Constant
 hpc:Constant rdf:type owl:Class ;
              rdfs:subClassOf hpc:PrimaryExpr .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ContinueStatement
 hpc:ContinueStatement rdf:type owl:Class ;
                       rdfs:subClassOf hpc:JumpStatement .
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Declaration
 hpc:Declaration rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Statement ;
                 rdfs:comment "Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions." .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#IOStatement
 hpc:IOStatement rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#IfElseStatement
 hpc:IfElseStatement rdf:type owl:Class ;
                     rdfs:subClassOf hpc:SelectionStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#IfStatement
 hpc:IfStatement rdf:type owl:Class ;
                 rdfs:subClassOf hpc:SelectionStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#IndirectionOp
 hpc:IndirectionOp rdf:type owl:Class ;
                   rdfs:subClassOf hpc:UnaryOp ;
                   rdfs:comment "*" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Initializer
 hpc:Initializer rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#IntConst
 hpc:IntConst rdf:type owl:Class ;
              rdfs:subClassOf hpc:Constant .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#IntType
 hpc:IntType rdf:type owl:Class ;
             rdfs:subClassOf hpc:BasicType .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#IterationStatement
 hpc:IterationStatement rdf:type owl:Class ;
                        owl:equivalentClass hpc:Loop ;
                        rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#JumpStatement
 hpc:JumpStatement rdf:type owl:Class ;
                   rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LabeledStatement
 hpc:LabeledStatement rdf:type owl:Class ;
                      rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LessOp
 hpc:LessOp rdf:type owl:Class ;
            rdfs:subClassOf hpc:BinaryOp ,
                            hpc:RelationalOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LessOrEqualOp
 hpc:LessOrEqualOp rdf:type owl:Class ;
                   rdfs:subClassOf hpc:BinaryOp ,
                                   hpc:RelationalOp .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#MemberRef
 hpc:MemberRef rdf:type owl:Class ;
               rdfs:subClassOf hpc:PostfixOp .
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#DefaultOptionStatement
 hpc:DefaultOptionStatement rdf:type owl:Class ;
                            rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#DerivedType
 hpc:DerivedType rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Type .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Directive
 hpc:Directive rdf:type owl:Class ;
               rdfs:subClassOf hpc:LanguageConstruct .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#DivAssignOp
 hpc:DivAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#DivOp
 hpc:DivOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#DoWhileStatement
 hpc:DoWhileStatement rdf:type owl:Class ;
                      rdfs:subClassOf hpc:IterationStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#DotExp
 hpc:DotExp rdf:type owl:Class ;
            rdfs:subClassOf hpc:MemberRef .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#DoubleType
 hpc:DoubleType rdf:type owl:Class ;
                rdfs:subClassOf hpc:FloatType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#EnumDecl
 hpc:EnumDecl rdf:type owl:Class ;
              rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#EnumType
 hpc:EnumType rdf:type owl:Class ;
              rdfs:subClassOf hpc:BasicType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#EnumerationConst
 hpc:EnumerationConst rdf:type owl:Class ;
                      rdfs:subClassOf hpc:Constant .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#EqualOp
 hpc:EqualOp rdf:type owl:Class ;
             rdfs:subClassOf hpc:BinaryOp ,
                             hpc:EqualityOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#EqualityOp
 hpc:EqualityOp rdf:type owl:Class ;
                rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Expression
 hpc:Expression rdf:type owl:Class ;
                rdfs:subClassOf hpc:LanguageConstruct .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ExpressionList
 hpc:ExpressionList rdf:type owl:Class ;
                    rdfs:subClassOf hpc:Unsorted .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ExpressionStatement
 hpc:ExpressionStatement rdf:type owl:Class ;
                         rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Extern
 hpc:Extern rdf:type owl:Class ;
            owl:equivalentClass [ rdf:type owl:Class ;
                                  owl:oneOf ( hpc:extern
@@ -849,17 +698,14 @@ hpc:Extern rdf:type owl:Class ;
            rdfs:subClassOf hpc:StorageClass .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ExternalDataDefinition
 hpc:ExternalDataDefinition rdf:type owl:Class ;
                            rdfs:subClassOf hpc:ExternalDefinition .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ExternalDefinition
 hpc:ExternalDefinition rdf:type owl:Class ;
                        rdfs:subClassOf hpc:LanguageConstruct .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ExternalFunctionDefinition
 hpc:ExternalFunctionDefinition rdf:type owl:Class ;
                                rdfs:subClassOf hpc:ExternalDefinition ,
                                                [ rdf:type owl:Restriction ;
@@ -869,35 +715,29 @@ hpc:ExternalFunctionDefinition rdf:type owl:Class ;
                                                ] .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FloatType
 hpc:FloatType rdf:type owl:Class ;
               rdfs:subClassOf hpc:BasicType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FloatingConst
 hpc:FloatingConst rdf:type owl:Class ;
                   rdfs:subClassOf hpc:Constant .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ForInitStatement
 hpc:ForInitStatement rdf:type owl:Class ;
                      rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ForStatement
 hpc:ForStatement rdf:type owl:Class ;
                  rdfs:subClassOf hpc:IterationStatement .
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Function
 hpc:Function rdf:type owl:Class ;
              owl:equivalentClass hpc:Kernel ;
              rdfs:subClassOf hpc:Statement ;
              rdfs:comment "A function of any kinds, including defining function declarations, non-defining function declarations, etc." .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionCall
 hpc:FunctionCall rdf:type owl:Class ;
                  rdfs:subClassOf hpc:PostfixOp ,
                                  [ rdf:type owl:Restriction ;
@@ -911,7 +751,6 @@ hpc:FunctionCall rdf:type owl:Class ;
                  rdfs:comment "A function call site, the same as the function call expression in AST" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionDeclaration
 hpc:FunctionDeclaration rdf:type owl:Class ;
                         rdfs:subClassOf hpc:Declaration ,
                                         hpc:Function ,
@@ -934,18 +773,15 @@ hpc:FunctionDeclaration rdf:type owl:Class ;
                         rdfs:comment "A function declaration can be either a forward declaration or a defining declaration. If it is a defining declaration then it contains a pointer to the function definition." .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionDefinitionBody
 hpc:FunctionDefinitionBody rdf:type owl:Class ;
                            rdfs:subClassOf hpc:CompoundStatement ,
                                            hpc:Scope .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionParameterList
 hpc:FunctionParameterList rdf:type owl:Class ;
                           rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionRef
 hpc:FunctionRef rdf:type owl:Class ;
                 rdfs:subClassOf hpc:PrimaryExpr ,
                                 [ rdf:type owl:Restriction ;
@@ -954,79 +790,64 @@ hpc:FunctionRef rdf:type owl:Class ;
                                 ] .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#FunctionType
 hpc:FunctionType rdf:type owl:Class ;
                  rdfs:subClassOf hpc:DerivedType .
 
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Global
 hpc:Global rdf:type owl:Class ;
            rdfs:subClassOf hpc:ScopeStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#GotoStatement
 hpc:GotoStatement rdf:type owl:Class ;
                   rdfs:subClassOf hpc:JumpStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#GreaterOp
 hpc:GreaterOp rdf:type owl:Class ;
               rdfs:subClassOf hpc:BinaryOp ,
                               hpc:RelationalOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#GreaterOrEqualOp
 hpc:GreaterOrEqualOp rdf:type owl:Class ;
                      rdfs:subClassOf hpc:BinaryOp ,
                                      hpc:RelationalOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ListExp
 hpc:ListExp rdf:type owl:Class ;
             rdfs:subClassOf hpc:Unsorted ;
             rdfs:comment "?" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Literal
 hpc:Literal rdf:type owl:Class ;
             rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalANDOp
 hpc:LogicalANDOp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalAndOp
 hpc:LogicalAndOp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalNegOp
 hpc:LogicalNegOp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:UnaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalOROp
 hpc:LogicalOROp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#LogicalOrOp
 hpc:LogicalOrOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:BinaryOp .
-###  https://github.com/HPC-FAIR/HPC-Ontology#LongType
 hpc:LongType rdf:type owl:Class ;
              rdfs:subClassOf hpc:IntType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Loop
 hpc:Loop rdf:type owl:Class ;
          rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Lvalue
 hpc:Lvalue rdf:type owl:Class ;
            rdfs:subClassOf hpc:Expression ,
                            [ rdf:type owl:Restriction ;
@@ -1034,118 +855,94 @@ hpc:Lvalue rdf:type owl:Class ;
                              owl:someValuesFrom hpc:Variable
                            ] ;
            rdfs:comment "An Object is a named region of storage; an lvalue is an expression referring to an object." .
-###  https://github.com/HPC-FAIR/HPC-Ontology#ModAssignOp
 hpc:ModAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ModOp
 hpc:ModOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#MulAssignOp
 hpc:MulAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#MulOp
 hpc:MulOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
-###  https://github.com/HPC-FAIR/HPC-Ontology#MultiplicativeOp
 hpc:MultiplicativeOp rdf:type owl:Class ;
                      rdfs:subClassOf hpc:Expression .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#NeqOp
 hpc:NeqOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp ,
                           hpc:EqualityOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#NullExpr
 hpc:NullExpr rdf:type owl:Class ;
              rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#NullPointerType
 hpc:NullPointerType rdf:type owl:Class ;
                     rdfs:subClassOf hpc:PointerType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#NullStatement
 hpc:NullStatement rdf:type owl:Class ;
                   rdfs:subClassOf hpc:Statement .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#OnesComplementOp
 hpc:OnesComplementOp rdf:type owl:Class ;
                      rdfs:subClassOf hpc:UnaryOp ;
                      rdfs:comment "?" .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#OrAssignOp
 hpc:OrAssignOp rdf:type owl:Class ;
                rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#OrOp
 hpc:OrOp rdf:type owl:Class ;
          rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ParallelRegion
 hpc:ParallelRegion rdf:type owl:Class ;
                    rdfs:subClassOf hpc:Directive ,
                                    hpc:OpenMP .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Parameter
 hpc:Parameter rdf:type owl:Class ;
               rdfs:subClassOf hpc:Variable .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PointerDecl
 hpc:PointerDecl rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PointerType
 hpc:PointerType rdf:type owl:Class ;
                 rdfs:subClassOf hpc:DerivedType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PostfixDecrementOp
 hpc:PostfixDecrementOp rdf:type owl:Class ;
                        rdfs:subClassOf hpc:PostfixOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PostfixIncrementOp
 hpc:PostfixIncrementOp rdf:type owl:Class ;
                        rdfs:subClassOf hpc:PostfixOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PostfixOp
 hpc:PostfixOp rdf:type owl:Class ;
               rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixDecrementOp
 hpc:PrefixDecrementOp rdf:type owl:Class ;
                       rdfs:subClassOf hpc:UnaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixIncrementOp
 hpc:PrefixIncrementOp rdf:type owl:Class ;
                       rdfs:subClassOf hpc:UnaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixMinusOp
 hpc:PrefixMinusOp rdf:type owl:Class ;
                   rdfs:subClassOf hpc:UnaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PrefixPlusOp
 hpc:PrefixPlusOp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:UnaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#PrimaryExpr
 hpc:PrimaryExpr rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Expression ;
                 rdfs:comment """Primary expressions are identifiers, constants, strings, or expressions in parentheses.
@@ -1155,70 +952,56 @@ constant
 string 
 (expression)""" .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ReferenceType
 hpc:ReferenceType rdf:type owl:Class ;
                   rdfs:subClassOf hpc:DerivedType .
-###  https://github.com/HPC-FAIR/HPC-Ontology#RelationalOp
 hpc:RelationalOp rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Expression ;
                  rdfs:comment "? model as individual or subclass" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ReturnStatement
 hpc:ReturnStatement rdf:type owl:Class ;
                     rdfs:subClassOf hpc:JumpStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Scope
 hpc:Scope rdf:type owl:Class ;
           owl:equivalentClass hpc:ScopeStatement ;
           rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ScopeStatement
 hpc:ScopeStatement rdf:type owl:Class ;
                    rdfs:subClassOf hpc:Statement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#SelectionStatement
 hpc:SelectionStatement rdf:type owl:Class ;
                        rdfs:subClassOf hpc:Statement .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ShlAssignOp
 hpc:ShlAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ShlOp
 hpc:ShlOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ShortType
 hpc:ShortType rdf:type owl:Class ;
               rdfs:subClassOf hpc:IntType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ShrAssignOp
 hpc:ShrAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ShrOp
 hpc:ShrOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Signed
 hpc:Signed rdf:type owl:Class ;
            rdfs:subClassOf hpc:Type .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Statement
 hpc:Statement rdf:type owl:Class ;
               rdfs:subClassOf hpc:LanguageConstruct .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Static
 hpc:Static rdf:type owl:Class ;
            owl:equivalentClass [ rdf:type owl:Class ;
                                  owl:oneOf ( hpc:static
@@ -1226,125 +1009,100 @@ hpc:Static rdf:type owl:Class ;
                                ] ;
            rdfs:subClassOf hpc:StorageClass .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#StorageClass
 hpc:StorageClass rdf:type owl:Class ;
                  rdfs:subClassOf hpc:LanguageConstruct .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#String
 hpc:String rdf:type owl:Class ;
            rdfs:subClassOf hpc:Type .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#StringLiteral
 hpc:StringLiteral rdf:type owl:Class ;
                   rdfs:subClassOf hpc:PrimaryExpr .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#StructureType
 hpc:StructureType rdf:type owl:Class ;
                   rdfs:subClassOf hpc:DerivedType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#StructureUnionDecl
 hpc:StructureUnionDecl rdf:type owl:Class ;
                        rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#SubAssignOp
 hpc:SubAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#SubOp
 hpc:SubOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#SwitchStatement
 hpc:SwitchStatement rdf:type owl:Class ;
                     rdfs:subClassOf hpc:SelectionStatement .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassDeclaration
 hpc:TemplateClassDeclaration rdf:type owl:Class ;
                              rdfs:subClassOf hpc:ClassDeclaration ,
                                              hpc:TemplateDeclaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateClassInstantiationDeclaration
 hpc:TemplateClassInstantiationDeclaration rdf:type owl:Class ;
                                           rdfs:subClassOf hpc:ClassDeclaration ,
                                                           hpc:TemplateInstantiation .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateDeclaration
 hpc:TemplateDeclaration rdf:type owl:Class ;
                         rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionDeclaration
 hpc:TemplateFunctionDeclaration rdf:type owl:Class ;
                                 rdfs:subClassOf hpc:FunctionDeclaration ,
                                                 hpc:TemplateDeclaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateFunctionInstantiationDeclaration
 hpc:TemplateFunctionInstantiationDeclaration rdf:type owl:Class ;
                                              rdfs:subClassOf hpc:FunctionDeclaration ,
                                                              hpc:TemplateInstantiation .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TemplateInstantiation
 hpc:TemplateInstantiation rdf:type owl:Class ;
                           rdfs:subClassOf hpc:Declaration .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Type
 hpc:Type rdf:type owl:Class ;
          rdfs:subClassOf hpc:LanguageConstruct .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TypeQualifier
 hpc:TypeQualifier rdf:type owl:Class ;
                   rdfs:subClassOf hpc:LanguageConstruct .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#TypedefDecl
 hpc:TypedefDecl rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Declaration .
-###  https://github.com/HPC-FAIR/HPC-Ontology#UnaryOp
 hpc:UnaryOp rdf:type owl:Class ;
             rdfs:subClassOf hpc:Expression .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#UnionType
 hpc:UnionType rdf:type owl:Class ;
               rdfs:subClassOf hpc:DerivedType .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#UnknownClass
 hpc:UnknownClass rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Unsorted .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#UnknownType
 hpc:UnknownType rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Type .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Unsigned
 hpc:Unsigned rdf:type owl:Class ;
              rdfs:subClassOf hpc:Type .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Unsorted
 hpc:Unsorted rdf:type owl:Class ;
              rdfs:subClassOf hpc:LanguageConstruct .
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Value
 hpc:Value rdf:type owl:Class ;
           rdfs:subClassOf hpc:Unsorted ;
           rdfs:comment "SgXXXVal = constant?" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Variable
 hpc:Variable rdf:type owl:Class ;
              rdfs:subClassOf hpc:Expression ,
                              [ rdf:type owl:Restriction ;
@@ -1383,52 +1141,42 @@ hpc:Variable rdf:type owl:Class ;
 named location of storage""" .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#VariableDecl
 hpc:VariableDecl rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#VariableDefinition
 hpc:VariableDefinition rdf:type owl:Class ;
                        rdfs:subClassOf hpc:Declaration .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#VariableRef
 hpc:VariableRef rdf:type owl:Class ;
                 rdfs:subClassOf hpc:PrimaryExpr ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty hpc:referTo ;
                                   owl:someValuesFrom hpc:Variable
                                 ] .
-###  https://github.com/HPC-FAIR/HPC-Ontology#VoidType
 hpc:VoidType rdf:type owl:Class ;
              rdfs:subClassOf hpc:BasicType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#Volatile
 hpc:Volatile rdf:type owl:Class ;
              rdfs:subClassOf hpc:TypeQualifier .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#WCharType
 hpc:WCharType rdf:type owl:Class ;
               rdfs:subClassOf hpc:CharType .
-###  https://github.com/HPC-FAIR/HPC-Ontology#WhileStatement
 hpc:WhileStatement rdf:type owl:Class ;
                    rdfs:subClassOf hpc:IterationStatement .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#XorAssignOp
 hpc:XorAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#XorOp
 hpc:XorOp rdf:type owl:Class ;
           rdfs:subClassOf hpc:BinaryOp .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#isAssignedTo
 hpc:isAssignedTo rdf:type owl:Class ;
                  rdfs:subClassOf hpc:Expression ,
                                  hpc:Unsorted .
@@ -1438,178 +1186,143 @@ hpc:isAssignedTo rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#array_type
 hpc:array_type rdf:type owl:NamedIndividual ,
                         hpc:ArrayType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#auto
 hpc:auto rdf:type owl:NamedIndividual ,
                   hpc:Auto .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#bool
 hpc:bool rdf:type owl:NamedIndividual ,
                   hpc:BoolType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#char
 hpc:char rdf:type owl:NamedIndividual ,
                   hpc:CharType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#complex
 hpc:complex rdf:type owl:NamedIndividual ,
                      hpc:ComplexType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#double
 hpc:double rdf:type owl:NamedIndividual ,
                     hpc:DoubleType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#enum_type
 hpc:enum_type rdf:type owl:NamedIndividual ,
                        hpc:EnumType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#extern
 hpc:extern rdf:type owl:NamedIndividual ,
                     hpc:Extern .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#float
 hpc:float rdf:type owl:NamedIndividual ,
                    hpc:FloatType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#function_type
 hpc:function_type rdf:type owl:NamedIndividual ,
                            hpc:FunctionType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#int
 hpc:int rdf:type owl:NamedIndividual ,
                  hpc:IntType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#long
 hpc:long rdf:type owl:NamedIndividual ,
                   hpc:LongType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#long_double
 hpc:long_double rdf:type owl:NamedIndividual ,
                          hpc:DoubleType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#long_long
 hpc:long_long rdf:type owl:NamedIndividual ,
                        hpc:LongType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#null_pointer
 hpc:null_pointer rdf:type owl:NamedIndividual ,
                           hpc:NullPointerType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#pointer_type
 hpc:pointer_type rdf:type owl:NamedIndividual ,
                           hpc:PointerType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#ref_type
 hpc:ref_type rdf:type owl:NamedIndividual ,
                       hpc:ReferenceType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#short
 hpc:short rdf:type owl:NamedIndividual ,
                    hpc:ShortType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#signed_char
 hpc:signed_char rdf:type owl:NamedIndividual ,
                          hpc:CharType ,
                          hpc:Signed .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#signed_int
 hpc:signed_int rdf:type owl:NamedIndividual ,
                         hpc:Signed .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#signed_long
 hpc:signed_long rdf:type owl:NamedIndividual ,
                          hpc:Signed .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#signed_long_long
 hpc:signed_long_long rdf:type owl:NamedIndividual ,
                               hpc:Signed .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#signed_short
 hpc:signed_short rdf:type owl:NamedIndividual ,
                           hpc:Signed .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#static
 hpc:static rdf:type owl:NamedIndividual ,
                     hpc:Static .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#string
 hpc:string rdf:type owl:NamedIndividual ,
                     hpc:String .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unknown_modifier
 hpc:unknown_modifier rdf:type owl:NamedIndividual ,
                               hpc:Unsorted .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unknown_type
 hpc:unknown_type rdf:type owl:NamedIndividual ,
                           hpc:UnknownType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_char
 hpc:unsigned_char rdf:type owl:NamedIndividual ,
                            hpc:Unsigned .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_int
 hpc:unsigned_int rdf:type owl:NamedIndividual ,
                           hpc:Unsigned .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long
 hpc:unsigned_long rdf:type owl:NamedIndividual ,
                            hpc:Unsigned .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_long_long
 hpc:unsigned_long_long rdf:type owl:NamedIndividual ,
                                 hpc:Unsigned .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unsigned_short
 hpc:unsigned_short rdf:type owl:NamedIndividual ,
                             hpc:Unsigned .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#unspecified
 hpc:unspecified rdf:type owl:NamedIndividual ,
                          hpc:StorageClass .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#void_type
 hpc:void_type rdf:type owl:NamedIndividual ,
                        hpc:VoidType .
 
 
-###  https://github.com/HPC-FAIR/HPC-Ontology#wchar
 hpc:wchar rdf:type owl:NamedIndividual ,
                    hpc:WCharType .
 					    
