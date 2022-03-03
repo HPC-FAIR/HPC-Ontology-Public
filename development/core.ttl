@@ -11,6 +11,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
 @base <https://hpc-fair.github.io/ontology> .
 
 <https://hpc-fair.github.io/ontology> rdf:type owl:Ontology ;
@@ -1105,6 +1106,8 @@ hpc:Action rdf:type owl:Class ;
 
 ###  https://hpc-fair.github.io/ontology#Activity
 hpc:Activity rdf:type owl:Class ;
+             rdf:type skos:Concept; 
+             skos:exactMatch prov:Activity;
              rdfs:subClassOf hpc:Thing ;
              rdfs:comment """something that occurs over a period of time an acts upon or with entities. This is used to represent actions already been done, happened already with concrete actors, timing , location..etc. information. 
 
@@ -1124,13 +1127,25 @@ New properties
 
 ###  https://hpc-fair.github.io/ontology#Agent
 hpc:Agent rdf:type owl:Class ;
+          rdf:type skos:Concept; 
+	  skos:exactMatch prov:Agent; 
           rdfs:subClassOf hpc:Thing ;
           rdfs:comment "A person, organizationsoftware, computer, etc.which can conduct some activities" .
 
+### Using SKOS to link HPC Ontology to PROV-O ontology	  
+prov:Entity rdf:type skos:Concept .
+prov:Activity rdf:type skos:Concept .
+prov:Agent rdf:type skos:Concept .
+prov:Person rdf:type skos:Concept .
+prov:SoftwareAgent rdf:type skos:Concept .
+prov:Organization rdf:type skos:Concept .
+prov:Location rdf:type skos:Concept .
 
 ###  https://hpc-fair.github.io/ontology#Artifact
 hpc:Artifact rdf:type owl:Class ;
              rdfs:subClassOf hpc:Thing ;
+             rdf:type skos:Concept;
+             skos:closeMatch prov:Entity;
              rdfs:comment """A physical object or its digital representaton in a computer system
 
 It inherits all properties from hpc:Thing, with the following additional properties:
@@ -1150,7 +1165,6 @@ It inherits all properties from hpc:Thing, with the following additional propert
 - hpc:targetApplication	Link to target applications the data tries to support
 - hpc:wasDerivedFrom	Some data was derived from other in the sequences of activities
 - hpc:license	License of the artifact""" .
-
 
 ###  https://hpc-fair.github.io/ontology#ArtifactTemplate
 hpc:ArtifactTemplate rdf:type owl:Class ;
@@ -1582,6 +1596,8 @@ hpc:Linux rdf:type owl:Class ;
 
 ###  https://hpc-fair.github.io/ontology#Location
 hpc:Location rdf:type owl:Class ;
+             rdf:type skos:Concept;        #  make it a concept individual
+             skos:exactMatch prov:Location;   # match Entity              
              rdfs:subClassOf hpc:Thing .
 
 
@@ -1674,6 +1690,8 @@ hpc:OperatingSystem rdf:type owl:Class ;
 
 ###  https://hpc-fair.github.io/ontology#Organization
 hpc:Organization rdf:type owl:Class ;
+                 rdf:type skos:Concept;
+                 skos:exactMatch prov:Organization;
                  rdfs:subClassOf hpc:Agent ,
                                  hpc:Thing .
 
@@ -1701,6 +1719,8 @@ hpc:Perl rdf:type owl:Class ;
 
 ###  https://hpc-fair.github.io/ontology#Person
 hpc:Person rdf:type owl:Class ;
+           rdf:type skos:Concept;
+	   skos:exactMatch prov:Person;
            rdfs:subClassOf hpc:Agent ;
            rdfs:comment """Properties of a person
 
@@ -1830,6 +1850,8 @@ hpc:SimpleLinearRegressionModel rdf:type owl:Class ;
 hpc:Software rdf:type owl:Class ;
              rdfs:subClassOf hpc:Agent ,
                              hpc:Data ;
+             rdf:type skos:Concept;
+             skos:exactMatch prov:SoftwareAgent;
              rdfs:comment """Properties
 
 - hpc:programLanguage	list of languages used one to multiple
