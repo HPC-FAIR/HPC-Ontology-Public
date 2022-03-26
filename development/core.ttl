@@ -157,6 +157,11 @@ hpc:aiModel rdf:type owl:ObjectProperty ;
 hpc:associatedSoftware rdf:type owl:ObjectProperty .
 
 
+###  https://hpc-fair.github.io/ontology#awardInstitution
+hpc:awardInstitution rdf:type owl:ObjectProperty ;
+                     rdfs:comment "A funded project has an award insititution." .
+
+
 ###  https://hpc-fair.github.io/ontology#before
 hpc:before rdf:type owl:ObjectProperty ,
                     owl:TransitiveProperty .
@@ -1840,6 +1845,7 @@ It inherits all properties from hpc:Thing, with the following additional propert
 	
 - hpc:awardID	AwardID
 - hpc:hasPI	Project's principal investigator's id
+- hpc:awardInstitution    The institution awarded. A PI may have multiple instutitions, not all are awarded.
 - hpc:awardAmount	Annual funding in dollar amount
 - hpc:fundedBy	Organization funding this project, link to Organization table
 - hpc:startDate	Project start date
