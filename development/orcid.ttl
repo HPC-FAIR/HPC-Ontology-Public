@@ -1,0 +1,157 @@
+@prefix : <https://hpc-fair.github.io/ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hpc: <https://hpc-fair.github.io/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://hpc-fair.github.io/ontology#> .
+
+<https://hpc-fair.github.io/ontology#> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/identifier
+dc:identifier rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#address
+hpc:address rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#arXivAuthorIdentifier
+hpc:arXivAuthorIdentifier rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf hpc:personIdentifier .
+
+
+###  https://hpc-fair.github.io/ontology#arxiv
+hpc:arxiv rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf hpc:workIdentifier ;
+          rdfs:comment "arxiv	arxiv: ArXiv	https://arxiv.org/abs/" .
+
+
+###  https://hpc-fair.github.io/ontology#asin
+hpc:asin rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf hpc:workIdentifier ;
+         rdfs:comment "asin: Amazon Standard Identification Number	http://www.amazon.com/dp/" .
+
+
+###  https://hpc-fair.github.io/ontology#biography
+hpc:biography rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string .
+
+
+###  https://hpc-fair.github.io/ontology#cit
+hpc:cit rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf hpc:workIdentifier ;
+        rdfs:comment "cit: CiteSeer" .
+
+
+###  https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID
+hpc:dataUniversalNumberingSystemID rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf hpc:organizationIdentifier ;
+                                   rdfs:comment "DUNS	Data Universal Numbering System	https://www.dnb.com/duns-number.html" ;
+                                   rdfs:label "DUNS" .
+
+
+###  https://hpc-fair.github.io/ontology#doi
+hpc:doi rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf hpc:workIdentifier ;
+        rdfs:comment "doi: Digital object identifier	https://doi.org/" .
+
+
+###  https://hpc-fair.github.io/ontology#eid
+hpc:eid rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf hpc:workIdentifier ;
+        rdfs:comment "Scopus Identifier" .
+
+
+###  https://hpc-fair.github.io/ontology#email
+hpc:email rdf:type owl:DatatypeProperty ;
+          rdfs:comment "a person or organization has one more more emails" .
+
+
+###  https://hpc-fair.github.io/ontology#grid
+hpc:grid rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf hpc:organizationIdentifier ;
+         rdfs:comment "Global Research Identifier Database	https://www.grid.ac/" .
+
+
+###  https://hpc-fair.github.io/ontology#isbn
+hpc:isbn rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf hpc:workIdentifier ;
+         rdfs:comment "isbn: International Standard Book Number	https://www.worldcat.org/isbn/" .
+
+
+###  https://hpc-fair.github.io/ontology#isni
+hpc:isni rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf hpc:personIdentifier ;
+         rdfs:comment "International Standard Name Identifier	https://isni.org/		person" .
+
+
+###  https://hpc-fair.github.io/ontology#issn
+hpc:issn rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf hpc:workIdentifier ;
+         rdfs:comment "issn: International Standard Serial Number. Includes print and electronic ISSN.	https://portal.issn.org/resource/ISSN/" .
+
+
+###  https://hpc-fair.github.io/ontology#legalEntityIdentifier
+hpc:legalEntityIdentifier rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf hpc:organizationIdentifier ;
+                          rdfs:comment "LEI	Legal Entity Identifier	https://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei" ;
+                          rdfs:label "LEI" .
+
+
+###  https://hpc-fair.github.io/ontology#organizationIdentifier
+hpc:organizationIdentifier rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf dc:identifier .
+
+
+###  https://hpc-fair.github.io/ontology#personIdentifier
+hpc:personIdentifier rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dc:identifier .
+
+
+###  https://hpc-fair.github.io/ontology#researchID
+hpc:researchID rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf hpc:personIdentifier .
+
+
+###  https://hpc-fair.github.io/ontology#ringgold
+hpc:ringgold rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf hpc:organizationIdentifier ;
+             rdfs:comment "https://www.ringgold.com/" .
+
+
+###  https://hpc-fair.github.io/ontology#ror
+hpc:ror rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf hpc:organizationIdentifier ;
+        rdfs:comment "research organization identifier	https://ror.org/" .
+
+
+###  https://hpc-fair.github.io/ontology#scopusAuthorIdentifier
+hpc:scopusAuthorIdentifier rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf hpc:personIdentifier .
+
+
+###  https://hpc-fair.github.io/ontology#uniqueEntityIdentifier
+hpc:uniqueEntityIdentifier rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf hpc:organizationIdentifier ;
+                           rdfs:comment "UEI	Unique Entity Identifier	https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/iae-systems-information-kit/unique-entity-identifier-update" ;
+                           rdfs:label "UEI" .
+
+
+###  https://hpc-fair.github.io/ontology#workIdentifier
+hpc:workIdentifier rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf dc:identifier .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
