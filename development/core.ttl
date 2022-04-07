@@ -138,6 +138,7 @@ prov:atLocation rdf:type owl:ObjectProperty ;
 
 ###  https://hpc-fair.github.io/ontology#actedOnBehalfOf
 hpc:actedOnBehalfOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf hpc:wasInfluencedBy ;
                     rdfs:comment "Some agent acted on behalf of another agent." .
 
 
@@ -605,7 +606,8 @@ hpc:wasGeneratedBy rdf:type owl:ObjectProperty ;
 
 
 ###  https://hpc-fair.github.io/ontology#wasInfluencedBy
-hpc:wasInfluencedBy rdf:type owl:ObjectProperty .
+hpc:wasInfluencedBy rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." .
 
 
 ###  https://hpc-fair.github.io/ontology#wasInformedBy
