@@ -255,10 +255,6 @@ hpc:generated rdf:type owl:ObjectProperty ;
               rdfs:comment "Some activie generated some artifact" .
 
 
-###  https://hpc-fair.github.io/ontology#generatedAtTime
-hpc:generatedAtTime rdf:type owl:ObjectProperty ;
-                    rdfs:comment "An artifact was generated at a certain data-time stamp." .
-
 
 ###  https://hpc-fair.github.io/ontology#generates
 hpc:generates rdf:type owl:ObjectProperty ;
@@ -660,6 +656,11 @@ hpc:workflow rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://hpc-fair.github.io/ontology#generatedAtTime
+hpc:generatedAtTime rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "An artifact was generated at a certain data-time stamp." .
+
 
 ###  https://hpc-fair.github.io/ontology#accuracy
 hpc:accuracy rdf:type owl:DatatypeProperty .
@@ -1086,7 +1087,8 @@ hpc:threadCountPerNode rdf:type owl:DatatypeProperty ;
 
 
 ###  https://hpc-fair.github.io/ontology#title
-hpc:title rdf:type owl:DatatypeProperty .
+hpc:title rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Title of an article, etc." .
 
 
 ###  https://hpc-fair.github.io/ontology#top500FirstAppearance
