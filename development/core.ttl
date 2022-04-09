@@ -255,7 +255,6 @@ hpc:generated rdf:type owl:ObjectProperty ;
               rdfs:comment "Some activie generated some artifact" .
 
 
-
 ###  https://hpc-fair.github.io/ontology#generates
 hpc:generates rdf:type owl:ObjectProperty ;
               owl:inverseOf hpc:wasGeneratedBy ;
@@ -657,11 +656,6 @@ hpc:workflow rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://hpc-fair.github.io/ontology#generatedAtTime
-hpc:generatedAtTime rdf:type owl:DatatypeProperty ;
-                    rdfs:comment "An artifact was generated at a certain data-time stamp." .
-
-
 ###  https://hpc-fair.github.io/ontology#accuracy
 hpc:accuracy rdf:type owl:DatatypeProperty .
 
@@ -771,7 +765,8 @@ hpc:cpuPeakPerformancePerNode rdf:type owl:DatatypeProperty ;
 
 
 ###  https://hpc-fair.github.io/ontology#date
-hpc:date rdf:type owl:DatatypeProperty .
+hpc:date rdf:type owl:DatatypeProperty ;
+         rdfs:comment "date-related properties for a resource" .
 
 
 ###  https://hpc-fair.github.io/ontology#dateCommissioned
@@ -781,6 +776,11 @@ hpc:dateCommissioned rdf:type owl:DatatypeProperty ;
 
 ###  https://hpc-fair.github.io/ontology#description
 hpc:description rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#discipline
+hpc:discipline rdf:type owl:DatatypeProperty ;
+               rdfs:comment "The discipline to which a subject vocabulary belongs." .
 
 
 ###  https://hpc-fair.github.io/ontology#dramFrequency
@@ -830,6 +830,11 @@ hpc:frequency rdf:type owl:DatatypeProperty .
 
 ###  https://hpc-fair.github.io/ontology#gender
 hpc:gender rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#generatedAtTime
+hpc:generatedAtTime rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "An artifact was generated at a certain data-time stamp." .
 
 
 ###  https://hpc-fair.github.io/ontology#givenName
@@ -906,6 +911,11 @@ hpc:isTunable rdf:type owl:DatatypeProperty ;
 
 ###  https://hpc-fair.github.io/ontology#jobTile
 hpc:jobTile rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#keyword
+hpc:keyword rdf:type owl:DatatypeProperty ;
+            rdfs:comment "A property used to tag a resource with a keyword that is likely to be used in search queries." .
 
 
 ###  https://hpc-fair.github.io/ontology#latestReleaseDate
@@ -1404,11 +1414,12 @@ It inherits all properties from hpc:Thing, with the following additional propert
 - hpc:license	Creative Commons Attribution License and its variants, or similar choices
 - hpc:version	Version number
 - hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.
-- hpc:subject	List of subjects or topics: performance modeling, image classification, text generation, etc.
+- hpc:subject  List of subjects or topics: performance modeling, image classification, text generation, etc.
 - hpc:creator    People/organization who created the artifact
 - hpc:contributor    Link to contributors  (in URI) of the artifact
-- hpc:file            List of associated files
-- hpc:project    Associated projects""" .
+- hpc:project    Associated projects
+- hpc:keyword    keywords
+- hpc:discipline  Disciplines""" .
 
 
 ###  https://hpc-fair.github.io/ontology#Data
@@ -2199,18 +2210,14 @@ hpc:Agent rdfs:comment "A person, organizationsoftware, computer, etc.which can 
           skos:exactMatch prov:Agent .
 
 
-hpc:Artifact skos:closeMatch prov:Entity ;
-             rdfs:comment """A physical object or its digital representaton in a computer system
+hpc:Artifact rdfs:comment """A physical object or its digital representaton in a computer system
 
 It inherits all properties from hpc:Thing, with the following additional properties (combined inherited properties from hpc:CreativeWork):
 
 - hpc:version	Version number
 - hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.
-- hpc:subject	List of subjects or topics: performance modeling, image classification, text generation, etc.
-- hpc:creator    People/organization who created the artifact
-- hpc:contributor	Link to contributors  (in URI) of the artifact
-- hpc:file	List of associated files
-- hpc:feed	Link to software which use this data as input: inverse of  hpc:input
+- hpc:file  List of associated files
+- hpc:feed  Link to software which use this data as input: inverse of  hpc:input
 - hpc:project	Associated projects
 - hpc:wasGeneratedBy	Link to the experiments generating the data, reverse of hpc:hadOutput
 - hpc:wasUsedBy	Link to experiment using this data as input, reverse of hpc:hadInput
@@ -2222,7 +2229,8 @@ It inherits all properties from hpc:Thing, with the following additional propert
 - hpc:wasQuotedFrom	artifact was quoted from a soure artifact, subproperty of wasDerivedFrom
 - hpc:invalidatedAtTime	Artifact was destroyed or became invalid at certain time
 - hpc:wasInvalidatedBy	Artifact was destroyed or invalidated by an activity
-- hpc:license	License of the artifact""" .
+- hpc:license	License of the artifact""" ;
+             skos:closeMatch prov:Entity .
 
 
 hpc:Collection rdfs:comment "A special thing that provides a structure to some constiuents, whch are themselves things." ;

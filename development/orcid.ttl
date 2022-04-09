@@ -19,9 +19,19 @@
 #    Object Properties
 #################################################################
 
+###  https://hpc-fair.github.io/ontology#author
+hpc:author rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf hpc:creator ;
+           rdfs:comment "Link a paper to one of its author" .
+
+
 ###  https://hpc-fair.github.io/ontology#authors
 hpc:authors rdf:type owl:ObjectProperty ;
             rdfs:comment "link to an orderded list of authors" .
+
+
+###  https://hpc-fair.github.io/ontology#creator
+hpc:creator rdf:type owl:ObjectProperty .
 
 
 ###  https://hpc-fair.github.io/ontology#education
@@ -85,6 +95,10 @@ hpc:dataUniversalNumberingSystemID rdf:type owl:DatatypeProperty ;
                                    rdfs:label "DUNS" .
 
 
+###  https://hpc-fair.github.io/ontology#date
+hpc:date rdf:type owl:DatatypeProperty .
+
+
 ###  https://hpc-fair.github.io/ontology#doi
 hpc:doi rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf hpc:workIdentifier ;
@@ -100,6 +114,10 @@ hpc:eid rdf:type owl:DatatypeProperty ;
 ###  https://hpc-fair.github.io/ontology#email
 hpc:email rdf:type owl:DatatypeProperty ;
           rdfs:comment "a person or organization has one more more emails" .
+
+
+###  https://hpc-fair.github.io/ontology#endingPage
+hpc:endingPage rdf:type owl:DatatypeProperty .
 
 
 ###  https://hpc-fair.github.io/ontology#grid
@@ -126,8 +144,9 @@ hpc:issn rdf:type owl:DatatypeProperty ;
          rdfs:comment "issn: International Standard Serial Number. Includes print and electronic ISSN.	https://portal.issn.org/resource/ISSN/" .
 
 
-###  https://hpc-fair.github.io/ontology#keyword
-hpc:keyword rdf:type owl:DatatypeProperty .
+###  https://hpc-fair.github.io/ontology#issueIdentifier
+hpc:issueIdentifier rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "An identifier used to identify a specific issue of a magazine, a journal or other resource." .
 
 
 ###  https://hpc-fair.github.io/ontology#legalEntityIdentifier
@@ -149,7 +168,13 @@ hpc:personIdentifier rdf:type owl:DatatypeProperty ;
 
 ###  https://hpc-fair.github.io/ontology#publicationDate
 hpc:publicationDate rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf hpc:date ;
                     rdfs:comment "Publication date of a publication" .
+
+
+###  https://hpc-fair.github.io/ontology#publicationYear
+hpc:publicationYear rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf hpc:date .
 
 
 ###  https://hpc-fair.github.io/ontology#researchID
@@ -160,7 +185,7 @@ hpc:researchID rdf:type owl:DatatypeProperty ;
 ###  https://hpc-fair.github.io/ontology#ringgold
 hpc:ringgold rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf hpc:organizationIdentifier ;
-             rdfs:comment "https://www.ringgold.com/" .
+             rdfs:comment "https://www.ringgold.com/ organization identifiers" .
 
 
 ###  https://hpc-fair.github.io/ontology#ror
@@ -174,11 +199,20 @@ hpc:scopusAuthorIdentifier rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf hpc:personIdentifier .
 
 
+###  https://hpc-fair.github.io/ontology#startingPage
+hpc:startingPage rdf:type owl:DatatypeProperty .
+
+
 ###  https://hpc-fair.github.io/ontology#uniqueEntityIdentifier
 hpc:uniqueEntityIdentifier rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf hpc:organizationIdentifier ;
                            rdfs:comment "UEI	Unique Entity Identifier	https://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/iae-systems-information-kit/unique-entity-identifier-update" ;
                            rdfs:label "UEI" .
+
+
+###  https://hpc-fair.github.io/ontology#volume
+hpc:volume rdf:type owl:DatatypeProperty ;
+           rdfs:comment "An identifier for a particular volume of a resource, such as a journal or a multi-volume book." .
 
 
 ###  https://hpc-fair.github.io/ontology#workIdentifier
@@ -194,20 +228,33 @@ hpc:workIdentifier rdf:type owl:DatatypeProperty ;
 hpc:Activity rdf:type owl:Class .
 
 
+###  https://hpc-fair.github.io/ontology#Article
+hpc:Article rdf:type owl:Class ;
+            rdfs:subClassOf hpc:Publication .
+
+
+###  https://hpc-fair.github.io/ontology#BachelorsThesis
+hpc:BachelorsThesis rdf:type owl:Class ;
+                    rdfs:subClassOf hpc:Thesis .
+
+
+###  https://hpc-fair.github.io/ontology#Book
+hpc:Book rdf:type owl:Class ;
+         rdfs:subClassOf hpc:Publication .
+
+
+###  https://hpc-fair.github.io/ontology#ConferencePaper
+hpc:ConferencePaper rdf:type owl:Class ;
+                    rdfs:subClassOf hpc:ProceedingsPaper .
+
+
 ###  https://hpc-fair.github.io/ontology#CreativeWork
-hpc:CreativeWork rdf:type owl:Class ;
-                 rdfs:comment """The most generic kind of creative work, including papers, books, movies, photographs, software programs, etc.
+hpc:CreativeWork rdf:type owl:Class .
 
-It inherits all properties from hpc:Thing, with the following additional properties:
 
-- hpc:license	Creative Commons Attribution License and its variants, or similar choices
-- hpc:version	Version number
-- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.
-- hpc:subject	List of subjects or topics: performance modeling, image classification, text generation, etc.
-- hpc:creator    People/organization who created the artifact
-- hpc:contributor    Link to contributors  (in URI) of the artifact
-- hpc:file            List of associated files
-- hpc:project    Associated projects""" .
+###  https://hpc-fair.github.io/ontology#DoctoralThesis
+hpc:DoctoralThesis rdf:type owl:Class ;
+                   rdfs:subClassOf hpc:Thesis .
 
 
 ###  https://hpc-fair.github.io/ontology#Education
@@ -229,6 +276,26 @@ hpc:Employment rdf:type owl:Class ;
 - jobTitle           job title of the employment""" .
 
 
+###  https://hpc-fair.github.io/ontology#JournalArticle
+hpc:JournalArticle rdf:type owl:Class ;
+                   rdfs:subClassOf hpc:Article .
+
+
+###  https://hpc-fair.github.io/ontology#MagazineArticle
+hpc:MagazineArticle rdf:type owl:Class ;
+                    rdfs:subClassOf hpc:Article .
+
+
+###  https://hpc-fair.github.io/ontology#MastersThesis
+hpc:MastersThesis rdf:type owl:Class ;
+                  rdfs:subClassOf hpc:Thesis .
+
+
+###  https://hpc-fair.github.io/ontology#NewspaperArticle
+hpc:NewspaperArticle rdf:type owl:Class ;
+                     rdfs:subClassOf hpc:Article .
+
+
 ###  https://hpc-fair.github.io/ontology#Organization
 hpc:Organization rdf:type owl:Class .
 
@@ -237,19 +304,90 @@ hpc:Organization rdf:type owl:Class .
 hpc:Person rdf:type owl:Class .
 
 
+###  https://hpc-fair.github.io/ontology#PosterPaper
+hpc:PosterPaper rdf:type owl:Class ;
+                rdfs:subClassOf hpc:Publication .
+
+
+###  https://hpc-fair.github.io/ontology#Presentation
+hpc:Presentation rdf:type owl:Class ;
+                 rdfs:subClassOf hpc:Publication ;
+                 rdfs:seeAlso "A set of slides" .
+
+
+###  https://hpc-fair.github.io/ontology#ProceedingsPaper
+hpc:ProceedingsPaper rdf:type owl:Class ;
+                     rdfs:subClassOf hpc:Publication .
+
+
 ###  https://hpc-fair.github.io/ontology#Publication
 hpc:Publication rdf:type owl:Class ;
                 rdfs:subClassOf hpc:CreativeWork ;
                 rdfs:comment """Publications like books, academic papers, posters, position papers, technical reports, dissertations, whitepapers, etc. Anything bibliographical content.
 
-- publicationDate
-- doi
-- conference
-- journal
-- publisher
-- pages
-- volumn
-- number""" .
+
+Properties inherited from hpc:CreativeWork	
+- hpc:license	Creative Commons Attribution License and its variants, or similar choices
+- hpc:version	Version number
+- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.	
+- hpc:subject	List of subjects or topics: performance modeling, image classification, text generation, etc.
+- hpc:creator    People/organization who created the artifact	
+- hpc:contributor    Link to contributors  (in URI) of the artifact	
+- hpc:project    Associated projects	
+- hpc:keyword	keywords
+- hpc:discipline	disciplines
+
+
+Extra properties for Publication
+
+- hpc:author	link to authors one by one
+- hpc:title	title
+- hpc:hasPublicationYear	Year of publication
+- hpc:doi	doi
+- hpc:isPartOf 	connect the expression to higher level objects like a journal issue
+- hpc:issueIdentifier	Journal issue ID
+- hpc:volume	Journal volume ID
+- hpc:journal	Journal name or Journal ID
+- hpc:publisher	Same as dcterms:publisher, connect to an organization or its name
+- hpc:publicationDate	publication year, date information
+- hpc:startingPage	starting page number
+- hpc:endingPage	ending page number""" ;
+                rdfs:seeAlso "fabio:Expression" .
+
+
+###  https://hpc-fair.github.io/ontology#ReferenceBook
+hpc:ReferenceBook rdf:type owl:Class ;
+                  rdfs:subClassOf hpc:Book .
+
+
+###  https://hpc-fair.github.io/ontology#ReviewArticle
+hpc:ReviewArticle rdf:type owl:Class ;
+                  rdfs:subClassOf hpc:Article .
+
+
+###  https://hpc-fair.github.io/ontology#SpecificationDocument
+hpc:SpecificationDocument rdf:type owl:Class ;
+                          rdfs:subClassOf hpc:Publication .
+
+
+###  https://hpc-fair.github.io/ontology#Textbook
+hpc:Textbook rdf:type owl:Class ;
+             rdfs:subClassOf hpc:Book .
+
+
+###  https://hpc-fair.github.io/ontology#Thesis
+hpc:Thesis rdf:type owl:Class ;
+           rdfs:subClassOf hpc:Book .
+
+
+###  https://hpc-fair.github.io/ontology#WebContent
+hpc:WebContent rdf:type owl:Class ;
+               rdfs:subClassOf hpc:Publication .
+
+
+###  https://hpc-fair.github.io/ontology#WorkshopPaper
+hpc:WorkshopPaper rdf:type owl:Class ;
+                  rdfs:subClassOf hpc:ProceedingsPaper .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
