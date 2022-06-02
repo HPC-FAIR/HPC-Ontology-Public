@@ -35,7 +35,7 @@ hpc:aliases rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
             schema:domainIncludes hpc:Variable ;
             schema:rangeIncludes hpc:Variable ;
-            rdfs:comment "Indicates a variable aliases another variable within some context" ;
+            rdfs:comment "Indicates a variable aliases another variable within some context" .
 
 
 
