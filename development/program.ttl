@@ -491,11 +491,6 @@ hpc:size rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
-###  http://www.co-ode.org/ontologies/ont.owl#CStandardLibrary
-<http://www.co-ode.org/ontologies/ont.owl#CStandardLibrary> rdf:type owl:Class ;
-                                                            rdfs:subClassOf hpc:StandardLibrary .
-
-
 ###  https://hpc-fair.github.io/ontology#AddAssignOp
 hpc:AddAssignOp rdf:type owl:Class ;
                 rdfs:subClassOf hpc:AssignmentOp .
@@ -1536,6 +1531,12 @@ hpc:isAssignedTo rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#c_standard_library
+<http://www.co-ode.org/ontologies/ont.owl#c_standard_library> rdf:type owl:NamedIndividual ,
+                                                                       hpc:StandardLibrary ;
+                                                              rdfs:comment "C standard library" .
+
 
 ###  https://hpc-fair.github.io/ontology#array_type
 hpc:array_type rdf:type owl:NamedIndividual ,
