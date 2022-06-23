@@ -31,7 +31,7 @@ hpc:accessedBy rdf:type owl:ObjectProperty ;
 hpc:allocate rdf:type owl:ObjectProperty ;
              owl:inverseOf hpc:allocatedBy .
 
-hpc:aliases rdf:type owl:ObjectProperty ;
+hpc:alias rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
             schema:domainIncludes hpc:Variable ;
             schema:rangeIncludes hpc:Variable ;
