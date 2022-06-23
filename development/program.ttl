@@ -47,15 +47,13 @@ hpc:alias rdf:type owl:ObjectProperty ;
 hpc:allocatedBy rdf:type owl:ObjectProperty ;
                 rdfs:comment "array relation" .
 
-<<<<<<< HEAD
 hpc:upstreamCallSite rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf hpc:graphLink ;
                      owl:inverseOf hpc:destFunc ;
                      schema:domainIncludes hpc:Function ;
                      schema:rangeIncludes hpc:Callsite ;
                      rdfs:comment "Inverse of a call site --> function being called." .
-=======
->>>>>>> d121b3ff8cfcbe184a886b899eebe2c63d11d372
+
 
 ###  https://hpc-fair.github.io/ontology#callSite
 hpc:callSite rdf:type owl:ObjectProperty ;
@@ -106,7 +104,6 @@ hpc:deallocatedBy rdf:type owl:ObjectProperty ;
 
 
 ###  https://hpc-fair.github.io/ontology#declaredBy
->>>>>>> d121b3ff8cfcbe184a886b899eebe2c63d11d372
 hpc:declaredBy rdf:type owl:ObjectProperty ;
                schema:domainIncludes hpc:Variable ;
                schema:rangeIncludes hpc:Statement ;
