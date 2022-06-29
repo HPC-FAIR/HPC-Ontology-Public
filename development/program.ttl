@@ -35,17 +35,33 @@ hpc:accessedBy rdf:type owl:ObjectProperty ;
 hpc:allocate rdf:type owl:ObjectProperty ;
              owl:inverseOf hpc:allocatedBy .
 
+hpc:alias rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf hpc:graphLink ;
+            schema:domainIncludes hpc:Variable ;
+            schema:rangeIncludes hpc:Variable ;
+            rdfs:comment "Indicates a variable aliases another variable within some context" .
+
+
 
 ###  https://hpc-fair.github.io/ontology#allocatedBy
 hpc:allocatedBy rdf:type owl:ObjectProperty ;
                 rdfs:comment "array relation" .
+
+hpc:upstreamCallSite rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf hpc:graphLink ;
+                     owl:inverseOf hpc:destFunc ;
+                     schema:domainIncludes hpc:Function ;
+                     schema:rangeIncludes hpc:Callsite ;
+                     rdfs:comment "Inverse of a call site --> function being called." .
 
 
 ###  https://hpc-fair.github.io/ontology#callSite
 hpc:callSite rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink ;
              owl:inverseOf hpc:srcFunc ;
-             rdfs:comment """a function has one or more call sites where it calls other functions. 
+             schema:domainIncludes hpc:Function ;
+             schema:rangeIncludes hpc:Callsite ;
+             rdfs:comment """a function has one or more call sites where it calls other functions.
 This property links a function to its function call sites.""" .
 
 
@@ -65,12 +81,16 @@ hpc:callee rdf:type owl:ObjectProperty ;
 
 ###  https://hpc-fair.github.io/ontology#caller
 hpc:caller rdf:type owl:ObjectProperty ;
+           schema:rangeIncludes hpc:Function ;
+           schema:domainIncludes hpc:Function ;
            rdfs:subPropertyOf hpc:graphLink .
 
 
 ###  https://hpc-fair.github.io/ontology#calls
 hpc:calls rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf hpc:graphLink ;
+          schema:rangeIncludes hpc:Function ;
+          schema:domainIncludes hpc:Function ;
           rdfs:comment "a function calls another function" .
 
 
@@ -85,6 +105,8 @@ hpc:deallocatedBy rdf:type owl:ObjectProperty ;
 
 ###  https://hpc-fair.github.io/ontology#declaredBy
 hpc:declaredBy rdf:type owl:ObjectProperty ;
+               schema:domainIncludes hpc:Variable ;
+               schema:rangeIncludes hpc:Statement ;
                rdfs:comment "a variable is declared by a statment" ,
                             "variable relation" .
 
@@ -98,6 +120,7 @@ hpc:definedBy rdf:type owl:ObjectProperty ;
 hpc:destFunc rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink ;
              owl:inverseOf hpc:upstreamCallSite ;
+             schema:rangeIncludes hpc:Function ;
              rdfs:comment "linke a call site to the function being called." .
 
 
@@ -261,6 +284,7 @@ hpc:hasOperator rdf:type owl:ObjectProperty ;
 
 ###  https://hpc-fair.github.io/ontology#hasParameter
 hpc:hasParameter rdf:type owl:ObjectProperty ;
+                 schema:rangeIncludes hpc:Parameter ;
                  rdfs:subPropertyOf hpc:graphLink .
 
 
@@ -379,6 +403,8 @@ hpc:sourceFile rdf:type owl:ObjectProperty ;
 ###  https://hpc-fair.github.io/ontology#srcFunc
 hpc:srcFunc rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
+            schema:rangeIncludes hpc:Function ;
+            schema:domainIncludes hpc:Callsite ;
             rdfs:comment "Inverse of Function--> CallSite" .
 
 
@@ -1206,10 +1232,10 @@ hpc:PrefixPlusOp rdf:type owl:Class ;
 hpc:PrimaryExpr rdf:type owl:Class ;
                 rdfs:subClassOf hpc:Expression ;
                 rdfs:comment """Primary expressions are identifiers, constants, strings, or expressions in parentheses.
-primary-expression 
-identifier 
+primary-expression
+identifier
 constant
-string 
+string
 (expression)""" .
 
 
