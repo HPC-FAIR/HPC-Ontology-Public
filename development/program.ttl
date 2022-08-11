@@ -16,31 +16,10 @@
 [ rdf:type owl:Ontology
  ] .
 
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://schema.org/domainIncludes
-schema:domainIncludes rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/rangeIncludes
-schema:rangeIncludes rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
-rdf:comment rdf:type owl:AnnotationProperty .
-
 
 #################################################################
 #    Object Properties
 #################################################################
-
-###  http://www.co-ode.org/ontologies/ont.owl#dependsOn
-<http://www.co-ode.org/ontologies/ont.owl#dependsOn> rdf:type owl:ObjectProperty ;
-                                                     rdfs:subPropertyOf hpc:graphLink ;
-                                                     schema:domainIncludes hpc:Statement ;
-                                                     schema:rangeIncludes hpc:Statement .
 
 
 ###  https://hpc-fair.github.io/ontology#access
@@ -451,6 +430,7 @@ hpc:upstreamCallSite rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf hpc:graphLink ;
                      schema:domainIncludes hpc:Function ;
                      schema:rangeIncludes hpc:Callsite ;
+                     owl:inverseOf hpc:destFunc ;
                      rdfs:comment "Inverse of a call site --> function being called." .
 
 
