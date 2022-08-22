@@ -16,9 +16,11 @@
 [ rdf:type owl:Ontology
  ] .
 
+
 #################################################################
 #    Object Properties
 #################################################################
+
 
 ###  https://hpc-fair.github.io/ontology#access
 hpc:access rdf:type owl:ObjectProperty ;
@@ -31,28 +33,22 @@ hpc:accessedBy rdf:type owl:ObjectProperty ;
                rdfs:comment "variable relation" .
 
 
+###  https://hpc-fair.github.io/ontology#alias
+hpc:alias rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf hpc:graphLink ;
+          schema:domainIncludes hpc:Variable ;
+          schema:rangeIncludes hpc:Variable ;
+          rdfs:comment "Indicates a variable aliases another variable within some context" .
+
+
 ###  https://hpc-fair.github.io/ontology#allocate
 hpc:allocate rdf:type owl:ObjectProperty ;
              owl:inverseOf hpc:allocatedBy .
-
-hpc:alias rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf hpc:graphLink ;
-            schema:domainIncludes hpc:Variable ;
-            schema:rangeIncludes hpc:Variable ;
-            rdfs:comment "Indicates a variable aliases another variable within some context" .
-
 
 
 ###  https://hpc-fair.github.io/ontology#allocatedBy
 hpc:allocatedBy rdf:type owl:ObjectProperty ;
                 rdfs:comment "array relation" .
-
-hpc:upstreamCallSite rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf hpc:graphLink ;
-                     owl:inverseOf hpc:destFunc ;
-                     schema:domainIncludes hpc:Function ;
-                     schema:rangeIncludes hpc:Callsite ;
-                     rdfs:comment "Inverse of a call site --> function being called." .
 
 
 ###  https://hpc-fair.github.io/ontology#callSite
@@ -69,7 +65,8 @@ This property links a function to its function call sites.""" .
 hpc:calledBy rdf:type owl:ObjectProperty ;
              owl:equivalentProperty hpc:caller ;
              rdfs:subPropertyOf hpc:graphLink ;
-             owl:inverseOf hpc:calls .
+             owl:inverseOf hpc:calls ;
+             rdf:comment "Associates a callee function with a caller function that invokes it." .
 
 
 ###  https://hpc-fair.github.io/ontology#callee
@@ -81,16 +78,16 @@ hpc:callee rdf:type owl:ObjectProperty ;
 
 ###  https://hpc-fair.github.io/ontology#caller
 hpc:caller rdf:type owl:ObjectProperty ;
-           schema:rangeIncludes hpc:Function ;
+           rdfs:subPropertyOf hpc:graphLink ;
            schema:domainIncludes hpc:Function ;
-           rdfs:subPropertyOf hpc:graphLink .
+           schema:rangeIncludes hpc:Function .
 
 
 ###  https://hpc-fair.github.io/ontology#calls
 hpc:calls rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf hpc:graphLink ;
-          schema:rangeIncludes hpc:Function ;
           schema:domainIncludes hpc:Function ;
+          schema:rangeIncludes hpc:Function ;
           rdfs:comment "a function calls another function" .
 
 
@@ -120,8 +117,9 @@ hpc:definedBy rdf:type owl:ObjectProperty ;
 hpc:destFunc rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink ;
              owl:inverseOf hpc:upstreamCallSite ;
+             rdf:type owl:FunctionalProperty ;
              schema:rangeIncludes hpc:Function ;
-             rdfs:comment "linke a call site to the function being called." .
+             rdfs:comment "Indicates the callee function of a callsite" .
 
 
 ###  https://hpc-fair.github.io/ontology#file
@@ -284,8 +282,8 @@ hpc:hasOperator rdf:type owl:ObjectProperty ;
 
 ###  https://hpc-fair.github.io/ontology#hasParameter
 hpc:hasParameter rdf:type owl:ObjectProperty ;
-                 schema:rangeIncludes hpc:Parameter ;
-                 rdfs:subPropertyOf hpc:graphLink .
+                 rdfs:subPropertyOf hpc:graphLink ;
+                 schema:rangeIncludes hpc:Parameter .
 
 
 ###  https://hpc-fair.github.io/ontology#hasParameterDeclList
@@ -369,6 +367,24 @@ hpc:hasValue rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf hpc:graphLink .
 
 
+###  https://hpc-fair.github.io/ontology#mayAlias
+hpc:mayAlias rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf hpc:alias ;
+             rdfs:comment "Indicates that two memory locations/variables may or may not alias one another" .
+
+
+###  https://hpc-fair.github.io/ontology#mustAlias
+hpc:mustAlias rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf hpc:alias ;
+              rdfs:comment "Indicates that two variables alias one another" .
+
+
+###  https://hpc-fair.github.io/ontology#neverAlias
+hpc:neverAlias rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf hpc:alias ;
+               rdfs:comment "Indicates that two memory locations/variables will never alias one another" .
+
+
 ###  https://hpc-fair.github.io/ontology#read
 hpc:read rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf hpc:access ;
@@ -403,14 +419,18 @@ hpc:sourceFile rdf:type owl:ObjectProperty ;
 ###  https://hpc-fair.github.io/ontology#srcFunc
 hpc:srcFunc rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf hpc:graphLink ;
-            schema:rangeIncludes hpc:Function ;
+            rdf:type owl:FunctionalProperty ;
             schema:domainIncludes hpc:Callsite ;
-            rdfs:comment "Inverse of Function--> CallSite" .
+            schema:rangeIncludes hpc:Function ;
+            rdfs:comment "Indicates the caller function of a given callsite" .
 
 
 ###  https://hpc-fair.github.io/ontology#upstreamCallSite
 hpc:upstreamCallSite rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf hpc:graphLink ;
+                     schema:domainIncludes hpc:Function ;
+                     schema:rangeIncludes hpc:Callsite ;
+                     owl:inverseOf hpc:destFunc ;
                      rdfs:comment "Inverse of a call site --> function being called." .
 
 
@@ -487,12 +507,50 @@ hpc:endMemoryAddress rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf hpc:memoryAddress .
 
 
+###  https://hpc-fair.github.io/ontology#exclusivePercentageTime
+hpc:exclusivePercentageTime rdf:type owl:DatatypeProperty ;
+                            rdfs:range xsd:decimal ,
+                                       xsd:double ,
+                                       xsd:float ;
+                            rdfs:comment "The proportion (percentage) of the execution time of the program spent executing this function, excluding time spent executing callee functions." .
+
+
+###  https://hpc-fair.github.io/ontology#exclusiveTime
+hpc:exclusiveTime rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:decimal ,
+                             xsd:double ,
+                             xsd:float ;
+                  rdfs:comment "Time spent in a function, excluding time spent executing children (callee) functions" .
+
+
+###  https://hpc-fair.github.io/ontology#hasProfiling
+hpc:hasProfiling rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:comment "Indicates whether or not a given node has information related to dynamic execution (performance information)" .
+
+
 ###  https://hpc-fair.github.io/ontology#hasValue
 hpc:hasValue rdf:type owl:DatatypeProperty .
 
 
 ###  https://hpc-fair.github.io/ontology#id
 hpc:id rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#inclusivePercentageTime
+hpc:inclusivePercentageTime rdf:type owl:DatatypeProperty ;
+                            rdfs:range xsd:decimal ,
+                                       xsd:double ,
+                                       xsd:float ;
+                            rdfs:comment "The proportion (percent) of the execution time of the program that was spent executing this function or callsite, including time spent executing child functions" .
+
+
+###  https://hpc-fair.github.io/ontology#inclusiveTime
+hpc:inclusiveTime rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:decimal ,
+                             xsd:double ,
+                             xsd:float ;
+                  rdfs:comment "Time spent within a function or callsite that includes time spent in callee functions" .
 
 
 ###  https://hpc-fair.github.io/ontology#kernelName
@@ -507,6 +565,13 @@ hpc:lineNumber rdf:type owl:DatatypeProperty ;
 
 ###  https://hpc-fair.github.io/ontology#memoryAddress
 hpc:memoryAddress rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#numOfCalls
+hpc:numOfCalls rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:int ,
+                          xsd:integer ;
+               rdfs:comment "Indicates the number of times a function or callsite is called within a given run" .
 
 
 ###  https://hpc-fair.github.io/ontology#size
@@ -536,6 +601,12 @@ hpc:AdditiveOp rdf:type owl:Class ;
 hpc:AddressOp rdf:type owl:Class ;
               rdfs:subClassOf hpc:UnaryOp ;
               rdfs:comment "&" .
+
+
+###  https://hpc-fair.github.io/ontology#AggregateCallsite
+hpc:AggregateCallsite rdf:type owl:Class ;
+                      rdfs:subClassOf hpc:CallSite ;
+                      rdfs:comment "Callsite returned from profiling analysis that may not contain all information about the callsite location" .
 
 
 ###  https://hpc-fair.github.io/ontology#AndAssignOp
@@ -615,8 +686,19 @@ hpc:BasicType rdf:type owl:Class ;
 
 ###  https://hpc-fair.github.io/ontology#BinaryOp
 hpc:BinaryOp rdf:type owl:Class ;
-             rdfs:subClassOf hpc:Expression ;
-             rdfs:comment "overlap" .
+             rdfs:subClassOf hpc:Expression ,
+                             [ rdf:type owl:Class ;
+                               owl:unionOf ( [ rdf:type owl:Restriction ;
+                                               owl:onProperty hpc:hasChild ;
+                                               owl:cardinality "0"^^xsd:nonNegativeInteger
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty hpc:hasChild ;
+                                               owl:cardinality "2"^^xsd:nonNegativeInteger
+                                             ]
+                                           )
+                             ] ;
+             rdfs:comment "An operation that takes two values and produces an output." .
 
 
 ###  https://hpc-fair.github.io/ontology#BitwiseANDOp
@@ -656,7 +738,8 @@ hpc:BreakStatement rdf:type owl:Class ;
 
 ###  https://hpc-fair.github.io/ontology#CallGraph
 hpc:CallGraph rdf:type owl:Class ;
-              rdfs:subClassOf hpc:Dataset .
+              rdfs:subClassOf hpc:Dataset ;
+              rdfs:comment "A graph that consists of Functions and FunctionCalls, which indicate caller-callee relationships in a program." .
 
 
 ###  https://hpc-fair.github.io/ontology#CallSite
@@ -885,8 +968,24 @@ hpc:FunctionCall rdf:type owl:Class ;
                                    owl:someValuesFrom hpc:Expression
                                  ] ,
                                  [ rdf:type owl:Restriction ;
+                                   owl:onProperty hpc:destFunc ;
+                                   owl:someValuesFrom hpc:Function
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty hpc:hasArgumentExpr ;
                                    owl:someValuesFrom hpc:Expression
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty hpc:srcFunc ;
+                                   owl:someValuesFrom hpc:Function
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty hpc:destFunc ;
+                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty hpc:srcFunc ;
+                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                  ] ;
                  rdfs:comment "A function call site, the same as the function call expression in AST" .
 
@@ -1426,7 +1525,12 @@ hpc:TypedefDecl rdf:type owl:Class ;
 
 ###  https://hpc-fair.github.io/ontology#UnaryOp
 hpc:UnaryOp rdf:type owl:Class ;
-            rdfs:subClassOf hpc:Expression .
+            rdfs:subClassOf hpc:Expression ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty hpc:hasChild ;
+                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                            ] ;
+            rdfs:comment "An operation that acts on a single value." .
 
 
 ###  https://hpc-fair.github.io/ontology#UnionType
