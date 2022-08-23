@@ -1,0 +1,120 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:genid1 <http://purl.org/dc/elements/1.1/creator> "The HPC-FAIR research team" .
+_:genid1 <http://purl.org/dc/elements/1.1/description> "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them." .
+_:genid1 <http://purl.org/dc/elements/1.1/title> "HPC Ontology for AI Models" .
+_:genid1 <http://purl.org/dc/terms/license> "the Creative Commons Attribution 4.0" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespacePrefix> "hpc" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespaceUri> <https://hpc-fair.github.io/ontology#> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them." .
+_:genid1 <http://www.w3.org/2002/07/owl#versionIRI> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://hpc-fair.github.io/ontology#decisionFeature
+<https://hpc-fair.github.io/ontology#decisionFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#decisionFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "For a decision tree node, the feature used as the left operand of the decision condition." .
+# 
+# https://hpc-fair.github.io/ontology#decisionLabel
+<https://hpc-fair.github.io/ontology#decisionLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#decisionLabel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#graphLink> .
+<https://hpc-fair.github.io/ontology#graphLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#decisionLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "The final decision for a leaf node in a decisiontree" .
+# 
+# https://hpc-fair.github.io/ontology#falseNode
+<https://hpc-fair.github.io/ontology#falseNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#falseNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#graphLink> .
+<https://hpc-fair.github.io/ontology#falseNode> <http://www.w3.org/2000/01/rdf-schema#comment> "link from a decision tree node to its false child node" .
+# 
+# https://hpc-fair.github.io/ontology#function
+<https://hpc-fair.github.io/ontology#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#function> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#graphLink> .
+<https://hpc-fair.github.io/ontology#function> <http://www.w3.org/2000/01/rdf-schema#comment> "a call graph (or other program analysis info object) has a function node." .
+# 
+# https://hpc-fair.github.io/ontology#graphLink
+# 
+# https://hpc-fair.github.io/ontology#trueNode
+<https://hpc-fair.github.io/ontology#trueNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#trueNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#graphLink> .
+<https://hpc-fair.github.io/ontology#trueNode> <http://www.w3.org/2000/01/rdf-schema#comment> "link from a decision tree node to its true child node" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://hpc-fair.github.io/ontology#hasChildNode
+<https://hpc-fair.github.io/ontology#hasChildNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#hasChildNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://hpc-fair.github.io/ontology#hasChildNode> <http://www.w3.org/2000/01/rdf-schema#comment> "If a decision tree node has child nodes or not." .
+# 
+# https://hpc-fair.github.io/ontology#relationValue
+<https://hpc-fair.github.io/ontology#relationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#treeNodeLevel
+<https://hpc-fair.github.io/ontology#treeNodeLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#treeNodeLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The level of a tree, starting from 0 for the root node" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://hpc-fair.github.io/ontology#Artifact
+<https://hpc-fair.github.io/ontology#Artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://hpc-fair.github.io/ontology#DecisionTree
+<https://hpc-fair.github.io/ontology#DecisionTree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#DecisionTree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#MachineLearningModel> .
+<https://hpc-fair.github.io/ontology#MachineLearningModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://hpc-fair.github.io/ontology#DecisionTreeNode
+<https://hpc-fair.github.io/ontology#DecisionTreeNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#DecisionTreeNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Artifact> .
+# 
+# https://hpc-fair.github.io/ontology#MachineLearningModel
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

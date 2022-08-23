@@ -1,0 +1,2529 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "The HPC-FAIR research team"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "This is a test"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "HPC Ontology for Programs"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This is a test"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "the Creative Commons Attribution 4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "hpc"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The HPC-FAIR Program portion of the ontology provides properties and classes relating to describing software, such as encoding source code and language constructs, as well as providing properties relating to program execution."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#consistsOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hpc-fair.github.io/ontology#extern"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasReturnType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#calls"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#destFunc"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasArgumentExpr"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#srcFunc"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#destFunc"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#srcFunc"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasInitialValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasDefinition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FunctionDefinitionBody"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Variable"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasScope"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Scope"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#referTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FunctionDeclaration"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#referTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Variable"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hpc-fair.github.io/ontology#static"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasChild"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#declaredBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://hpc-fair.github.io/ontology#auto"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#definedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasInitializer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Initializer"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasScope"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Scope"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasSize"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Literal"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasStorageClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#StorageClass"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Literal"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#referTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Variable"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://hpc-fair.github.io/ontology#AddressOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#IndirectionOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#LogicalNegOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#OnesComplementOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#PostfixDecrementOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#PostfixIncrementOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#PrefixDecrementOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#PrefixIncrementOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#PrefixMinusOp"
+    }, {
+      "@id" : "https://hpc-fair.github.io/ontology#PrefixPlusOp"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasChild"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasChild"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/rangeIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#c_standard_library",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#StandardLibrary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "C standard library"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AddAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AddOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AdditiveOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AddressOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "&"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AggregateCallsite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Callsite returned from profiling analysis that may not contain all information about the callsite location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#CallSite"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AndAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AndOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ArrayDecl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ArraySub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PostfixOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ArrayType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DerivedType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ArrowExp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MemberRef"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AssignInitializer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Initializer"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AssignStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Auto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#StorageClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BasicBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ScopeStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BasicType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BinaryOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An operation that takes two values and produces an output."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BitwiseANDOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BitwiseOROp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BitwiseShiftOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BitwiseXOROp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Block",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Scope"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BoolType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BasicType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BreakStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#JumpStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CallGraph",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A graph that consists of Functions and FunctionCalls, which indicate caller-callee relationships in a program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Dataset"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CallSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FunctionCall"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CaseOptionStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CastOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CharConst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Constant"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CharType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BasicType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ClassDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CommaOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ComplexType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BasicType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CompoundStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The body of a function definition is a compound statement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ConditionalOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Const",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#TypeQualifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Constant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PrimaryExpr"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ContinueStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#JumpStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Declaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DefaultOptionStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DerivedType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Directive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DivAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DivOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DoWhileStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#IterationStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DotExp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MemberRef"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DoubleType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FloatType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#EnumDecl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#EnumType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BasicType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#EnumerationConst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Constant"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#EqualOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#EqualityOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#EqualityOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ExpressionList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Unsorted"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ExpressionStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Extern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#StorageClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ExternalDataDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ExternalDefinition"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ExternalDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ExternalFunctionDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ExternalDefinition"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FloatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BasicType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FloatingConst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Constant"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ForInitStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ForStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#IterationStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A function of any kinds, including defining function declarations, non-defining function declarations, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Kernel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FunctionCall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A function call site, the same as the function call expression in AST"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PostfixOp"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FunctionDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A function declaration can be either a forward declaration or a defining declaration. If it is a defining declaration then it contains a pointer to the function definition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FunctionDefinitionBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#CompoundStatement"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Scope"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FunctionParameterList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FunctionRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PrimaryExpr"
+  }, {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FunctionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DerivedType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Global",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ScopeStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#GotoStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#JumpStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#GreaterOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#RelationalOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#GreaterOrEqualOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#RelationalOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IOStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IfElseStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#SelectionStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IfStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#SelectionStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IndirectionOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "*"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Initializer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IntConst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Constant"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IntType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BasicType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IterationStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Loop"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#JumpStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Kernel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A kernel is a function or subroutine of a program written in any programming languages. A kernel has a defined function body and can be executed on a computer. This is a generic concept used for performance analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LabeledStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LessOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#RelationalOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LessOrEqualOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#RelationalOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Library",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ListExp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Unsorted"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LogicalANDOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LogicalAndOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LogicalNegOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LogicalOROp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LogicalOrOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LongType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#IntType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Loop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Lvalue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Object is a named region of storage; an lvalue is an expression referring to an object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  }, {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MainFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The main function in C/C++. Or similar entry function in other programming languages."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MemberRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PostfixOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ModAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ModOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MulAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MulOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MultiplicativeOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#NeqOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#EqualityOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Nth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#NthArg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Nth"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#NthPara",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Nth"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#NullExpr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#NullPointerType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PointerType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#NullStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#OnesComplementOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#OpenMP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#OrAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#OrOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ParallelRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Directive"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#OpenMP"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Variable"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PointerDecl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PointerType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DerivedType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PostfixDecrementOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PostfixOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PostfixIncrementOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PostfixOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PostfixOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PrefixDecrementOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PrefixIncrementOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PrefixMinusOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PrefixPlusOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PrimaryExpr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Primary expressions are identifiers, constants, strings, or expressions in parentheses.\nprimary-expression\nidentifier\nconstant\nstring\n(expression)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ReferenceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DerivedType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#RegisterStorage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#StorageClass"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#RelationalOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "? model as individual or subclass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ReturnStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#JumpStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Scope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ScopeStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ScopeStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SelectionStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ShlAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ShlOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ShortType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#IntType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ShrAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ShrOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Signed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SizeofOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#StandardLibrary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Standard libraries defined in some language standards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Library"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Statement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Static",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#StorageClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#StorageClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#String",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#StringLiteral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PrimaryExpr"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#StructureType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DerivedType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#StructureUnionDecl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SubAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SubOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SwitchStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#SelectionStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TemplateClassDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ClassDeclaration"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#TemplateDeclaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TemplateClassInstantiationDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ClassDeclaration"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#TemplateInstantiation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TemplateDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TemplateFunctionDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FunctionDeclaration"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#TemplateDeclaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TemplateFunctionInstantiationDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FunctionDeclaration"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#TemplateInstantiation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TemplateInstantiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TypeQualifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TypedefDecl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#UnaryOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An operation that acts on a single value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  }, {
+    "@id" : "_:genid28"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#UnionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DerivedType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#UnknownClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Unsorted"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#UnknownType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Unsigned",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Unsorted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SgXXXVal = constant?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Unsorted"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "synonyms: object\nnamed location of storage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#VariableDecl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#VariableDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Declaration"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#VariableRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PrimaryExpr"
+  }, {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#VoidType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BasicType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Volatile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#TypeQualifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#WCharType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#CharType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#WhileStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#IterationStatement"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#XorAssignOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#AssignmentOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#XorOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#access",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "function relation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#accessedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#accessedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "variable relation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#alias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Variable"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates a variable aliases another variable within some context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#allocate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#allocatedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#allocatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "array relation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#allocatedDataSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#antiDependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#dependsOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#flowDependsOn"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#arrayID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#id"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#arrayName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#array_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#ArrayType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#auto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Auto" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#beginMemoryAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#memoryAddress"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#bool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#BoolType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#callSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Callsite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a function has one or more call sites where it calls other functions.\nThis property links a function to its function call sites."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#srcFunc"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#calledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@value" : "Associates a callee function with a caller function that invokes it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#caller"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#calls"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#callee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#calls"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#caller"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#caller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#calls",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a function calls another function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#char",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#CharType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#codeVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#columnNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Column number within a file"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#commandLineOption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#complex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#ComplexType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#consistsOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#deallocatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "array relation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#declaredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Variable"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Statement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a variable is declared by a statment"
+  }, {
+    "@value" : "variable relation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#definedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#dependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A general property that states some expression or instruction is dependant on data modified by the target of the property. There are four subclasses of this property, each providing more information about the given data dependency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#destFunc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the callee function of a callsite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#upstreamCallSite"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#double",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#DoubleType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#endMemoryAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#memoryAddress"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#enum_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#EnumType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#exclusivePercentageTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The proportion (percentage) of the execution time of the program spent executing this function, excluding time spent executing callee functions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#exclusiveTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Time spent in a function, excluding time spent executing children (callee) functions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#extern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Extern" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#file",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#float",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#FloatType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#flowDependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the source instance forms a read-after-write hazard with the output instance, with the source value representing the affected read and the object value representing the offending write."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#dependsOn"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#function_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#FunctionType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#graphLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasAlignment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "AST node to alignment node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasArgumentExpr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasArgumentList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasArrayBaseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasArrayRank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasBaseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "AST has a body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasChild",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasParent"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "AST node to its condition node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasDeclaration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Domain: definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasElseBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasExpression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ExpressionStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasFalseBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasFile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "AST node to its file node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasForIncr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasForInit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasForTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasHiddenType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasIndexExp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasInitStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasInitialValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasInitializer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasKey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "case key:"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasLabelRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasLeftOperand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasChild"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasOperand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasChild"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasOperator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasParameterDeclList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "function relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FunctionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasParameterList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasParent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasProfiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates whether or not a given node has information related to dynamic execution (performance information)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasReturnType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "function relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FunctionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasRightOperand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#BinaryOp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasChild"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasScope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasSelector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasStorageClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "variable relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasTrueBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "variable relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#inclusivePercentageTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The proportion (percent) of the execution time of the program that was spent executing this function or callsite, including time spent executing child functions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#inclusiveTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Time spent within a function or callsite that includes time spent in callee functions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#inputDependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the source instance forms an input dependence with the object instance, with the object instance preceeding the source in execution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#dependsOn"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#int",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#IntType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isAssignedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Expression"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Unsorted"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#kernelName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#lineNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "line number within a file"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#LongType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#long_double",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#DoubleType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#long_long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#LongType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#mayAlias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that two memory locations/variables may or may not alias one another"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#alias"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#memoryAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#mustAlias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that two variables alias one another"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#alias"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#neverAlias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that two memory locations/variables will never alias one another"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#alias"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#null_pointer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#NullPointerType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#numOfCalls",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the number of times a function or callsite is called within a given run"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#outputDependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the source instance forms an output dependence with the object instance, with the object instance preceeding the source in execution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#dependsOn"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#pointer_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#PointerType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#read",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#access"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#readBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#readBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#accessedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ref_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#ReferenceType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#referTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#referredBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#referredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#relationOp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#ShortType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#signed_char",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#CharType", "https://hpc-fair.github.io/ontology#Signed" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#signed_int",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Signed" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#signed_long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Signed" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#signed_long_long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Signed" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#signed_short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Signed" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#sourceFile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#file"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#srcFunc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Callsite"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the caller function of a given callsite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#static",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Static" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#string",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#String" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unknown_modifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Unsorted" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unknown_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#UnknownType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unsigned_char",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Unsigned" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unsigned_int",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Unsigned" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unsigned_long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Unsigned" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unsigned_long_long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Unsigned" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unsigned_short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Unsigned" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#unspecified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#StorageClass" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#upstreamCallSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Function"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Callsite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of a call site --> function being called."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#void_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#VoidType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wchar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#WCharType" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#write",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#access"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#writtenBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#writtenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#accessedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#writtenIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LanguageConstruct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+} ]

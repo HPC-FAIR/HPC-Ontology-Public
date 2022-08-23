@@ -1,0 +1,163 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:genid1 <http://purl.org/dc/elements/1.1/creator> "The HPC-FAIR research team" .
+_:genid1 <http://purl.org/dc/elements/1.1/description> "The HPC-FAIR for Performance portion of the ontology provides data annotation properties relating to different aspects that affect the execution of a program. Timing, profiling, and diagnostic information are able to be encoded with these properties." .
+_:genid1 <http://purl.org/dc/elements/1.1/title> "HPC Ontology for Performance" .
+_:genid1 <http://purl.org/dc/terms/license> "the Creative Commons Attribution 4.0" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespacePrefix> "hpc" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespaceUri> <https://hpc-fair.github.io/ontology#> .
+_:genid1 <http://www.w3.org/2002/07/owl#versionIRI> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://hpc-fair.github.io/ontology#achievedActiveWarpsPerSM
+<https://hpc-fair.github.io/ontology#achievedActiveWarpsPerSM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#achievedGPUOccupancy
+<https://hpc-fair.github.io/ontology#achievedGPUOccupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#achievedGPUOccupancy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#occupancy> .
+# 
+# https://hpc-fair.github.io/ontology#activeCyclesOfStreamingMultiprocessor
+<https://hpc-fair.github.io/ontology#activeCyclesOfStreamingMultiprocessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#activeCyclesOfStreamingMultiprocessor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#cycle> .
+# 
+# https://hpc-fair.github.io/ontology#averageExecutionTime
+<https://hpc-fair.github.io/ontology#averageExecutionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#averageExecutionTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#executionTime> .
+# 
+# https://hpc-fair.github.io/ontology#codeVariant
+<https://hpc-fair.github.io/ontology#codeVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#cpuPageFault
+<https://hpc-fair.github.io/ontology#cpuPageFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#cpuPageFault> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#pageFault> .
+# 
+# https://hpc-fair.github.io/ontology#cycle
+<https://hpc-fair.github.io/ontology#cycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#dataTransferSize
+<https://hpc-fair.github.io/ontology#dataTransferSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#dataTransferSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#size> .
+<https://hpc-fair.github.io/ontology#dataTransferSize> <http://schema.org/domainIncludes> <https://hpc-fair.github.io/ontology#Memory> .
+# 
+# https://hpc-fair.github.io/ontology#deviceToHostTransferSize
+<https://hpc-fair.github.io/ontology#deviceToHostTransferSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#deviceToHostTransferSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#dataTransferSize> .
+# 
+# https://hpc-fair.github.io/ontology#dramUtilizationRate
+<https://hpc-fair.github.io/ontology#dramUtilizationRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#dramUtilizationRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#percentage> .
+# 
+# https://hpc-fair.github.io/ontology#executionTime
+<https://hpc-fair.github.io/ontology#executionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#executionTimePercentage
+<https://hpc-fair.github.io/ontology#executionTimePercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#executionTimePercentage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#percentage> .
+# 
+# https://hpc-fair.github.io/ontology#gpuPageFault
+<https://hpc-fair.github.io/ontology#gpuPageFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#gpuPageFault> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#pageFault> .
+# 
+# https://hpc-fair.github.io/ontology#hasRmax
+<https://hpc-fair.github.io/ontology#hasRmax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#hasRmax> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum achieved performance [TFlop/s]" .
+# 
+# https://hpc-fair.github.io/ontology#hasRpeak
+<https://hpc-fair.github.io/ontology#hasRpeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#hasRpeak> <http://www.w3.org/2000/01/rdf-schema#comment> "The theoretical peak performance [TFlop/s]" .
+# 
+# https://hpc-fair.github.io/ontology#hostToDeviceTransferSize
+<https://hpc-fair.github.io/ontology#hostToDeviceTransferSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#hostToDeviceTransferSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#dataTransferSize> .
+# 
+# https://hpc-fair.github.io/ontology#l1CacheUitlizationRate
+<https://hpc-fair.github.io/ontology#l1CacheUitlizationRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#l1CacheUitlizationRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#percentage> .
+# 
+# https://hpc-fair.github.io/ontology#l2CacheUtilizationRate
+<https://hpc-fair.github.io/ontology#l2CacheUtilizationRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#l2CacheUtilizationRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#percentage> .
+# 
+# https://hpc-fair.github.io/ontology#labeledCodeVariant
+<https://hpc-fair.github.io/ontology#labeledCodeVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#labeledCodeVariant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#codeVariant> .
+# 
+# https://hpc-fair.github.io/ontology#maxExecutionTime
+<https://hpc-fair.github.io/ontology#maxExecutionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#maxExecutionTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#executionTime> .
+# 
+# https://hpc-fair.github.io/ontology#memoryOccupancy
+<https://hpc-fair.github.io/ontology#memoryOccupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#memoryOccupancy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#occupancy> .
+# 
+# https://hpc-fair.github.io/ontology#memoryThroughputRate
+<https://hpc-fair.github.io/ontology#memoryThroughputRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#memoryThroughputRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#percentage> .
+# 
+# https://hpc-fair.github.io/ontology#minExecutionTime
+<https://hpc-fair.github.io/ontology#minExecutionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#minExecutionTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#executionTime> .
+# 
+# https://hpc-fair.github.io/ontology#occupancy
+<https://hpc-fair.github.io/ontology#occupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#overhead
+<https://hpc-fair.github.io/ontology#overhead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#pageFault
+<https://hpc-fair.github.io/ontology#pageFault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#pageFault> <http://schema.org/domainIncludes> <https://hpc-fair.github.io/ontology#Memory> .
+# 
+# https://hpc-fair.github.io/ontology#percentage
+<https://hpc-fair.github.io/ontology#percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#size
+<https://hpc-fair.github.io/ontology#size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#streamingProcessorUtilizationRate
+<https://hpc-fair.github.io/ontology#streamingProcessorUtilizationRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#streamingProcessorUtilizationRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#percentage> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

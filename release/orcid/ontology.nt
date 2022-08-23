@@ -1,0 +1,334 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:genid1 <http://purl.org/dc/elements/1.1/creator> "The HPC-FAIR research team" .
+_:genid1 <http://purl.org/dc/elements/1.1/description> "The HPC-FAIR ORCID portion of the ontology provides declarations to semantically describe aspects of an academic or technical publication, such as authorship, affiliations, and information about the publication venue." .
+_:genid1 <http://purl.org/dc/elements/1.1/title> "HPC Ontology for ORCID" .
+_:genid1 <http://purl.org/dc/terms/license> "the Creative Commons Attribution 4.0" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespacePrefix> "hpc" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespaceUri> <https://hpc-fair.github.io/ontology#> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "The HPC-FAIR ORCID portion of the ontology provides declarations to semantically describe aspects of an academic or technical publication, such as authorship, affiliations, and information about the publication venue." .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://hpc-fair.github.io/ontology/program" .
+_:genid1 <http://www.w3.org/2002/07/owl#versionIRI> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://hpc-fair.github.io/ontology#author
+<https://hpc-fair.github.io/ontology#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#author> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#creator> .
+<https://hpc-fair.github.io/ontology#author> <http://www.w3.org/2000/01/rdf-schema#comment> "Link a paper to one of its author" .
+# 
+# https://hpc-fair.github.io/ontology#authors
+<https://hpc-fair.github.io/ontology#authors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#authors> <http://www.w3.org/2000/01/rdf-schema#comment> "link to an orderded list of authors" .
+# 
+# https://hpc-fair.github.io/ontology#creator
+<https://hpc-fair.github.io/ontology#creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://hpc-fair.github.io/ontology#education
+<https://hpc-fair.github.io/ontology#education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#education> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hpc-fair.github.io/ontology#Person> .
+<https://hpc-fair.github.io/ontology#education> <http://www.w3.org/2000/01/rdf-schema#range> <https://hpc-fair.github.io/ontology#Education> .
+<https://hpc-fair.github.io/ontology#education> <http://www.w3.org/2000/01/rdf-schema#comment> "Link a person with his/her education history (Education objects)" .
+# 
+# https://hpc-fair.github.io/ontology#employment
+<https://hpc-fair.github.io/ontology#employment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://hpc-fair.github.io/ontology#employment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://hpc-fair.github.io/ontology#Person> .
+<https://hpc-fair.github.io/ontology#employment> <http://www.w3.org/2000/01/rdf-schema#range> <https://hpc-fair.github.io/ontology#Employment> .
+<https://hpc-fair.github.io/ontology#employment> <http://www.w3.org/2000/01/rdf-schema#comment> "Link a person with his/her employment history (Employment objects)" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#address
+<https://hpc-fair.github.io/ontology#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#arXivAuthorIdentifier
+<https://hpc-fair.github.io/ontology#arXivAuthorIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#arXivAuthorIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#personIdentifier> .
+# 
+# https://hpc-fair.github.io/ontology#arxiv
+<https://hpc-fair.github.io/ontology#arxiv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#arxiv> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#workIdentifier> .
+<https://hpc-fair.github.io/ontology#arxiv> <http://www.w3.org/2000/01/rdf-schema#comment> "arxiv\tarxiv: ArXiv\thttps://arxiv.org/abs/" .
+# 
+# https://hpc-fair.github.io/ontology#asin
+<https://hpc-fair.github.io/ontology#asin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#asin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#workIdentifier> .
+<https://hpc-fair.github.io/ontology#asin> <http://www.w3.org/2000/01/rdf-schema#comment> "asin: Amazon Standard Identification Number\thttp://www.amazon.com/dp/" .
+# 
+# https://hpc-fair.github.io/ontology#biography
+<https://hpc-fair.github.io/ontology#biography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#biography> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://hpc-fair.github.io/ontology#cit
+<https://hpc-fair.github.io/ontology#cit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#cit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#workIdentifier> .
+<https://hpc-fair.github.io/ontology#cit> <http://www.w3.org/2000/01/rdf-schema#comment> "cit: CiteSeer" .
+# 
+# https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID
+<https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#organizationIdentifier> .
+<https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID> <http://www.w3.org/2000/01/rdf-schema#comment> "DUNS\tData Universal Numbering System\thttps://www.dnb.com/duns-number.html" .
+<https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID> <http://www.w3.org/2000/01/rdf-schema#label> "DUNS" .
+# 
+# https://hpc-fair.github.io/ontology#date
+<https://hpc-fair.github.io/ontology#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#doi
+<https://hpc-fair.github.io/ontology#doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#doi> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#workIdentifier> .
+<https://hpc-fair.github.io/ontology#doi> <http://www.w3.org/2000/01/rdf-schema#comment> "doi: Digital object identifier\thttps://doi.org/" .
+# 
+# https://hpc-fair.github.io/ontology#eid
+<https://hpc-fair.github.io/ontology#eid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#eid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#workIdentifier> .
+<https://hpc-fair.github.io/ontology#eid> <http://www.w3.org/2000/01/rdf-schema#comment> "Scopus Identifier" .
+# 
+# https://hpc-fair.github.io/ontology#email
+<https://hpc-fair.github.io/ontology#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#email> <http://www.w3.org/2000/01/rdf-schema#comment> "a person or organization has one more more emails" .
+# 
+# https://hpc-fair.github.io/ontology#endingPage
+<https://hpc-fair.github.io/ontology#endingPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#grid
+<https://hpc-fair.github.io/ontology#grid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#grid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#organizationIdentifier> .
+<https://hpc-fair.github.io/ontology#grid> <http://www.w3.org/2000/01/rdf-schema#comment> "Global Research Identifier Database\thttps://www.grid.ac/" .
+# 
+# https://hpc-fair.github.io/ontology#isbn
+<https://hpc-fair.github.io/ontology#isbn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#isbn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#workIdentifier> .
+<https://hpc-fair.github.io/ontology#isbn> <http://www.w3.org/2000/01/rdf-schema#comment> "isbn: International Standard Book Number\thttps://www.worldcat.org/isbn/" .
+# 
+# https://hpc-fair.github.io/ontology#isni
+<https://hpc-fair.github.io/ontology#isni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#isni> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#personIdentifier> .
+<https://hpc-fair.github.io/ontology#isni> <http://www.w3.org/2000/01/rdf-schema#comment> "International Standard Name Identifier\thttps://isni.org/\t\tperson" .
+# 
+# https://hpc-fair.github.io/ontology#issn
+<https://hpc-fair.github.io/ontology#issn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#issn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#workIdentifier> .
+<https://hpc-fair.github.io/ontology#issn> <http://www.w3.org/2000/01/rdf-schema#comment> "issn: International Standard Serial Number. Includes print and electronic ISSN.\thttps://portal.issn.org/resource/ISSN/" .
+# 
+# https://hpc-fair.github.io/ontology#issueIdentifier
+<https://hpc-fair.github.io/ontology#issueIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#issueIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier used to identify a specific issue of a magazine, a journal or other resource." .
+# 
+# https://hpc-fair.github.io/ontology#legalEntityIdentifier
+<https://hpc-fair.github.io/ontology#legalEntityIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#legalEntityIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#organizationIdentifier> .
+<https://hpc-fair.github.io/ontology#legalEntityIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "LEI\tLegal Entity Identifier\thttps://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei" .
+<https://hpc-fair.github.io/ontology#legalEntityIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "LEI" .
+# 
+# https://hpc-fair.github.io/ontology#organizationIdentifier
+<https://hpc-fair.github.io/ontology#organizationIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#organizationIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+# 
+# https://hpc-fair.github.io/ontology#personIdentifier
+<https://hpc-fair.github.io/ontology#personIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#personIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+# 
+# https://hpc-fair.github.io/ontology#publicationDate
+<https://hpc-fair.github.io/ontology#publicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#publicationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#date> .
+<https://hpc-fair.github.io/ontology#publicationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Publication date of a publication" .
+# 
+# https://hpc-fair.github.io/ontology#publicationYear
+<https://hpc-fair.github.io/ontology#publicationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#date> .
+# 
+# https://hpc-fair.github.io/ontology#researchID
+<https://hpc-fair.github.io/ontology#researchID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#researchID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#personIdentifier> .
+# 
+# https://hpc-fair.github.io/ontology#ringgold
+<https://hpc-fair.github.io/ontology#ringgold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#ringgold> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#organizationIdentifier> .
+<https://hpc-fair.github.io/ontology#ringgold> <http://www.w3.org/2000/01/rdf-schema#comment> "https://www.ringgold.com/ organization identifiers" .
+# 
+# https://hpc-fair.github.io/ontology#ror
+<https://hpc-fair.github.io/ontology#ror> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#ror> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#organizationIdentifier> .
+<https://hpc-fair.github.io/ontology#ror> <http://www.w3.org/2000/01/rdf-schema#comment> "research organization identifier\thttps://ror.org/" .
+# 
+# https://hpc-fair.github.io/ontology#scopusAuthorIdentifier
+<https://hpc-fair.github.io/ontology#scopusAuthorIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#scopusAuthorIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#personIdentifier> .
+# 
+# https://hpc-fair.github.io/ontology#startingPage
+<https://hpc-fair.github.io/ontology#startingPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://hpc-fair.github.io/ontology#uniqueEntityIdentifier
+<https://hpc-fair.github.io/ontology#uniqueEntityIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#uniqueEntityIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://hpc-fair.github.io/ontology#organizationIdentifier> .
+<https://hpc-fair.github.io/ontology#uniqueEntityIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "UEI\tUnique Entity Identifier\thttps://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/iae-systems-information-kit/unique-entity-identifier-update" .
+<https://hpc-fair.github.io/ontology#uniqueEntityIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "UEI" .
+# 
+# https://hpc-fair.github.io/ontology#volume
+<https://hpc-fair.github.io/ontology#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#volume> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier for a particular volume of a resource, such as a journal or a multi-volume book." .
+# 
+# https://hpc-fair.github.io/ontology#workIdentifier
+<https://hpc-fair.github.io/ontology#workIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://hpc-fair.github.io/ontology#workIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://hpc-fair.github.io/ontology#Activity
+<https://hpc-fair.github.io/ontology#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://hpc-fair.github.io/ontology#Article
+<https://hpc-fair.github.io/ontology#Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Publication> .
+# 
+# https://hpc-fair.github.io/ontology#BachelorsThesis
+<https://hpc-fair.github.io/ontology#BachelorsThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Thesis> .
+# 
+# https://hpc-fair.github.io/ontology#Book
+<https://hpc-fair.github.io/ontology#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Publication> .
+# 
+# https://hpc-fair.github.io/ontology#ConferencePaper
+<https://hpc-fair.github.io/ontology#ConferencePaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#ConferencePaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#ProceedingsPaper> .
+# 
+# https://hpc-fair.github.io/ontology#CreativeWork
+<https://hpc-fair.github.io/ontology#CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://hpc-fair.github.io/ontology#DoctoralThesis
+<https://hpc-fair.github.io/ontology#DoctoralThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#DoctoralThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Thesis> .
+# 
+# https://hpc-fair.github.io/ontology#Education
+<https://hpc-fair.github.io/ontology#Education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Education> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Activity> .
+<https://hpc-fair.github.io/ontology#Education> <http://www.w3.org/2000/01/rdf-schema#comment> "Education is a kind of activity so it inherits all properties of Acitvity, with additional properties:\n- organization   insitution provding the education\n- department     department associated\n- degree             degree levels: bachelor, master, Ph.D, etc\n- major               major of study" .
+# 
+# https://hpc-fair.github.io/ontology#Employment
+<https://hpc-fair.github.io/ontology#Employment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Employment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Activity> .
+<https://hpc-fair.github.io/ontology#Employment> <http://www.w3.org/2000/01/rdf-schema#comment> "Employment is a kind of activity so it inherits all properties of Acitvity, with additional properties:\n- organization   organization employing a person\n- department     department employing a person\n- jobTitle           job title of the employment" .
+# 
+# https://hpc-fair.github.io/ontology#JournalArticle
+<https://hpc-fair.github.io/ontology#JournalArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Article> .
+# 
+# https://hpc-fair.github.io/ontology#MagazineArticle
+<https://hpc-fair.github.io/ontology#MagazineArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#MagazineArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Article> .
+# 
+# https://hpc-fair.github.io/ontology#MastersThesis
+<https://hpc-fair.github.io/ontology#MastersThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Thesis> .
+# 
+# https://hpc-fair.github.io/ontology#NewspaperArticle
+<https://hpc-fair.github.io/ontology#NewspaperArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#NewspaperArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Article> .
+# 
+# https://hpc-fair.github.io/ontology#Organization
+<https://hpc-fair.github.io/ontology#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://hpc-fair.github.io/ontology#Person
+<https://hpc-fair.github.io/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://hpc-fair.github.io/ontology#PosterPaper
+<https://hpc-fair.github.io/ontology#PosterPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#PosterPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Publication> .
+# 
+# https://hpc-fair.github.io/ontology#Presentation
+<https://hpc-fair.github.io/ontology#Presentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Presentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Publication> .
+<https://hpc-fair.github.io/ontology#Presentation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "A set of slides" .
+# 
+# https://hpc-fair.github.io/ontology#ProceedingsPaper
+<https://hpc-fair.github.io/ontology#ProceedingsPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#ProceedingsPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Publication> .
+# 
+# https://hpc-fair.github.io/ontology#Publication
+<https://hpc-fair.github.io/ontology#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#CreativeWork> .
+<https://hpc-fair.github.io/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "Publications like books, academic papers, posters, position papers, technical reports, dissertations, whitepapers, etc. Anything bibliographical content.\n\n\nProperties inherited from hpc:CreativeWork\t\n- hpc:license\tCreative Commons Attribution License and its variants, or similar choices\n- hpc:version\tVersion number\n- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.\t\n- hpc:subject\tList of subjects or topics: performance modeling, image classification, text generation, etc.\n- hpc:creator    People/organization who created the artifact\t\n- hpc:contributor    Link to contributors  (in URI) of the artifact\t\n- hpc:project    Associated projects\t\n- hpc:keyword\tkeywords\n- hpc:discipline\tdisciplines\n\n\nExtra properties for Publication\n\n- hpc:author\tlink to authors one by one\n- hpc:title\ttitle\n- hpc:hasPublicationYear\tYear of publication\n- hpc:doi\tdoi\n- hpc:isPartOf \tconnect the expression to higher level objects like a journal issue\n- hpc:issueIdentifier\tJournal issue ID\n- hpc:volume\tJournal volume ID\n- hpc:journal\tJournal name or Journal ID\n- hpc:publisher\tSame as dcterms:publisher, connect to an organization or its name\n- hpc:publicationDate\tpublication year, date information\n- hpc:startingPage\tstarting page number\n- hpc:endingPage\tending page number" .
+<https://hpc-fair.github.io/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "fabio:Expression" .
+# 
+# https://hpc-fair.github.io/ontology#ReferenceBook
+<https://hpc-fair.github.io/ontology#ReferenceBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#ReferenceBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Book> .
+# 
+# https://hpc-fair.github.io/ontology#ReviewArticle
+<https://hpc-fair.github.io/ontology#ReviewArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#ReviewArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Article> .
+# 
+# https://hpc-fair.github.io/ontology#SpecificationDocument
+<https://hpc-fair.github.io/ontology#SpecificationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#SpecificationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Publication> .
+# 
+# https://hpc-fair.github.io/ontology#Textbook
+<https://hpc-fair.github.io/ontology#Textbook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Textbook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Book> .
+# 
+# https://hpc-fair.github.io/ontology#Thesis
+<https://hpc-fair.github.io/ontology#Thesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#Thesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Book> .
+# 
+# https://hpc-fair.github.io/ontology#WebContent
+<https://hpc-fair.github.io/ontology#WebContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#WebContent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#Publication> .
+# 
+# https://hpc-fair.github.io/ontology#WorkshopPaper
+<https://hpc-fair.github.io/ontology#WorkshopPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://hpc-fair.github.io/ontology#WorkshopPaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://hpc-fair.github.io/ontology#ProceedingsPaper> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

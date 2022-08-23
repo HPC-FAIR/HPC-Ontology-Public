@@ -1,0 +1,3357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <Ontology>
+        <dc:creator>The HPC-FAIR research team</dc:creator>
+        <dc:description>This is a test</dc:description>
+        <dc:title>HPC Ontology for Programs</dc:title>
+        <terms:description>This is a test</terms:description>
+        <terms:license>the Creative Commons Attribution 4.0</terms:license>
+        <vann:preferredNamespacePrefix>hpc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://hpc-fair.github.io/ontology#"/>
+        <rdfs:comment>The HPC-FAIR Program portion of the ontology provides properties and classes relating to describing software, such as encoding source code and language constructs, as well as providing properties relating to program execution.</rdfs:comment>
+        <versionIRI>1.0.0</versionIRI>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#comment -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#access -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#access">
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#accessedBy"/>
+        <rdfs:comment>function relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#accessedBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#accessedBy">
+        <rdfs:comment>variable relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#alias -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#alias">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Variable"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Variable"/>
+        <rdfs:comment>Indicates a variable aliases another variable within some context</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#allocate -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#allocate">
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#allocatedBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#allocatedBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#allocatedBy">
+        <rdfs:comment>array relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#antiDependsOn -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#antiDependsOn">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#dependsOn"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#flowDependsOn"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#callSite -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#callSite">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#srcFunc"/>
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Callsite"/>
+        <rdfs:comment>a function has one or more call sites where it calls other functions.
+This property links a function to its function call sites.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#calledBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#calledBy">
+        <equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#caller"/>
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#calls"/>
+        <rdf:comment>Associates a callee function with a caller function that invokes it.</rdf:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#callee -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#callee">
+        <equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#calls"/>
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#caller"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#caller -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#caller">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#calls -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#calls">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <rdfs:comment>a function calls another function</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#consistsOf -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#consistsOf"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#deallocatedBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#deallocatedBy">
+        <rdfs:comment>array relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#declaredBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#declaredBy">
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Variable"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+        <rdfs:comment>a variable is declared by a statment</rdfs:comment>
+        <rdfs:comment>variable relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#definedBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#definedBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#dependsOn -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#dependsOn">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdfs:comment>A general property that states some expression or instruction is dependant on data modified by the target of the property. There are four subclasses of this property, each providing more information about the given data dependency.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#destFunc -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#destFunc">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#upstreamCallSite"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <rdfs:comment>Indicates the callee function of a callsite</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#file -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#file"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#flowDependsOn -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#flowDependsOn">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#dependsOn"/>
+        <rdfs:comment>Indicates the source instance forms a read-after-write hazard with the output instance, with the source value representing the affected read and the object value representing the offending write.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#graphLink -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#graphLink"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasAlignment -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasAlignment">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdfs:comment>AST node to alignment node</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasArgumentExpr -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasArgumentExpr">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasArgumentList -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasArgumentList">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasArrayBaseType -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasArrayBaseType">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#hasType"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasArrayRank -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasArrayRank">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>?</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasBaseType -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasBaseType">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#hasType"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasBody -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasBody">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdfs:comment>AST has a body</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasChild -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasChild">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#hasParent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasCondition -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasCondition">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdfs:comment>AST node to its condition node</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasDeclaration -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasDeclaration">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdfs:comment>Domain: definition</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasDefinition -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasDefinition">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasElseBody -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasElseBody">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasExpression -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasExpression">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#ExpressionStatement"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasFalseBody -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasFalseBody">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasFile -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasFile">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdfs:comment>AST node to its file node</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasForIncr -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasForIncr">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasForInit -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasForInit">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasForTest -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasForTest">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasHiddenType -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasHiddenType">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#hasType"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasIndexExp -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasIndexExp">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasInitStatement -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasInitStatement">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasInitialValue -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasInitialValue">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasInitializer -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasInitializer">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasKey -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasKey">
+        <rdfs:comment>case key:</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasLabelRef -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasLabelRef">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasLeftOperand -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasLeftOperand">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#hasChild"/>
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasOperand -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasOperand">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#hasChild"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasOperator -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasOperator">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasParameter -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasParameter">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Parameter"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasParameterDeclList -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasParameterDeclList">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#FunctionType"/>
+        <rdfs:comment>function relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasParameterList -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasParameterList">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasParent -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasParent">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasReturnType -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasReturnType">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#hasType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#FunctionType"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+        <rdfs:comment>function relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasRightOperand -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasRightOperand">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#hasChild"/>
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasScope -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasScope">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasSelector -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasSelector">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasSize -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasSize"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasStatement -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasStatement">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasStorageClass -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasStorageClass">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>variable relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasTarget -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasTarget"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasTrueBody -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasTrueBody">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasType -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasType">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+        <rdfs:comment>variable relation</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasValue -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasValue">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#inputDependsOn -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#inputDependsOn">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#dependsOn"/>
+        <rdfs:comment>Indicates the source instance forms an input dependence with the object instance, with the object instance preceeding the source in execution.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#mayAlias -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#mayAlias">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#alias"/>
+        <rdfs:comment>Indicates that two memory locations/variables may or may not alias one another</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#mustAlias -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#mustAlias">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#alias"/>
+        <rdfs:comment>Indicates that two variables alias one another</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#neverAlias -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#neverAlias">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#alias"/>
+        <rdfs:comment>Indicates that two memory locations/variables will never alias one another</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#outputDependsOn -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#outputDependsOn">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#dependsOn"/>
+        <rdfs:comment>Indicates the source instance forms an output dependence with the object instance, with the object instance preceeding the source in execution.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#read -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#read">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#access"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#readBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#readBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#readBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#accessedBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#referTo -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#referTo">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#referredBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#referredBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#referredBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#relationOp -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#relationOp"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#sourceFile -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#sourceFile">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#file"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#srcFunc -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#srcFunc">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Callsite"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <rdfs:comment>Indicates the caller function of a given callsite</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#upstreamCallSite -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#upstreamCallSite">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#graphLink"/>
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <schema:rangeIncludes rdf:resource="https://hpc-fair.github.io/ontology#Callsite"/>
+        <rdfs:comment>Inverse of a call site --&gt; function being called.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#write -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#write">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#access"/>
+        <inverseOf rdf:resource="https://hpc-fair.github.io/ontology#writtenBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#writtenBy -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#writtenBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#accessedBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#writtenIn -->
+
+
+    <ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#writtenIn">
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Nth -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#Nth"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#NthArg -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#NthArg">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#Nth"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#NthPara -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#NthPara">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#Nth"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#allocatedDataSize -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#allocatedDataSize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#arrayID -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#arrayID">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#id"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#arrayName -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#arrayName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#beginMemoryAddress -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#beginMemoryAddress">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#memoryAddress"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#codeVariant -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#codeVariant"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#columnNumber -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#columnNumber">
+        <rdfs:comment>Column number within a file</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#commandLineOption -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#commandLineOption"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#endMemoryAddress -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#endMemoryAddress">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#memoryAddress"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#exclusivePercentageTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#exclusivePercentageTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>The proportion (percentage) of the execution time of the program spent executing this function, excluding time spent executing callee functions.</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#exclusiveTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#exclusiveTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Time spent in a function, excluding time spent executing children (callee) functions</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasProfiling -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hasProfiling">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates whether or not a given node has information related to dynamic execution (performance information)</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasValue -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hasValue"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#id -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#id"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#inclusivePercentageTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#inclusivePercentageTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>The proportion (percent) of the execution time of the program that was spent executing this function or callsite, including time spent executing child functions</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#inclusiveTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#inclusiveTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Time spent within a function or callsite that includes time spent in callee functions</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#kernelName -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#kernelName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#lineNumber -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#lineNumber">
+        <rdfs:comment>line number within a file</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#memoryAddress -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#memoryAddress"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#numOfCalls -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#numOfCalls">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Indicates the number of times a function or callsite is called within a given run</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#size -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#size"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AddAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AddAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AddOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AddOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AdditiveOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AdditiveOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AddressOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AddressOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+        <rdfs:comment>&amp;</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AggregateCallsite -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AggregateCallsite">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#CallSite"/>
+        <rdfs:comment>Callsite returned from profiling analysis that may not contain all information about the callsite location</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AndAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AndAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AndOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AndOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ArrayDecl -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ArrayDecl">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ArraySub -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ArraySub">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PostfixOp"/>
+        <rdfs:comment>[]</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ArrayType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ArrayType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DerivedType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ArrowExp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ArrowExp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MemberRef"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AssignInitializer -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AssignInitializer">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Initializer"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasInitialValue"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AssignStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AssignStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AssignmentOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#AssignmentOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Auto -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Auto">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#auto"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#StorageClass"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BasicBlock -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BasicBlock">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ScopeStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BasicType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BasicType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+        <rdfs:comment>Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BinaryOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BinaryOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+        <rdfs:subClassOf>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasChild"/>
+                        <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</cardinality>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasChild"/>
+                        <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</cardinality>
+                    </Restriction>
+                </unionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>An operation that takes two values and produces an output.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BitwiseANDOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BitwiseANDOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BitwiseOROp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BitwiseOROp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BitwiseShiftOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BitwiseShiftOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BitwiseXOROp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BitwiseXOROp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Block -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Block">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Scope"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BoolType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BoolType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BasicType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BreakStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#BreakStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#JumpStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CallGraph -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CallGraph">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Dataset"/>
+        <rdfs:comment>A graph that consists of Functions and FunctionCalls, which indicate caller-callee relationships in a program.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CallSite -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CallSite">
+        <equivalentClass rdf:resource="https://hpc-fair.github.io/ontology#FunctionCall"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CaseOptionStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CaseOptionStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CastOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CastOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CharConst -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CharConst">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Constant"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CharType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CharType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BasicType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ClassDeclaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ClassDeclaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CommaOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CommaOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ComplexType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ComplexType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BasicType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CompoundStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#CompoundStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#consistsOf"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The body of a function definition is a compound statement.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ConditionalOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ConditionalOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Const -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Const">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#TypeQualifier"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Constant -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Constant">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PrimaryExpr"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ContinueStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ContinueStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#JumpStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Dataset -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Dataset"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Declaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Declaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+        <rdfs:comment>Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DefaultOptionStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#DefaultOptionStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DerivedType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#DerivedType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Directive -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Directive">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DivAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#DivAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DivOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#DivOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DoWhileStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#DoWhileStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#IterationStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DotExp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#DotExp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MemberRef"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DoubleType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#DoubleType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#FloatType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#EnumDecl -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#EnumDecl">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#EnumType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#EnumType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BasicType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#EnumerationConst -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#EnumerationConst">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Constant"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#EqualOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#EqualOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#EqualityOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#EqualityOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#EqualityOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Expression -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Expression">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ExpressionList -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ExpressionList">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Unsorted"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ExpressionStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ExpressionStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Extern -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Extern">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#extern"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#StorageClass"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ExternalDataDefinition -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ExternalDataDefinition">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ExternalDefinition"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ExternalDefinition -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ExternalDefinition">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ExternalFunctionDefinition -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ExternalFunctionDefinition">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ExternalDefinition"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasReturnType"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FloatType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FloatType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BasicType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FloatingConst -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FloatingConst">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Constant"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ForInitStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ForInitStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ForStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ForStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#IterationStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Function -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Function">
+        <equivalentClass rdf:resource="https://hpc-fair.github.io/ontology#Kernel"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+        <rdfs:comment>A function of any kinds, including defining function declarations, non-defining function declarations, etc.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FunctionCall -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FunctionCall">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PostfixOp"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#calls"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#destFunc"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasArgumentExpr"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#srcFunc"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#destFunc"/>
+                <maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#srcFunc"/>
+                <maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A function call site, the same as the function call expression in AST</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FunctionDeclaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FunctionDeclaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasDefinition"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#FunctionDefinitionBody"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasParameter"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Variable"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasScope"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Scope"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasType"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A function declaration can be either a forward declaration or a defining declaration. If it is a defining declaration then it contains a pointer to the function definition.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FunctionDefinitionBody -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FunctionDefinitionBody">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#CompoundStatement"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Scope"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FunctionParameterList -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FunctionParameterList">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FunctionRef -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FunctionRef">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PrimaryExpr"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#referTo"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#FunctionDeclaration"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FunctionType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#FunctionType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DerivedType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Global -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Global">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ScopeStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#GotoStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#GotoStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#JumpStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#GreaterOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#GreaterOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#RelationalOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#GreaterOrEqualOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#GreaterOrEqualOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#RelationalOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IOStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#IOStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IfElseStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#IfElseStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#SelectionStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IfStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#IfStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#SelectionStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IndirectionOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#IndirectionOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+        <rdfs:comment>*</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Initializer -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Initializer">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IntConst -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#IntConst">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Constant"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IntType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#IntType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BasicType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IterationStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#IterationStatement">
+        <equivalentClass rdf:resource="https://hpc-fair.github.io/ontology#Loop"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#JumpStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#JumpStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Kernel -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Kernel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+        <rdfs:comment xml:lang="en">A kernel is a function or subroutine of a program written in any programming languages. A kernel has a defined function body and can be executed on a computer. This is a generic concept used for performance analysis.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LabeledStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LabeledStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LanguageConstruct -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LessOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LessOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#RelationalOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LessOrEqualOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LessOrEqualOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#RelationalOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Library -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Library"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ListExp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ListExp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Unsorted"/>
+        <rdfs:comment>?</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Literal -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Literal">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LogicalANDOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LogicalANDOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LogicalAndOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LogicalAndOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LogicalNegOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LogicalNegOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LogicalOROp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LogicalOROp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LogicalOrOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LogicalOrOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LongType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#LongType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#IntType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Loop -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Loop">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Lvalue -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Lvalue">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#referTo"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Variable"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An Object is a named region of storage; an lvalue is an expression referring to an object.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MainFunction -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#MainFunction">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Function"/>
+        <rdfs:comment>The main function in C/C++. Or similar entry function in other programming languages.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MemberRef -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#MemberRef">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PostfixOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ModAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ModAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ModOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ModOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MulAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#MulAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MulOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#MulOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MultiplicativeOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#MultiplicativeOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#NeqOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#NeqOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#EqualityOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#NullExpr -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#NullExpr">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#NullPointerType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#NullPointerType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PointerType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#NullStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#NullStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#OnesComplementOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#OnesComplementOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+        <rdfs:comment>?</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#OpenMP -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#OpenMP"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#OrAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#OrAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#OrOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#OrOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ParallelRegion -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ParallelRegion">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Directive"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#OpenMP"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Parameter -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Parameter">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Variable"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PointerDecl -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PointerDecl">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PointerType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PointerType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DerivedType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PostfixDecrementOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PostfixDecrementOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PostfixOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PostfixIncrementOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PostfixIncrementOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PostfixOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PostfixOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PostfixOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PrefixDecrementOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PrefixDecrementOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PrefixIncrementOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PrefixIncrementOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PrefixMinusOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PrefixMinusOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PrefixPlusOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PrefixPlusOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PrimaryExpr -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#PrimaryExpr">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+        <rdfs:comment>Primary expressions are identifiers, constants, strings, or expressions in parentheses.
+primary-expression
+identifier
+constant
+string
+(expression)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ProgrammingModel -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ReferenceType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ReferenceType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DerivedType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#RegisterStorage -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#RegisterStorage">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#StorageClass"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#RelationalOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#RelationalOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+        <rdfs:comment>? model as individual or subclass</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ReturnStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ReturnStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#JumpStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Scope -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Scope">
+        <equivalentClass rdf:resource="https://hpc-fair.github.io/ontology#ScopeStatement"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ScopeStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ScopeStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SelectionStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#SelectionStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Statement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ShlAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ShlAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ShlOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ShlOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ShortType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ShortType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#IntType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ShrAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ShrAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ShrOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#ShrOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Signed -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Signed">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SizeofOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#SizeofOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#StandardLibrary -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#StandardLibrary">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Library"/>
+        <rdfs:comment>Standard libraries defined in some language standards</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Statement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Statement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Static -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Static">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#static"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#StorageClass"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#StorageClass -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#StorageClass">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#String -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#String">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#StringLiteral -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#StringLiteral">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PrimaryExpr"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#StructureType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#StructureType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DerivedType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#StructureUnionDecl -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#StructureUnionDecl">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SubAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#SubAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SubOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#SubOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SwitchStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#SwitchStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#SelectionStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TemplateClassDeclaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TemplateClassDeclaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ClassDeclaration"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#TemplateDeclaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TemplateClassInstantiationDeclaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TemplateClassInstantiationDeclaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ClassDeclaration"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#TemplateInstantiation"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TemplateDeclaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TemplateDeclaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TemplateFunctionDeclaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TemplateFunctionDeclaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#FunctionDeclaration"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#TemplateDeclaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TemplateFunctionInstantiationDeclaration -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TemplateFunctionInstantiationDeclaration">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#FunctionDeclaration"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#TemplateInstantiation"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TemplateInstantiation -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TemplateInstantiation">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Type -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Type">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TypeQualifier -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TypeQualifier">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TypedefDecl -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#TypedefDecl">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#UnaryOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#UnaryOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasChild"/>
+                <maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</maxCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An operation that acts on a single value.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#UnionType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#UnionType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DerivedType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#UnknownClass -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#UnknownClass">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Unsorted"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#UnknownType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#UnknownType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Unsigned -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Unsigned">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Unsorted -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Unsorted">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LanguageConstruct"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Value -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Value">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Unsorted"/>
+        <rdfs:comment>SgXXXVal = constant?</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Variable -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Variable">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#declaredBy"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#definedBy"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasInitializer"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Initializer"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasScope"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Scope"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasSize"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasStorageClass"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#StorageClass"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#hasType"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Type"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Literal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>synonyms: object
+named location of storage</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#VariableDecl -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#VariableDecl">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#VariableDefinition -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#VariableDefinition">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Declaration"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#VariableRef -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#VariableRef">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PrimaryExpr"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://hpc-fair.github.io/ontology#referTo"/>
+                <someValuesFrom rdf:resource="https://hpc-fair.github.io/ontology#Variable"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#VoidType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#VoidType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BasicType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Volatile -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#Volatile">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#TypeQualifier"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#WCharType -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#WCharType">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#CharType"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#WhileStatement -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#WhileStatement">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#IterationStatement"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#XorAssignOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#XorAssignOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#AssignmentOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#XorOp -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#XorOp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#BinaryOp"/>
+    </Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isAssignedTo -->
+
+
+    <Class rdf:about="https://hpc-fair.github.io/ontology#isAssignedTo">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Expression"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Unsorted"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#c_standard_library -->
+
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#c_standard_library">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#StandardLibrary"/>
+        <rdfs:comment>C standard library</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#array_type -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#array_type">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#ArrayType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#auto -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#auto">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Auto"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#bool -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#bool">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#BoolType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#char -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#char">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#CharType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#complex -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#complex">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#ComplexType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#double -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#double">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#DoubleType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#enum_type -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#enum_type">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#EnumType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#extern -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#extern">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Extern"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#float -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#float">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#FloatType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#function_type -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#function_type">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#FunctionType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#int -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#int">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#IntType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#long -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#long">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#LongType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#long_double -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#long_double">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#DoubleType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#long_long -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#long_long">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#LongType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#null_pointer -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#null_pointer">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#NullPointerType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#pointer_type -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#pointer_type">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#PointerType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ref_type -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#ref_type">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#ReferenceType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#short -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#short">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#ShortType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#signed_char -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#signed_char">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#CharType"/>
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Signed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#signed_int -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#signed_int">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Signed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#signed_long -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#signed_long">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Signed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#signed_long_long -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#signed_long_long">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Signed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#signed_short -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#signed_short">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Signed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#static -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#static">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Static"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#string -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#string">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#String"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unknown_modifier -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unknown_modifier">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Unsorted"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unknown_type -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unknown_type">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#UnknownType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unsigned_char -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unsigned_char">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Unsigned"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unsigned_int -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unsigned_int">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Unsigned"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unsigned_long -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unsigned_long">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Unsigned"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unsigned_long_long -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unsigned_long_long">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Unsigned"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unsigned_short -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unsigned_short">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Unsigned"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#unspecified -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#unspecified">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#StorageClass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#void_type -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#void_type">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#VoidType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wchar -->
+
+
+    <NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#wchar">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#WCharType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#AddressOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#IndirectionOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#LogicalNegOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#OnesComplementOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#PostfixDecrementOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#PostfixIncrementOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#PrefixDecrementOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#PrefixIncrementOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#PrefixMinusOp"/>
+            <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#PrefixPlusOp"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

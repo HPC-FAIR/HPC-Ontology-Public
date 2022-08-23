@@ -1,0 +1,478 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "The HPC-FAIR research team"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The HPC-FAIR ORCID portion of the ontology provides declarations to semantically describe aspects of an academic or technical publication, such as authorship, affiliations, and information about the publication venue."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "HPC Ontology for ORCID"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "the Creative Commons Attribution 4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "hpc"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The HPC-FAIR ORCID portion of the ontology provides declarations to semantically describe aspects of an academic or technical publication, such as authorship, affiliations, and information about the publication venue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://hpc-fair.github.io/ontology/program"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Publication"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BachelorsThesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thesis"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Publication"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ConferencePaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProceedingsPaper"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DoctoralThesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thesis"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Education",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Education is a kind of activity so it inherits all properties of Acitvity, with additional properties:\n- organization   insitution provding the education\n- department     department associated\n- degree             degree levels: bachelor, master, Ph.D, etc\n- major               major of study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Activity"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Employment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Employment is a kind of activity so it inherits all properties of Acitvity, with additional properties:\n- organization   organization employing a person\n- department     department employing a person\n- jobTitle           job title of the employment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Activity"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#JournalArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Article"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MagazineArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Article"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MastersThesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thesis"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#NewspaperArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Article"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PosterPaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Publication"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Presentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "A set of slides"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Publication"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ProceedingsPaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Publication"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Publication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Publications like books, academic papers, posters, position papers, technical reports, dissertations, whitepapers, etc. Anything bibliographical content.\n\n\nProperties inherited from hpc:CreativeWork\t\n- hpc:license\tCreative Commons Attribution License and its variants, or similar choices\n- hpc:version\tVersion number\n- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.\t\n- hpc:subject\tList of subjects or topics: performance modeling, image classification, text generation, etc.\n- hpc:creator    People/organization who created the artifact\t\n- hpc:contributor    Link to contributors  (in URI) of the artifact\t\n- hpc:project    Associated projects\t\n- hpc:keyword\tkeywords\n- hpc:discipline\tdisciplines\n\n\nExtra properties for Publication\n\n- hpc:author\tlink to authors one by one\n- hpc:title\ttitle\n- hpc:hasPublicationYear\tYear of publication\n- hpc:doi\tdoi\n- hpc:isPartOf \tconnect the expression to higher level objects like a journal issue\n- hpc:issueIdentifier\tJournal issue ID\n- hpc:volume\tJournal volume ID\n- hpc:journal\tJournal name or Journal ID\n- hpc:publisher\tSame as dcterms:publisher, connect to an organization or its name\n- hpc:publicationDate\tpublication year, date information\n- hpc:startingPage\tstarting page number\n- hpc:endingPage\tending page number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "fabio:Expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#CreativeWork"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ReferenceBook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Book"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ReviewArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Article"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SpecificationDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Publication"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Textbook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Book"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Thesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Book"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#WebContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Publication"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#WorkshopPaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProceedingsPaper"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#arXivAuthorIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#personIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#arxiv",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "arxiv\tarxiv: ArXiv\thttps://arxiv.org/abs/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#workIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#asin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "asin: Amazon Standard Identification Number\thttp://www.amazon.com/dp/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#workIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link a paper to one of its author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#creator"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#authors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "link to an orderded list of authors"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#biography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "cit: CiteSeer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#workIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "DUNS\tData Universal Numbering System\thttps://www.dnb.com/duns-number.html"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DUNS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#organizationIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "doi: Digital object identifier\thttps://doi.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#workIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#education",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link a person with his/her education history (Education objects)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Education"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#eid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Scopus Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#workIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a person or organization has one more more emails"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#employment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link a person with his/her employment history (Employment objects)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Employment"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#endingPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#grid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Global Research Identifier Database\thttps://www.grid.ac/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#organizationIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isbn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "isbn: International Standard Book Number\thttps://www.worldcat.org/isbn/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#workIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isni",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "International Standard Name Identifier\thttps://isni.org/\t\tperson"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#personIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#issn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "issn: International Standard Serial Number. Includes print and electronic ISSN.\thttps://portal.issn.org/resource/ISSN/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#workIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#issueIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An identifier used to identify a specific issue of a magazine, a journal or other resource."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#legalEntityIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "LEI\tLegal Entity Identifier\thttps://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LEI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#organizationIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#organizationIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/identifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#personIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/identifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#publicationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Publication date of a publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#publicationYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#researchID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#personIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ringgold",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "https://www.ringgold.com/ organization identifiers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#organizationIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ror",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "research organization identifier\thttps://ror.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#organizationIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#scopusAuthorIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#personIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#startingPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#uniqueEntityIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "UEI\tUnique Entity Identifier\thttps://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/iae-systems-information-kit/unique-entity-identifier-update"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UEI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#organizationIdentifier"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An identifier for a particular volume of a resource, such as a journal or a multi-volume book."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#workIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/identifier"
+  } ]
+} ]

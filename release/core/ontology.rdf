@@ -1,0 +1,3786 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://hpc-fair.github.io/ontology#"
+     xml:base="https://hpc-fair.github.io/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://hpc-fair.github.io/ontology">
+        <owl:versionIRI rdf:resource="https://hpc-fair.github.io/ontology/1.0.0"/>
+        <dc:creator>The HPC-FAIR research team</dc:creator>
+        <dc:description>The HPC Ontology describes software, hardware, and artifacts in the domain
+of High-Performance Computing. It can be used to annotate training
+ datasets and machine learning models used in HPC software analyses 
+and optimizations. The goal is to make datasets and AI models FAIR.</dc:description>
+        <dc:title>HPC Ontology</dc:title>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-23T13:30:00-07:00</terms:created>
+        <terms:license>the Creative Commons Attribution 4.0</terms:license>
+        <vann:preferredNamespacePrefix>hpc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://hpc-fair.github.io/ontology#"/>
+        <rdfs:comment>The HPC Ontology describes software, hardware, and artifacts in the domain of High-Performance Computing. It can be used to annotate training datasets and machine learning models used in HPC software analyses and optimizations. The goal is to make datasets and AI models FAIR.</rdfs:comment>
+        <owl:versionIRI>1.0.0</owl:versionIRI>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status">
+        <rdfs:comment>Indicates the status of the vocabulary (Recommnedation, Draft, etc.)</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes">
+        <rdfs:comment>one or more domains a property is associated with. Union semantics is used for multiple domains, instead of intersection semantics of rdfs:range</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
+        <rdfs:comment>Adding a link to a previous version helps to see how the vocabulary has changed from one to the other. Thanks to this relationship, tools like WIDOCO may create automated changelog sections in the documentation of an ontology.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
+        <rdfs:comment>It is always helpful to add examples on the intended usages of the ontology. Pointers to real examples are also valuable.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#atLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#atLocation">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#hasLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#actedOnBehalfOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#actedOnBehalfOf">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>Some agent acted on behalf of another agent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#after -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#after">
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#before"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#aiModel -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#aiModel">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#data"/>
+        <rdfs:comment>a project has an ai model</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#associatedSoftware -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#associatedSoftware"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#awardInstitution -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#awardInstitution">
+        <rdfs:comment>A funded project has an award insititution.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#before -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#before">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#benchmark -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#benchmark">
+        <rdfs:comment>Link to the associated benchmark software ID</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#conducted -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#conducted">
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasConductedBy"/>
+        <rdfs:comment>an agent conducted an activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#consistsOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#consistsOf"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#contributor -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#contributor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasAttributeTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#coprocessor -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#coprocessor">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#processor"/>
+        <rdfs:comment>a computer has a coprocessor</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#correspondsToArtifactTemplate -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#correspondsToArtifactTemplate">
+        <rdfs:comment>Artifact of an activity corresponds to a artifact template of a plan. Similar to opmv:correspondsToTemplateArtifact.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#correspondsToPlan -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#correspondsToPlan">
+        <rdfs:comment>Some activity corresponds to (follows) a plan.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#correspondsToStep -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#correspondsToStep">
+        <rdfs:comment>Some activity corresponds to a step of a plan. Similar to ompw:correspondsToTemplateProcess.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpu -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#cpu">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#processor"/>
+        <rdfs:comment>a computer has a cpu object linked</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#creator -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#creator">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#data -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#data">
+        <rdfs:comment>a project has data (dataset, aiModel ,etc). Derived from experiment generating or using the data.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#dataset -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#dataset">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#data"/>
+        <rdfs:comment>a project has a dataset</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#feed -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#feed">
+        <rdfs:comment>link to software which use this data as input: inverse of hpc:input or hpc:use</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#file -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#file">
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#File"/>
+        <rdfs:comment>a data object has an associated file</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#fundedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#fundedBy">
+        <rdfs:comment>a project is funded by some agencies</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#generated -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#generated">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#hadOutput"/>
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasGeneratedBy"/>
+        <rdfs:comment>Some activie generated some artifact</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#generates -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#generates">
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasGeneratedBy"/>
+        <rdfs:comment>Some activity/experiment generates some data (workflow, dataset, ai models, etc. )</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#graphLink -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#graphLink">
+        <rdfs:comment>the top level object properties for any links between AST nodes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hadInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hadInput">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#used"/>
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasUsedBy"/>
+        <rdfs:comment>Link to ids of input datasets used to generate this model (dataset)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hadMember -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hadMember">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>A collection had some member entity(thing).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hadOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hadOutput">
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasGeneratedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hadPrimarySource -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hadPrimarySource">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasDerivedFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasCompiler -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasCompiler"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasInput">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#uses"/>
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#isInputOf"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#ArtifactTemplate"/>
+        <rdfs:comment>A plan or step has some input artifact template</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasLocation">
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#Location"/>
+        <rdfs:comment>The location information of a computer or an organization</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasMember -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasMember">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#member"/>
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#memberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasNode -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasNode">
+        <rdfs:comment>Link a cluster to its login or compute nodes.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasOperatingSystem -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasOperatingSystem">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#operatingSystem"/>
+        <rdfs:comment>Link from a machine to OS software ID: RHEL version 8, the one runs on the computer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasOutput">
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#isOutputOf"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#ArtifactTemplate"/>
+        <rdfs:comment>A plan or step has some artifact template</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasPI -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasPI"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasSize -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasSize"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasVendor -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#hasVendor"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#invalidated -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#invalidated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasInvalidatedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isArtifactTemplateOfPlan -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isArtifactTemplateOfPlan">
+        <rdfs:comment>some artifact template belongs to a plan as input or output. simiar to opmw:isVariableOfTemplate</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isDecomposedAsPlan -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isDecomposedAsPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>MultiStep is decomposed to a Plan</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isDerivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isDerivedFrom">
+        <rdfs:comment>some artifact template is derived from another artifact template, after some steps.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isGeneratedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isGeneratedBy">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#isOutputOf"/>
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#ArtifactTemplate"/>
+        <rdfs:comment>Some artifact template is generated by a plan or step</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isInputOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isInputOf">
+        <rdfs:comment>some artifact template is an input of a plan or step</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isOutputOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isOutputOf">
+        <rdfs:comment>some artifact template is output of a plan or step</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isPartOf">
+        <rdfs:comment>is a part of bigger organization entities, used to support parent-child organization relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isPreceededBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isPreceededBy">
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#Step"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#Step"/>
+        <rdfs:comment>A step is preceeded by another step.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isStepOfPlan -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isStepOfPlan">
+        <rdfs:domain rdf:resource="https://hpc-fair.github.io/ontology#Step"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#Plan"/>
+        <rdfs:comment>a step is a step of a plan. Similar to opmw:isStepOfTemplate</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isSubPlanOfPlan -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isSubPlanOfPlan">
+        <rdfs:comment>A plan is a sub plan of another plan.  Linking MultiStep to its parent Plan.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isVariableTemplateOfPlan -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#isVariableTemplateOfPlan">
+        <rdfs:comment>similar to opmw:isVariableOfPlan.  Links a variable template to its plan</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#member -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#member">
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#memberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#memberOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#memberOf"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#next -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#next">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#prev"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#operatingSystem -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#operatingSystem"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#osFamily -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#osFamily">
+        <rdfs:comment>Linux, MacOS, Windows etc.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#prev -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#prev">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#processor -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#processor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>a computer node links to its processor node</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#programmingLanguage -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#programmingLanguage">
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+        <rdfs:comment>software is written in some programming language</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#project -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#project">
+        <rdfs:comment>something has a project associated</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ranOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#ranOn">
+        <rdfs:comment>Some software ran on some machine.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#runsOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#runsOn">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#supportedMachine"/>
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#Computer"/>
+        <rdfs:comment>software runs on some machine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#software -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#software">
+        <rdfs:comment>software used by a hardware devices.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#submitter -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#submitter">
+        <rdfs:comment>A person submits data into our system</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#supportedMachine -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#supportedMachine">
+        <rdfs:comment>some software package supports some type of machines</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#supportedOperatingSystem -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#supportedOperatingSystem">
+        <rdfs:comment>a software package supports some OS types</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#targetApplication -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#targetApplication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>target application an AI model supports</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#targetMachine -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#targetMachine">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">link to concrete computers an AI model supports to model</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#used -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#used">
+        <owl:inverseOf rdf:resource="https://hpc-fair.github.io/ontology#wasUsedBy"/>
+        <rdfs:comment>Activity/Experiment used some artifact as input</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#uses -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#uses">
+        <rdfs:range rdf:resource="https://hpc-fair.github.io/ontology#ArtifactTemplate"/>
+        <rdfs:comment>A plan or step uses some artifact template as input</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#usesWorkflow -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#usesWorkflow">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#correspondsToPlan"/>
+        <rdfs:comment>Some activity/experiment uses a workflow (plan). This is similar to opmw:correspondsToTemplate which link an execution instance to its workflow template (plan).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#vendor -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#vendor"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasAWH -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasAWH">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#wasAssociatedWithHardware"/>
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasAssociatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasAWS -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasAWS">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#wasAssociatedWithSoftware"/>
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasAssociatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasAssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasAssociatedWith">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>An activity was associated with some agent who had a role in conducting the activity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasAssociatedWithHardware -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasAssociatedWithHardware">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasAssociatedWith"/>
+        <rdfs:comment>some activity was associated with some hardware, such as runOn</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasAssociatedWithSoftware -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasAssociatedWithSoftware">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasAssociatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasAttributeTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasAttributeTo">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>Some artifact was attributed to an agent</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasConductedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasConductedBy">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#wasControlledBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasAssociatedWith"/>
+        <rdfs:comment>some activity was conducted by an agent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasControlledBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasControlledBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasDerivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasDerivedFrom">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>Some artifact was derived from another, after some processing. Simiar to prov-o:wasDerivedFrom</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasDerivedFromDataset -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasDerivedFromDataset">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasDerivedFrom"/>
+        <rdfs:comment>Some AI models were derived from datasets in the workflow pipeline</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasDerivedFromSoftware -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasDerivedFromSoftware">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasDerivedFromDataset"/>
+        <rdfs:comment>program analysis information (such as a call graph) was derivd from an input software</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasEndedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasEndedBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>An activity is deemed to have been ended by an entity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasGeneratedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasGeneratedBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>Link from Artifact to the activity/experiments generating the data</rdfs:comment>
+        <rdfs:comment>Some artifact was generated by some activity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasInfluencedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasInfluencedBy">
+        <rdfs:comment>Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasInformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasInformedBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasPreceededBy"/>
+        <rdfs:comment>Similar to prov:wasInformedBy. It indicates activity a1 happened before activity a2. And a2 used some artifact generated by a1.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasInvalidatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasInvalidatedBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>Artifact was invalidated by some activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasPreceededBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasPreceededBy">
+        <rdfs:comment>Some activity was preceeded by another activity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasQuotedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasQuotedFrom">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasDerivedFrom"/>
+        <rdfs:comment>A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasRevisionOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasRevisionOf">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasDerivedFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasStartedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasStartedBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>An activity was started by some agent</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#wasUsedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#wasUsedBy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#wasInfluencedBy"/>
+        <rdfs:comment>Link from artifact to experiment using it, reverse of hpc:used.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#workflow -->
+
+
+    <owl:ObjectProperty rdf:about="https://hpc-fair.github.io/ontology#workflow">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#data"/>
+        <rdfs:comment>Project has some workflow</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#accuracy -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#accuracy"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#affiliate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#affiliate"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#alternateName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#alternateName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#awardAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#awardAmount"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#city -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#city"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#codeVariant -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#codeVariant"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#computeNodeCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#computeNodeCount">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#continent -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#continent">
+        <rdfs:comment>located continent</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#coprocessorCores -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#coprocessorCores">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#coprocessorCountPerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#coprocessorCountPerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#coprocessorMemorySize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#coprocessorMemorySize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#coprocessorMemorySizePerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#coprocessorMemorySizePerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#coprocessorPeakPerformancePerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#coprocessorPeakPerformancePerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#coprocessorSpeed -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#coprocessorSpeed">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#frequency"/>
+        <rdfs:comment>The frequency of a coprocessor</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#count -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#count"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#country -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#country"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuArchitecture -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuArchitecture"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuCoreCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuCoreCount">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuCorePerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuCorePerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuCorePerSocket -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuCorePerSocket">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuFrequency -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuFrequency">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#frequency"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuMemorySizePerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuMemorySizePerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuPeakPerformancePerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuPeakPerformancePerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#date">
+        <rdfs:comment>date-related properties for a resource</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#dateCommissioned -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#dateCommissioned">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#description -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#description"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#discipline -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#discipline">
+        <rdfs:comment>The discipline to which a subject vocabulary belongs.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#dramFrequency -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#dramFrequency">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#frequency"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#endDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#endDate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#familyName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#familyName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#fileFormat -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#fileFormat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#fileName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#fileName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#fileSize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#fileSize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#firstReleaseDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#firstReleaseDate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#format -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#format">
+        <rdfs:comment>An AI models can be saved model, protobuf, onnx, h5, etc. format.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#frequency -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#frequency"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#gender -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#gender"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#generatedAtTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#generatedAtTime">
+        <rdfs:comment>An artifact was generated at a certain data-time stamp.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#givenName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#givenName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#harddriveSize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#harddriveSize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasHPCGPerformance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hasHPCGPerformance">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hasID">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#id"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasIDType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hasIDType">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#idType"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#homepage -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#homepage"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#id -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#id"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#idType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#idType"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#inputDataSize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#inputDataSize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#interconnect -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#interconnect"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#interconnectFamily -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#interconnectFamily"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#invalidatedAtTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#invalidatedAtTime">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#date"/>
+        <rdfs:comment>An artifact was destructed or expired at certain time</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isPlanned -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#isPlanned">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isPubliclyAccessible -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#isPubliclyAccessible">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>If Data is public or Private. True means is public.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#isTunable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#isTunable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#jobTile -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#jobTile"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#keyword -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#keyword">
+        <rdfs:comment>A property used to tag a resource with a keyword that is likely to be used in search queries.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#latestReleaseDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#latestReleaseDate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#license -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#license"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#loginNodeCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#loginNodeCount">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#machineLearningFramework -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#machineLearningFramework"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#mangledName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#mangledName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+        <rdfs:comment>Mangled name of a named programming language construct</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#md5 -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#md5"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#memoryAddress -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#memoryAddress"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#memoryBandwidth -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#memoryBandwidth">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#singleCPUMemoryBandwidth"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#memorySize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#memorySize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#name"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#numberOfCalls -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#numberOfCalls">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#params -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#params">
+        <rdfs:comment>configurable parameters for an AI model</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#percentage -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#percentage"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#performance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#performance"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#platform -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#platform"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#power -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#power">
+        <rdfs:comment>Power consumption in kW, Watt, GigaWatt etc. qudt:QuantityValue</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#powerEfficiency -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#powerEfficiency">
+        <rdfs:comment>Power efficiency e.g. GFlops/Watts</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#processorGeneration -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#processorGeneration">
+        <rdfs:comment>Processor generation information (used in Top500)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#processorPeakPerformance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#processorPeakPerformance">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+        <rdfs:comment>Processor peak performance per node, co-processs are excluded.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#processorTech -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#processorTech">
+        <rdfs:comment>Processor codename/model</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#programArea -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#programArea"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#programLanguage -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#programLanguage"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#publication -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#publication"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#qualifiedName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#qualifiedName">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#name"/>
+        <rdfs:comment>C++ qualified names for a function, variable, classs, namespace, etc.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#segment -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#segment">
+        <rdfs:comment>The field using HPC system (research, academic, industry, vendor)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#singleCPUMemoryBandwidth -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#singleCPUMemoryBandwidth"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#site -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#site">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment>Facitility/institution name hosting HPC machine</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#size -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#size"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#startDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#startDate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#state -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#state">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#subject -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#subject">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>link to related subjects or topics: performance modeling, image classification, text generation, etc.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#submitDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#submitDate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#supportsAccelerator -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#supportsAccelerator">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#systemArchitecture -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#systemArchitecture">
+        <rdfs:comment>the system architecture (MPP, cluster or others)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#systemModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#systemModel">
+        <rdfs:comment>high-level description of system model used by Top500
+Supercomputer Fugaku
+IBM Power System AC922
+Sunway MPP
+HPE Cray EX235n
+NVIDIA DGX A100</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#threadCountPerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#threadCountPerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#title -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#title">
+        <rdfs:comment>Title of an article, etc.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#top500FirstAppearance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#top500FirstAppearance"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#top500Rank -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#top500Rank"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#top500nhalf -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#top500nhalf">
+        <rdfs:comment>Problem size for achieving half of Rmax</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#top500nmax -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#top500nmax">
+        <rdfs:comment>Problem size for achieving Rmax</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterCPUCoreCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterCPUCoreCount">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#count"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterCPUPeakPerformance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterCPUPeakPerformance">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterCoProcressorPeakPerformance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterCoProcressorPeakPerformance">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterCoprocessorCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterCoprocessorCount"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterGPUPeakPerformance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterGPUPeakPerformance">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterMemorySize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterMemorySize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterPeakPerformance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterPeakPerformance">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalClusterProcessorPeakPerformance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalClusterProcessorPeakPerformance">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#totalPeakPerformancePerNode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#totalPeakPerformancePerNode">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#performance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#url -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#url">
+        <owl:equivalentProperty rdf:resource="https://hpc-fair.github.io/ontology#website"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#version -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#version"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#website -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#website"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#zip -->
+
+
+    <owl:DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#zip"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#AIModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#AIModel">
+        <owl:equivalentClass rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Data"/>
+        <rdfs:comment>Machine learning models or AI models
+
+- hpc:format	A models can be saved model, protobuf, onnx, h5, .caffemodel, etc. format. 
+- hpc:isTunable	Whether a model can be tuned during the runtime
+- hpc:params	configurable parameters for this model
+- hpc:machineLearningFramework	framework like TF, PyTorch, MXNet, etc. used to generate the model
+- hpc:modelType	domains to which the model belongs to, repsented by typeOf relation of class hierarchy
+- hps:supportsAccelerator	if yes, the model will run on GPU (or other ASICs like TPU, NPU) else CPU. 
+- hpc:accuracy	Accuracy of the model
+- hpc:overhead	Overhead of the model
+- hpc:wasDerivedFromDataset	Link to ids of input datasets used to generate this model, this can be derived from Experiment also
+- hpc:learningType	Learning type of the model
+- hpc:learningAlgorithm	The short form (or long form) name of the model architecture. This should be different from model type. Model type is more like &quot;tags&quot; for efficient search.
+- hpc:hyperParameter	List of hyperparameters; key-value pairs differnet from inputParameters.
+- hpc:modelProperty	Additional properties of the model to be stored in the key-value pair
+- hpc:inputShape	Input shape to be fed to the model
+- hpc:inputDatasetFormat	Input format of the dataset
+- hpc:isPlanned	If this is only a planned model object generated by a workflow</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Accelerator -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Accelerator">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Coprocessor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Action -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Action">
+        <owl:equivalentClass rdf:resource="https://hpc-fair.github.io/ontology#Activity"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Activity -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Activity">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Agent -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Agent">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Artifact -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Artifact">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#CreativeWork"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ArtifactTemplate -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ArtifactTemplate">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+        <rdfs:comment>input and output of planned activites. They are different from artifacts in that artifact templates are not yet instantiated, similar to formal arguments of a function.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Benchmark -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Benchmark">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#BuildingDataset -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#BuildingDataset">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#C -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#C">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CPU -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#CPU">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Processor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CSVDataset -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#CSVDataset">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CUDA -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#CUDA">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Cache -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Cache">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Memory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Cilk -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Cilk">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Cluster -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Cluster">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Computer"/>
+        <rdfs:comment>A computer cluster consists of multiple computers (or computation nodes). It inherits all properties of a Computer, with additional properties:
+
+- hpc:totalClusterCPUCoreCount  total cpu core count of a cluster
+- hpc:systemArchitecture        the system architecture (MPP, cluster or others)
+- hpc:computeNodeCount  number of compute nodes
+- hpc:loginNodeCount    
+- hpc:gpuNodeCount      
+- hpc:top500Rank        top500 ranking and its timestap
+- hpc:top500FirstAppearance     defintion TBD
+- hpc:description       The overall description from top500 list
+- hpc:site      siteID given by Top500 list
+- hpc:top500nmax        Problem size for achieving Rmax
+- hpc:top500nhalf       Problem size for achieving half of Rmax
+- hpc:hasHPCGPerformance        Achieved perormance using High Performance Conjugate Gradients (HPCG) Benchmark
+- hpc:systemModel       high-level description of system model used by Top500
+- hpc:totalClusterCoprocessorCount      total cpu core count of a cluster
+- hpc:totalCluserMemorySize
+- hpc:totalClusterProcessorPeakPerformance
+- hpc:totalClusterCoprocressorPeakPerformance   
+- hpc:totalClusterPeakPerformance       entire cluster&apos;s cpu+gpu performance
+- hpc:interconnectFamily        Infiniband, Custom Interconnect, Omnipath,...
+- hpc:interconnect      vendor and details describing interconnect
+- hpc:hasNode   link to its compute or login nodes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Clustering -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Clustering">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnsupervisedLearning"/>
+        <rdfs:comment>The action of clustering elements into different categories</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CoPrincipalInvestigator -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#CoPrincipalInvestigator">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#PrincipalInvestigator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Collection -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Collection">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Company -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Company">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Compiler -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Compiler">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Compiling -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Compiling">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Computer -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Computer">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Agent"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Hardware"/>
+        <rdfs:comment>Properties of a comuter system: 
+
+- hpc:processor Link to one or more CPU objects
+- hpc:processorCorePerNode      Number of CPU cores per machine
+- hpc:threadCountPerNode        Number of max threads supported
+- hpc:memorySize        size of main memory
+- hpc:harddriveSize     size of disks
+- hpc:coprocessor       link to one or more Coprocessor objects (includes GPU and accelerator)
+- hpc:coprocessorMemorySizePerNode      Total memory size from coprocessor.  This depends on number of coprocessor in a node
+- hpc:coprocessorCountPerNode	coprocessor count per node
+- hpc:totalPeakPerformancePerNode       entire node&apos;s cpu+gpu performance
+- hpc:hasOperatingSystem        Link to OS software ID: RHEL version 8, the one runs on the computer
+- hpc:osFamily  Linux, MacOS, Windows
+- hpc:hasCompiler       Link to one or more compilers: software IDs
+- hpc:gpuInterconnect   bus types connecting CPU and GPUs: NVILINK or others
+- hpc:power     Power consumption in kW
+- hpc:powerEfficiency   Power efficiency [GFlops/Watts]
+- hpc:hasRmax   The maximum achieved performance [TFlop/s]
+- hpc:hasRpeak  The theoretical peak performance [TFlop/s]
+- hpc:dateCommissioned  The year the workstation is built
+- hpc:site      Facility/institution name hosting HPC machine
+- hpc:city      located city
+- hpc:state     located state
+- hpc:country   located country
+- hpc:continent located continent
+- hpc:vendor    company manufacturing it
+- hpc:segment   The field using HPC system (research, academic, industry, vendor)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ConvolutionalNeuralNetwork -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ConvolutionalNeuralNetwork">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#FeedforwardNeuralNetwork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Coprocessor -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Coprocessor">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Processor"/>
+        <rdfs:comment>Properties of a coprocessor:
+
+- hpc:coprocessorPeakPerformancePerNode	Peak performance per node
+- hpc:coprocessorMemorySize	Memory size available to the coprocessor.  e.g. GPU global memory
+- hpc:coprocessorCores	number of cores in a coprocessor
+- hpc:coprocessorSpeed	Frequency of coprocessors</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CorrectnessTool -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#CorrectnessTool">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#CreativeWork -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#CreativeWork">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+        <rdfs:comment>The most generic kind of creative work, including papers, books, movies, photographs, software programs, etc.
+
+It inherits all properties from hpc:Thing, with the following additional properties:
+
+- hpc:license	Creative Commons Attribution License and its variants, or similar choices
+- hpc:version	Version number
+- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.
+- hpc:subject  List of subjects or topics: performance modeling, image classification, text generation, etc.
+- hpc:creator    People/organization who created the artifact
+- hpc:contributor    Link to contributors  (in URI) of the artifact
+- hpc:project    Associated projects
+- hpc:keyword    keywords
+- hpc:discipline  Disciplines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Data -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Data">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataClearning -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataClearning">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataFiltering -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataFiltering">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataFormatting -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataFormatting">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataGathering -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataGathering">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataMerging -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataMerging">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataProcessing -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataProcessing">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataTemplate -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataTemplate">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ArtifactTemplate"/>
+        <rdfs:comment>more complex artifact templates used as input and output of a plan</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DataVerifying -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DataVerifying">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DataProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DatabaseManagementSystem -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DatabaseManagementSystem">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Dataset -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Dataset">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Debugger -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Debugger">
+        <owl:equivalentClass rdf:resource="https://hpc-fair.github.io/ontology#DebuggingTool"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Debugging -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Debugging">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DebuggingTool -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DebuggingTool">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DecisionTree -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DecisionTree">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DeepNeuralNetwork -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DeepNeuralNetwork">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#DimensionReduction -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#DimensionReduction">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#UnsupervisedLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#EmptyCollection -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#EmptyCollection">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Executing -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Executing">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Experiment -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Experiment">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Activity"/>
+        <rdfs:comment>A kind of scientifc activity or process. It is an action or series of actions performed on or caused by artifacts, and resulting in new artifacts.
+New properties
+
+- hpc:hadInput	             Experiment-level input data (values, files, directory), same as hpc:used
+- hpc:hadOutput	Experiment-level generated data, same as hpc:generated
+- hpc:usedWorkflow	link to IDs of workflow objects
+- hpc:wasConductedBy	Person who conducted this activity
+- hpc:associatedSoftware	software used to conduct this activity
+- hpc:associatedHardware	hardware used to conduct this activity
+- hpc:wasStartedBy                 Agent started this activity
+- hpc:wasEndedBy                   Agent ended this activity
+- hpc:project	Associated projects, an activity can be funded by several projects</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#FeedforwardNeuralNetwork -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#FeedforwardNeuralNetwork">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#File -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#File">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Artifact"/>
+        <rdfs:comment>A file stored in a computer system. 
+
+Inheriting all properties from Artifact, with additional properties of this File class: 
+
+- hpc:version	Version number
+- hps:isPubliclyAccessible	Dataset is Public or Private. True means is public.
+- hpc:subject	Related subject keywords
+- hpc:contributor	List of contributors
+- hpc:project	List of associated projects
+- hpc:size	tar. .gz, csv, excel, etc
+- hpc:format	File size in bytes
+- hpc:md5	md5 checksum of the file</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Fortran -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Fortran">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#GPU -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#GPU">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Accelerator"/>
+        <rdfs:comment>NVIDIA GPU
+
+It has the follow properties:
+
+Performance properties (defined in the performance component)
+- hpc:cycle     cycle count of profiled code
+- hpc:executionTime     total execution time for this kernel.e.g
+- hpc:numberOfCalls     Number of calls to this kernel
+- hpc:averageExecutionTime      average kernel execution time(ms)
+- hpc:minExecutionTime  Minimal kernel execution time
+- hpc:maxExecutionTime  Maximal kernel execution time
+- hpc:executionTimePercentage   percentage of time spent in this kernel (%)
+- hpc:memoryThroughputRate      GPU memory throughput w.r.t. theoretical peak (%)
+- hpc:dramUtilizationRate       achieved DRAM utilization w.r.t. the theoretical maximum
+- hpc:streamingProcessorUtilizationRate SM throughput w.r.t. theoretical peak (%)
+- hpc:l1CacheUtilizationRate    achieved L1/Tex cache utilization w.r.t. the theoretical maximum
+- hpc:l2CacheUtilizationRate    achieved L2 cache utilization w.r.t. the theoretical maximum
+- hpc:achievedGPUOccupancy      Achieved profiled occupancy
+- hpc:achievedActiveWarpsPerSM  profiled active warps per SM
+- hpc:cpuPageFault      CPU page fault count
+- hpc:gpuPageFault      GPU page fault count
+- hpc:hostToDeviceTransferSize  Host to Device transfer size
+- hpc:deviceToHostTransferSize  Device to Host transfer size
+
+Hardware properties (defined in the GPU component)
+- hpc:dramFrequency     Frequency of DRAM
+- hpc:streamingMultiprocessorFrequency  Frequency of Streaming multiprocessor
+- hpc:activeCyclesOfStreamingMultiprocessor     Active cycle counts from SM
+- hpc:theoreticalActiveWarpsPerSM       Theoretical Active Warps per SM
+- hpc:theoreticalGPUOccupancy   Theoretical Occupancy
+- hpc:maxGPUThreadBlockSizeLimitedBySM  Max block limited by SM
+- hpc:maxGPUThreadBlockSizeLimitedByRegister    Max block limited by registers
+- hpc:maxGPUThreadBlockSizeLimitedBySharedMemory        Max block limited by shared memory
+- hpc:maxGPUThreadBlockSizeLimitedByWarps       Max block limited by warps
+
+Configuration properties (defined in the GPU component)
+- hpc:gpuThreadBlockSize        Launch block size
+- hpc:gpuThreadGridSize Launch grid size
+- hpc:registersPerThread        Launch register//thread
+- hpc:gpuSharedMemoryConfigurationSize  Launch shared memory configuration size
+- hpc:gpuDriverSharedMemorySizePerBlock 
+- hpc:gpuDynamicSharedMemorySizePerBlock
+- hpc:gpuStaticSharedMemorySizePerBlock Launch static shared memory
+- hpc:gpuThreadCount    GPU thread count
+- hpc:gpuWavesPerSM     Launch wave per SM
+- hpc:gpuUnifiedMemoryRemoteMapSize     Unified memory remote map</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#GPUSharedMemory -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#GPUSharedMemory">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#GeneralLinearModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#GeneralLinearModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#GeneralizedLinearModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#GeneralizedLinearModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Hardware -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Hardware">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+        <rdfs:comment>Properties
+
+- hpc:vendor	company manufacturing it</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#HiddenMarkovModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#HiddenMarkovModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#HierarchicalClustering -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#HierarchicalClustering">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Iterating -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Iterating">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Executing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Java -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Java">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#K-meansClustering -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#K-meansClustering">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#L1Cache -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#L1Cache">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Cache"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#L2Cache -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#L2Cache">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Cache"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#L3Cache -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#L3Cache">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Cache"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Library -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Library">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LinearDiscriminantAnalysis -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#LinearDiscriminantAnalysis">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DimensionReduction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LinearRegression -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#LinearRegression">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LinearRegressionModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#LinearRegressionModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Linking -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Linking">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Linux -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Linux">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Unix"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Location -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Location">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LogisticRegressionModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#LogisticRegressionModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#GeneralizedLinearModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#LongShortTermMemory -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#LongShortTermMemory">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#RecurrentNeuralNetwork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MPI -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MPI">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MachineLearning -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MachineLearning">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MachineLearningModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MachineLearningModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MachineLearningSoftware -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MachineLearningSoftware">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MarkovProcess -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MarkovProcess">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#SupervisedLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Memory -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Memory">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MicrosoftWindows -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MicrosoftWindows">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#OperatingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ModelEvaluation -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ModelEvaluation">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ModelTraining -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ModelTraining">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MultiStep -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MultiStep">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Plan"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Step"/>
+        <rdfs:comment>A collection of multiple steps. This can be viewed as both a step and a plan</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#MultipleLinearRegressionModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#MultipleLinearRegressionModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LinearRegressionModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#National_Laboratory -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#National_Laboratory">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#OpenACC -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#OpenACC">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#OpenMP -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#OpenMP">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#OperatingSystem -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#OperatingSystem">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Organization -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Organization">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Agent"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#POSIXThreads -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#POSIXThreads">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ParameterTemplate -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ParameterTemplate">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ArtifactTemplate"/>
+        <rdfs:comment>single parameter template</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PerformanceAnalysisTool -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#PerformanceAnalysisTool">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Perl -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Perl">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Person -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Person">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Plan -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Plan">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+        <rdfs:comment>A Plan of series actions to be done. A plan takes in conceptual artifacts( called artifact templates) and generate artifact templates.  A plan can be used by multiple activites which consume and generate concrete artifacts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PrincipalComponentAnalysis -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#PrincipalComponentAnalysis">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#DimensionReduction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#PrincipalInvestigator -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#PrincipalInvestigator">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Processor -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Processor">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Hardware"/>
+        <rdfs:comment>Properties of a processor
+
+- hpc:processorTech	Processor codename/model
+- hpc:processorGeneration	Processor generation information
+- hpc:processorCorePerSocket	number of cores in a socket
+- hpc:cpuFrequency	Frequency of CPUs
+- hpc:singleCPUMemoryBandwidth	Peak memory bandwidth
+- hpc:processorPeakPerformancePerNode	Peak performance</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Profiling -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Profiling">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Programmer -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Programmer">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ProgrammingLanguage -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ProgrammingModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ProgrammingModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Project -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Project">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+        <rdfs:comment>A research or development project. 
+
+It inherits all properties from hpc:Thing, with the following additional properties:	
+	
+- hpc:awardID	AwardID
+- hpc:hasPI	Project&apos;s principal investigator&apos;s id
+- hpc:awardInstitution    The institution awarded. A PI may have multiple instutitions, not all are awarded.
+- hpc:awardAmount	Annual funding in dollar amount
+- hpc:fundedBy	Organization funding this project, link to Organization table
+- hpc:startDate	Project start date
+- hpc:endDate	Project end date
+- hpc:programArea	e.g. DOE program areas such as computer science, energy, nuclear physics, fusion, biology, etc.
+- hpc:dataset	Link to one or more datasets
+- hpc:aiModel	Link to one of more AI models
+- hpc:data	Link to data
+- hpc:publication	Link to publications (DOIs, or URL)
+- hpc:member	Link to project members, reverse of hpc:memberOf
+- hpc:experiment	Link to experiments within this project, inverse of hpc:project</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Python -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Python">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#RandomForest -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#RandomForest">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#RecurrentNeuralNetwork -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#RecurrentNeuralNetwork">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Register -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Register">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Reinforcementlearning -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Reinforcementlearning">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Server -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Server">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#ShellScript -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#ShellScript">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SimpleLinearRegressionModel -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#SimpleLinearRegressionModel">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#LinearRegressionModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Software -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Software">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Agent"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SpectralClustering -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#SpectralClustering">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Clustering"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Step -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Step">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Thing"/>
+        <rdfs:comment>A step within a Plan</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#StreamingMultiprocessor -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#StreamingMultiprocessor">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SuperComputer -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#SuperComputer">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Cluster"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SupervisedLearning -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#SupervisedLearning">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#SupportVectorMachine -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#SupportVectorMachine">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearningModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TableColumn -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#TableColumn">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#CSVDataset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#TableRow -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#TableRow">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#CSVDataset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Thing -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Thing">
+        <rdfs:comment>A top level concept with the following properties
+
+- hpc:hasIDType Type of the ID
+- hpc:name  Name of the thing
+- hpc:alternateName An alias for this item
+- hpc:description Short description
+- hpc:url URL of official website of a thing, if any
+- hpc:submitter  Person who submits this info.
+- hpc:submitDate Date of submission</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Trainning -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Trainning">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#UPC -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#UPC">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#University -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#University">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Unix -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Unix">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#OperatingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#UnsupervisedLearning -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#UnsupervisedLearning">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#MachineLearning"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Vendor -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Vendor">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Warp -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Warp">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Workflow -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Workflow">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Data"/>
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Plan"/>
+        <rdfs:comment>similar to opmw:WorkflowTemplate. A subclass of Plan.
+
+Properties
+- hpc:hasInput	 Workflow is a subclass of a plan: it has input artifact or artifact template, same as hpc:uses
+- hpc:hasOutput   generated data (datasets, AI models), same as hpc:generates</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Workstation -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#Workstation">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#macOS -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#macOS">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#Unix"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#C++ -->
+
+
+    <owl:Class rdf:about="https://hpc-fair.github.io/ontology#C++">
+        <rdfs:subClassOf rdf:resource="https://hpc-fair.github.io/ontology#ProgrammingLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Collection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Collection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#EmptyCollection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Location -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Location">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Organization -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Organization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#Person">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Activity -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Activity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Agent -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Agent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Artifact -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Artifact">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Collection -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Collection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#EmptyCollection -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#EmptyCollection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#IBM -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#IBM">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Intel -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Intel">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Location -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Location">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Nvidia -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Nvidia">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Organization -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Organization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Person -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Person">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#Software -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#Software">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#lassen -->
+
+
+    <owl:NamedIndividual rdf:about="https://hpc-fair.github.io/ontology#lassen">
+        <rdf:type rdf:resource="https://hpc-fair.github.io/ontology#SuperComputer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:comment>Date when the vocabulary was created. There are different ways in which the date may be represented, but typically is with an xsd:dateTime literal. Note that some vocabularies, like schema.org, define their own object as range for the date property. We advise to look at the respective vocabulary specifications for more information.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment>Definition of the term. We recommend it to be as precise as possible, in order to avoid possible misunderstandings when reusing the ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <rdfs:comment>Source used to define the ontology term. This property is also used for crawlers, in order to refer to the ontology document in case they stumble upon a term.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment>A human readable label of the term.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment>
+            <rdf:Description/>
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionIRI">
+        <rdfs:comment>The IRI that identifies this version of your vocabulary.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+        <rdfs:comment>Details about the version being handled. We recommend to include, for example, the version number of the ontology (e.g., 1.0.1).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Activity">
+        <rdfs:comment>something that occurs over a period of time an acts upon or with entities. This is used to represent actions already been started, or done, happened already with concrete actors, timing , location..etc. information. 
+
+New properties
+
+- hpc:wasPrecededBy	Actions required before this action (e.g. data preprocessing)
+- hpc:wasInformedBy              Activity a2 used some artifact generated by Activity a1. 
+- hpc:wasAssociatedWith	Person who had a role in this activity
+- hpc:startDate	Activity start date
+- hpc:endDate	                        Activity end date</rdfs:comment>
+        <skos:exactMatch rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Agent">
+        <rdfs:comment>A person, organizationsoftware, computer, etc.which can conduct some activities</rdfs:comment>
+        <skos:exactMatch rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Artifact">
+        <rdfs:comment>A physical object or its digital representaton in a computer system
+
+It inherits all properties from hpc:Thing, with the following additional properties (combined inherited properties from hpc:CreativeWork):
+
+- hpc:version	Version number
+- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.
+- hpc:file  List of associated files
+- hpc:feed  Link to software which use this data as input: inverse of  hpc:input
+- hpc:project	Associated projects
+- hpc:wasGeneratedBy	Link to the experiments generating the data, reverse of hpc:hadOutput
+- hpc:wasUsedBy	Link to experiment using this data as input, reverse of hpc:hadInput
+- hpc:targetMachine	Link to target machines the data tries to support
+- hpc:targetApplication	Link to target applications the data tries to support
+- hpc:wasDerivedFrom	Some data was derived from other in the sequences of activities
+- hpc:hadPrimarySource	Derived from a primary source,  subproperty of wasDerivedFrom
+- hpc:wasRevisionOf	Derived from a previous version as a revision,  subproperty of wasDerivedFrom
+- hpc:wasQuotedFrom	artifact was quoted from a soure artifact, subproperty of wasDerivedFrom
+- hpc:invalidatedAtTime	Artifact was destroyed or became invalid at certain time
+- hpc:wasInvalidatedBy	Artifact was destroyed or invalidated by an activity
+- hpc:license	License of the artifact</rdfs:comment>
+        <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Collection">
+        <rdfs:comment>A special thing that provides a structure to some constiuents, whch are themselves things.</rdfs:comment>
+        <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#EmptyCollection">
+        <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Location">
+        <skos:exactMatch rdf:resource="http://www.w3.org/ns/prov#Location"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Organization">
+        <skos:exactMatch rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Person">
+        <rdfs:comment>Properties of a person
+
+- hpc:familyName	family name
+- hpc:givenName	given name
+- hpc:gender	male, female
+- hpc:title	Mr. Mrs, Ms, Dr. etc.
+- hpc:jobTitle	could be multiple
+- hpc:affiliation	could be multiple
+- hpc:homepage	URL of the person&apos;s homepage, either personal or work
+- hpc:memberOf	a member of an organization
+- hpc:conducted	Link to experiment IDs a person conducted</rdfs:comment>
+        <skos:exactMatch rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://hpc-fair.github.io/ontology#Software">
+        <rdfs:comment>Properties
+
+- hpc:programLanguage	list of languages used one to multiple
+- hpc:operatingSystem	Link to OS classes supported
+- hpc:firstReleaseDate	first release date
+- hpc:latestReleaseDate	latest release date
+- hpc:vendor	Link to vendors
+- hpc:runsOn	Link to a type of machine running the software, such as X86, IBM, Mac = hpc:supportedMachine
+- hpc:hasInput 	artifact used as input for software
+- hpc:hasOutput 	artifact generated by software</rdfs:comment>
+        <skos:exactMatch rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,129 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology ;
+   <http://purl.org/dc/elements/1.1/creator> "The HPC-FAIR research team" ;
+   <http://purl.org/dc/elements/1.1/description> "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them." ;
+   <http://purl.org/dc/elements/1.1/title> "HPC Ontology for AI Models" ;
+   <http://purl.org/dc/terms/license> "the Creative Commons Attribution 4.0" ;
+   <http://purl.org/vocab/vann/preferredNamespacePrefix> "hpc" ;
+   <http://purl.org/vocab/vann/preferredNamespaceUri> <https://hpc-fair.github.io/ontology#> ;
+   rdfs:comment "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them." ;
+   owl:versionIRI "1.0.0"
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://hpc-fair.github.io/ontology#decisionFeature
+<https://hpc-fair.github.io/ontology#decisionFeature> rdf:type owl:ObjectProperty ;
+                                                      rdfs:comment "For a decision tree node, the feature used as the left operand of the decision condition." .
+
+
+###  https://hpc-fair.github.io/ontology#decisionLabel
+<https://hpc-fair.github.io/ontology#decisionLabel> rdf:type owl:ObjectProperty ;
+                                                    rdfs:subPropertyOf <https://hpc-fair.github.io/ontology#graphLink> ;
+                                                    rdfs:comment "The final decision for a leaf node in a decisiontree" .
+
+
+###  https://hpc-fair.github.io/ontology#falseNode
+<https://hpc-fair.github.io/ontology#falseNode> rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf <https://hpc-fair.github.io/ontology#graphLink> ;
+                                                rdfs:comment "link from a decision tree node to its false child node" .
+
+
+###  https://hpc-fair.github.io/ontology#function
+<https://hpc-fair.github.io/ontology#function> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <https://hpc-fair.github.io/ontology#graphLink> ;
+                                               rdfs:comment "a call graph (or other program analysis info object) has a function node." .
+
+
+###  https://hpc-fair.github.io/ontology#graphLink
+<https://hpc-fair.github.io/ontology#graphLink> rdf:type owl:ObjectProperty .
+
+
+###  https://hpc-fair.github.io/ontology#trueNode
+<https://hpc-fair.github.io/ontology#trueNode> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <https://hpc-fair.github.io/ontology#graphLink> ;
+                                               rdfs:comment "link from a decision tree node to its true child node" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://hpc-fair.github.io/ontology#hasChildNode
+<https://hpc-fair.github.io/ontology#hasChildNode> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:range xsd:boolean ;
+                                                   rdfs:comment "If a decision tree node has child nodes or not." .
+
+
+###  https://hpc-fair.github.io/ontology#relationValue
+<https://hpc-fair.github.io/ontology#relationValue> rdf:type owl:DatatypeProperty .
+
+
+###  https://hpc-fair.github.io/ontology#treeNodeLevel
+<https://hpc-fair.github.io/ontology#treeNodeLevel> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:comment "The level of a tree, starting from 0 for the root node" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://hpc-fair.github.io/ontology#Artifact
+<https://hpc-fair.github.io/ontology#Artifact> rdf:type owl:Class .
+
+
+###  https://hpc-fair.github.io/ontology#DecisionTree
+<https://hpc-fair.github.io/ontology#DecisionTree> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://hpc-fair.github.io/ontology#MachineLearningModel> .
+
+
+###  https://hpc-fair.github.io/ontology#DecisionTreeNode
+<https://hpc-fair.github.io/ontology#DecisionTreeNode> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://hpc-fair.github.io/ontology#Artifact> .
+
+
+###  https://hpc-fair.github.io/ontology#MachineLearningModel
+<https://hpc-fair.github.io/ontology#MachineLearningModel> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

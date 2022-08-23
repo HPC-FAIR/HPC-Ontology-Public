@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <Ontology>
+        <dc:creator>The HPC-FAIR research team</dc:creator>
+        <dc:description>The HPC-FAIR for Performance portion of the ontology provides data annotation properties relating to different aspects that affect the execution of a program. Timing, profiling, and diagnostic information are able to be encoded with these properties.</dc:description>
+        <dc:title>HPC Ontology for Performance</dc:title>
+        <terms:license>the Creative Commons Attribution 4.0</terms:license>
+        <vann:preferredNamespacePrefix>hpc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://hpc-fair.github.io/ontology#"/>
+        <versionIRI>1.0.0</versionIRI>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#achievedActiveWarpsPerSM -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#achievedActiveWarpsPerSM"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#achievedGPUOccupancy -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#achievedGPUOccupancy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#occupancy"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#activeCyclesOfStreamingMultiprocessor -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#activeCyclesOfStreamingMultiprocessor">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#cycle"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#averageExecutionTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#averageExecutionTime">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#executionTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#codeVariant -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#codeVariant"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cpuPageFault -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cpuPageFault">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#pageFault"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#cycle -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#cycle"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#dataTransferSize -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#dataTransferSize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#size"/>
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Memory"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#deviceToHostTransferSize -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#deviceToHostTransferSize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#dataTransferSize"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#dramUtilizationRate -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#dramUtilizationRate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#percentage"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#executionTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#executionTime"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#executionTimePercentage -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#executionTimePercentage">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#percentage"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#gpuPageFault -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#gpuPageFault">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#pageFault"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasRmax -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hasRmax">
+        <rdfs:comment>The maximum achieved performance [TFlop/s]</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hasRpeak -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hasRpeak">
+        <rdfs:comment>The theoretical peak performance [TFlop/s]</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#hostToDeviceTransferSize -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#hostToDeviceTransferSize">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#dataTransferSize"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#l1CacheUitlizationRate -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#l1CacheUitlizationRate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#percentage"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#l2CacheUtilizationRate -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#l2CacheUtilizationRate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#percentage"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#labeledCodeVariant -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#labeledCodeVariant">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#codeVariant"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#maxExecutionTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#maxExecutionTime">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#executionTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#memoryOccupancy -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#memoryOccupancy">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#occupancy"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#memoryThroughputRate -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#memoryThroughputRate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#percentage"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#minExecutionTime -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#minExecutionTime">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#executionTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#occupancy -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#occupancy"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#overhead -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#overhead"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#pageFault -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#pageFault">
+        <schema:domainIncludes rdf:resource="https://hpc-fair.github.io/ontology#Memory"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#percentage -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#percentage"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#size -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#size"/>
+    
+
+
+    <!-- https://hpc-fair.github.io/ontology#streamingProcessorUtilizationRate -->
+
+
+    <DatatypeProperty rdf:about="https://hpc-fair.github.io/ontology#streamingProcessorUtilizationRate">
+        <rdfs:subPropertyOf rdf:resource="https://hpc-fair.github.io/ontology#percentage"/>
+    </DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

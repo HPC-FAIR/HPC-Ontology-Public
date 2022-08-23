@@ -1,0 +1,810 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://hpc-fair.github.io/ontology", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "HPC Ontology for GPU"
+    },
+    "iri" : "No IRI set",
+    "author" : [ "The HPC-FAIR research team" ],
+    "description" : {
+      "undefined" : "The HPC-FAIR GPU portion of the ontology provides properties relating to technical aspects of a GPU."
+    },
+    "comments" : {
+      "undefined" : "The HPC-FAIR GPU portion of the ontology provides properties relating to technical aspects of a GPU."
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "the Creative Commons Attribution 4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "The HPC-FAIR research team",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "hpc",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "HPC Ontology for GPU",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://hpc-fair.github.io/ontology#pageFault",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "pageFault"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuArchitecture",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "gpuArchitecture"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#theoreticalGPUOccupancy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "theoreticalGPUOccupancy"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuNodeCount",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "gpuNodeCount"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuMemorySizePerNode",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "gpuMemorySizePerNode"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySharedMemory",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "maxGPUThreadBlockSizeLimitedBySharedMemory"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuThreadBlockSize",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "gpuThreadBlockSize"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#frequency",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "frequency"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuUnifiedMemoryRemoteMapSize",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "gpuUnifiedMemoryRemoteMapSize"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuModel",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "gpuModel"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuFrequency",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "gpuFrequency"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuInterconnect",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "gpuInterconnect"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "bus types connecting CPU and GPUs: NVILINK or others"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuPeakPerformancePerNode",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "gpuPeakPerformancePerNode"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByRegister",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "maxGPUThreadBlockSizeLimitedByRegister"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuWavesPerSM",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "gpuWavesPerSM"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#registersPerThread",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "registersPerThread"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuDriverSharedMemorySizePerBlock",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "gpuDriverSharedMemorySizePerBlock"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#coprocessorSpeed",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "coprocessorSpeed"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuSharedMemoryConfigurationSize",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "gpuSharedMemoryConfigurationSize"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedBySM",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "maxGPUThreadBlockSizeLimitedBySM"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#theoreticalActiveWarpsPerSM",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "theoreticalActiveWarpsPerSM"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#maxGPUThreadBlockSizeLimitedByWarps",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "maxGPUThreadBlockSizeLimitedByWarps"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#count",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "count"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#size",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "size"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuDynamicSharedMemorySizePerBlock",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "gpuDynamicSharedMemorySizePerBlock"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuStaticSharedMemorySizePerBlock",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "gpuStaticSharedMemorySizePerBlock"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#performance",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "performance"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuThreadGridSize",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "gpuThreadGridSize"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#occupancy",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "occupancy"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#gpuThreadCount",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "gpuThreadCount"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#streamingMultiprocessorFrequency",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "streamingMultiprocessorFrequency"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "63"
+  } ]
+}

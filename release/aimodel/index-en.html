@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>HPC Ontology for AI Models</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://hpc-fair.github.io/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://hpc-fair.github.io/ontology#","name":"HPC Ontology for AI Models", "headline":"The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them.", "datePublished":"Tue Aug 16 18:51:38 EDT 2022", "author":[{"@type":"Person","name":"The HPC-FAIR research team"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>HPC Ontology for AI Models</h1>
+
+
+<dl>
+<dt>Authors:</dt>
+<dd>The HPC-FAIR research team</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-the%20Creative%20Commons%20Attribution%204.0-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>The HPC-FAIR research team. HPC Ontology for AI Models.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The AI Model portion of the HPC-FAIR Ontology provides two classes to describe a decision tree (along with its nodes) along with various properties. This portion is minimal and can be used in conjunction with other portions of the ontology.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>hpc</b></td><td>&lt;https://hpc-fair.github.io/ontology#&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+<tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>hpc</b></td><td>&lt;https://hpc-fair.github.io/ontology&gt;</td></tr>
+<tr><td><b>bibo</b></td><td>&lt;http://purl.org/ontology/bibo&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">HPC Ontology for AI Models: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#DecisionTree" title="https://hpc-fair.github.io/ontology#DecisionTree">
+         <span>decision tree</span>
+      </a>
+   </li>
+   <li>
+      <a href="#DecisionTreeNode"
+         title="https://hpc-fair.github.io/ontology#DecisionTreeNode">
+         <span>decision tree node</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#decisionFeature"
+         title="https://hpc-fair.github.io/ontology#decisionFeature">
+         <span>decision feature</span>
+      </a>
+   </li>
+   <li>
+      <a href="#decisionLabel" title="https://hpc-fair.github.io/ontology#decisionLabel">
+         <span>decision label</span>
+      </a>
+   </li>
+   <li>
+      <a href="#falseNode" title="https://hpc-fair.github.io/ontology#falseNode">
+         <span>false node</span>
+      </a>
+   </li>
+   <li>
+      <a href="#function" title="https://hpc-fair.github.io/ontology#function">
+         <span>function</span>
+      </a>
+   </li>
+   <li>
+      <a href="#trueNode" title="https://hpc-fair.github.io/ontology#trueNode">
+         <span>true node</span>
+      </a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#hasChildNode" title="https://hpc-fair.github.io/ontology#hasChildNode">
+         <span>has child node</span>
+      </a>
+   </li>
+   <li>
+      <a href="#treeNodeLevel"
+         title="https://hpc-fair.github.io/ontology#treeNodeLevel">
+         <span>tree node level</span>
+      </a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">HPC Ontology for AI Models: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Information for the AI Model portion of the ontology can be found above in the introduction.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for HPC Ontology for AI Models classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by HPC Ontology for AI Models.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#DecisionTree" title="https://hpc-fair.github.io/ontology#DecisionTree">
+            <span>decision tree</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DecisionTreeNode"
+            title="https://hpc-fair.github.io/ontology#DecisionTreeNode">
+            <span>decision tree node</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="DecisionTree">
+      <h3>decision tree<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#DecisionTree</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="https://hpc-fair.github.io/ontology#MachineLearningModel"
+               target="_blank"
+               title="https://hpc-fair.github.io/ontology#MachineLearningModel">machine learning model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DecisionTreeNode">
+      <h3>decision tree node<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#DecisionTreeNode</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="https://hpc-fair.github.io/ontology#Artifact"
+               target="_blank"
+               title="https://hpc-fair.github.io/ontology#Artifact">artifact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#decisionFeature"
+            title="https://hpc-fair.github.io/ontology#decisionFeature">
+            <span>decision feature</span>
+         </a>
+      </li>
+      <li>
+         <a href="#decisionLabel" title="https://hpc-fair.github.io/ontology#decisionLabel">
+            <span>decision label</span>
+         </a>
+      </li>
+      <li>
+         <a href="#falseNode" title="https://hpc-fair.github.io/ontology#falseNode">
+            <span>false node</span>
+         </a>
+      </li>
+      <li>
+         <a href="#function" title="https://hpc-fair.github.io/ontology#function">
+            <span>function</span>
+         </a>
+      </li>
+      <li>
+         <a href="#trueNode" title="https://hpc-fair.github.io/ontology#trueNode">
+            <span>true node</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="decisionFeature">
+      <h3>decision feature<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#decisionFeature</p>
+      <div class="comment">
+         <span class="markdown">For a decision tree node, the feature used as the left operand of the decision condition.</span>
+      </div>
+   </div>
+   <div class="entity" id="decisionLabel">
+      <h3>decision label<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#decisionLabel</p>
+      <div class="comment">
+         <span class="markdown">The final decision for a leaf node in a decisiontree</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://hpc-fair.github.io/ontology#graphLink"
+                  target="_blank"
+                  title="https://hpc-fair.github.io/ontology#graphLink">graph link</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="falseNode">
+      <h3>false node<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#falseNode</p>
+      <div class="comment">
+         <span class="markdown">link from a decision tree node to its false child node</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://hpc-fair.github.io/ontology#graphLink"
+                  target="_blank"
+                  title="https://hpc-fair.github.io/ontology#graphLink">graph link</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="function">
+      <h3>function<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#function</p>
+      <div class="comment">
+         <span class="markdown">a call graph (or other program analysis info object) has a function node.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://hpc-fair.github.io/ontology#graphLink"
+                  target="_blank"
+                  title="https://hpc-fair.github.io/ontology#graphLink">graph link</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="trueNode">
+      <h3>true node<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#trueNode</p>
+      <div class="comment">
+         <span class="markdown">link from a decision tree node to its true child node</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://hpc-fair.github.io/ontology#graphLink"
+                  target="_blank"
+                  title="https://hpc-fair.github.io/ontology#graphLink">graph link</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasChildNode" title="https://hpc-fair.github.io/ontology#hasChildNode">
+            <span>has child node</span>
+         </a>
+      </li>
+      <li>
+         <a href="#treeNodeLevel"
+            title="https://hpc-fair.github.io/ontology#treeNodeLevel">
+            <span>tree node level</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasChildNode">
+      <h3>has child node<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#hasChildNode</p>
+      <div class="comment">
+         <span class="markdown">If a decision tree node has child nodes or not.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="treeNodeLevel">
+      <h3>tree node level<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://hpc-fair.github.io/ontology#treeNodeLevel</p>
+      <div class="comment">
+         <span class="markdown">The level of a tree, starting from 0 for the root node</span>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+   * [AI Model](/aimodel/index-en.html)
+   * [Core](/core/index-en.html)
+   * [GPU](/gpu/index-en.html)
+   * [ORCID](/orcid/index-en.html)
+   * [Performance](/performance/index-en.html)
+   * [Program](/program/index-en.html)</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

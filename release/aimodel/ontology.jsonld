@@ -1,0 +1,130 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "The HPC-FAIR research team"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "HPC Ontology for AI Models"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "the Creative Commons Attribution 4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "hpc"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Artifact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DecisionTree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DecisionTreeNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Artifact"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#decisionFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "For a decision tree node, the feature used as the left operand of the decision condition."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#decisionLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The final decision for a leaf node in a decisiontree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#falseNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "link from a decision tree node to its false child node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a call graph (or other program analysis info object) has a function node."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#graphLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasChildNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If a decision tree node has child nodes or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#relationValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#treeNodeLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The level of a tree, starting from 0 for the root node"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#trueNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "link from a decision tree node to its true child node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#graphLink"
+  } ]
+} ]

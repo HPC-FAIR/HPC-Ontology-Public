@@ -1,0 +1,2387 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date when the vocabulary was created. There are different ways in which the date may be represented, but typically is with an xsd:dateTime literal. Note that some vocabularies, like schema.org, define their own object as range for the date property. We advise to look at the respective vocabulary specifications for more information."
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the status of the vocabulary (Recommnedation, Draft, etc.)"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "one or more domains a property is associated with. Union semantics is used for multiple domains, instead of intersection semantics of rdfs:range"
+  } ]
+}, {
+  "@id" : "http://schema.org/rangeIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Definition of the term. We recommend it to be as precise as possible, in order to avoid possible misunderstandings when reusing the ontology."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Source used to define the ontology term. This property is also used for crawlers, in order to refer to the ontology document in case they stumble upon a term."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A human readable label of the term."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#priorVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Adding a link to a previous version helps to see how the vocabulary has changed from one to the other. Thanks to this relationship, tools like WIDOCO may create automated changelog sections in the documentation of an ontology."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The IRI that identifies this version of your vocabulary."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Details about the version being handled. We recommend to include, for example, the version number of the ontology (e.g., 1.0.1)."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is always helpful to add examples on the intended usages of the ontology. Pointers to real examples are also valuable."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#EmptyCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#SoftwareAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#atLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hasLocation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "The HPC-FAIR research team"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The HPC Ontology describes software, hardware, and artifacts in the domain\nof High-Performance Computing. It can be used to annotate training\n datasets and machine learning models used in HPC software analyses \nand optimizations. The goal is to make datasets and AI models FAIR."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "HPC Ontology"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2021-09-23T13:30:00-07:00"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "the Creative Commons Attribution 4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "hpc"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The HPC Ontology describes software, hardware, and artifacts in the domain of High-Performance Computing. It can be used to annotate training datasets and machine learning models used in HPC software analyses and optimizations. The goal is to make datasets and AI models FAIR."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology/1.0.0"
+  }, {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#AIModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Machine learning models or AI models\n\n- hpc:format\tA models can be saved model, protobuf, onnx, h5, .caffemodel, etc. format. \n- hpc:isTunable\tWhether a model can be tuned during the runtime\n- hpc:params\tconfigurable parameters for this model\n- hpc:machineLearningFramework\tframework like TF, PyTorch, MXNet, etc. used to generate the model\n- hpc:modelType\tdomains to which the model belongs to, repsented by typeOf relation of class hierarchy\n- hps:supportsAccelerator\tif yes, the model will run on GPU (or other ASICs like TPU, NPU) else CPU. \n- hpc:accuracy\tAccuracy of the model\n- hpc:overhead\tOverhead of the model\n- hpc:wasDerivedFromDataset\tLink to ids of input datasets used to generate this model, this can be derived from Experiment also\n- hpc:learningType\tLearning type of the model\n- hpc:learningAlgorithm\tThe short form (or long form) name of the model architecture. This should be different from model type. Model type is more like \"tags\" for efficient search.\n- hpc:hyperParameter\tList of hyperparameters; key-value pairs differnet from inputParameters.\n- hpc:modelProperty\tAdditional properties of the model to be stored in the key-value pair\n- hpc:inputShape\tInput shape to be fed to the model\n- hpc:inputDatasetFormat\tInput format of the dataset\n- hpc:isPlanned\tIf this is only a planned model object generated by a workflow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Data"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Accelerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Coprocessor"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Activity"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "something that occurs over a period of time an acts upon or with entities. This is used to represent actions already been started, or done, happened already with concrete actors, timing , location..etc. information. \n\nNew properties\n\n- hpc:wasPrecededBy\tActions required before this action (e.g. data preprocessing)\n- hpc:wasInformedBy              Activity a2 used some artifact generated by Activity a1. \n- hpc:wasAssociatedWith\tPerson who had a role in this activity\n- hpc:startDate\tActivity start date\n- hpc:endDate\t                        Activity end date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person, organizationsoftware, computer, etc.which can conduct some activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Artifact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A physical object or its digital representaton in a computer system\n\nIt inherits all properties from hpc:Thing, with the following additional properties (combined inherited properties from hpc:CreativeWork):\n\n- hpc:version\tVersion number\n- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.\n- hpc:file  List of associated files\n- hpc:feed  Link to software which use this data as input: inverse of  hpc:input\n- hpc:project\tAssociated projects\n- hpc:wasGeneratedBy\tLink to the experiments generating the data, reverse of hpc:hadOutput\n- hpc:wasUsedBy\tLink to experiment using this data as input, reverse of hpc:hadInput\n- hpc:targetMachine\tLink to target machines the data tries to support\n- hpc:targetApplication\tLink to target applications the data tries to support\n- hpc:wasDerivedFrom\tSome data was derived from other in the sequences of activities\n- hpc:hadPrimarySource\tDerived from a primary source,  subproperty of wasDerivedFrom\n- hpc:wasRevisionOf\tDerived from a previous version as a revision,  subproperty of wasDerivedFrom\n- hpc:wasQuotedFrom\tartifact was quoted from a soure artifact, subproperty of wasDerivedFrom\n- hpc:invalidatedAtTime\tArtifact was destroyed or became invalid at certain time\n- hpc:wasInvalidatedBy\tArtifact was destroyed or invalidated by an activity\n- hpc:license\tLicense of the artifact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#CreativeWork"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ArtifactTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "input and output of planned activites. They are different from artifacts in that artifact templates are not yet instantiated, similar to formal arguments of a function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Benchmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#BuildingDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#C++",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CPU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Processor"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CSVDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Dataset"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CUDA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Cache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Memory"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Cilk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Cluster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A computer cluster consists of multiple computers (or computation nodes). It inherits all properties of a Computer, with additional properties:\n\n- hpc:totalClusterCPUCoreCount  total cpu core count of a cluster\n- hpc:systemArchitecture        the system architecture (MPP, cluster or others)\n- hpc:computeNodeCount  number of compute nodes\n- hpc:loginNodeCount    \n- hpc:gpuNodeCount      \n- hpc:top500Rank        top500 ranking and its timestap\n- hpc:top500FirstAppearance     defintion TBD\n- hpc:description       The overall description from top500 list\n- hpc:site      siteID given by Top500 list\n- hpc:top500nmax        Problem size for achieving Rmax\n- hpc:top500nhalf       Problem size for achieving half of Rmax\n- hpc:hasHPCGPerformance        Achieved perormance using High Performance Conjugate Gradients (HPCG) Benchmark\n- hpc:systemModel       high-level description of system model used by Top500\n- hpc:totalClusterCoprocessorCount      total cpu core count of a cluster\n- hpc:totalCluserMemorySize\n- hpc:totalClusterProcessorPeakPerformance\n- hpc:totalClusterCoprocressorPeakPerformance   \n- hpc:totalClusterPeakPerformance       entire cluster's cpu+gpu performance\n- hpc:interconnectFamily        Infiniband, Custom Interconnect, Omnipath,...\n- hpc:interconnect      vendor and details describing interconnect\n- hpc:hasNode   link to its compute or login nodes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Computer"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Clustering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The action of clustering elements into different categories"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnsupervisedLearning"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CoPrincipalInvestigator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#PrincipalInvestigator"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A special thing that provides a structure to some constiuents, whch are themselves things."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Collection"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Organization"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Compiler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Compiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Computer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties of a comuter system: \n\n- hpc:processor Link to one or more CPU objects\n- hpc:processorCorePerNode      Number of CPU cores per machine\n- hpc:threadCountPerNode        Number of max threads supported\n- hpc:memorySize        size of main memory\n- hpc:harddriveSize     size of disks\n- hpc:coprocessor       link to one or more Coprocessor objects (includes GPU and accelerator)\n- hpc:coprocessorMemorySizePerNode      Total memory size from coprocessor.  This depends on number of coprocessor in a node\n- hpc:coprocessorCountPerNode\tcoprocessor count per node\n- hpc:totalPeakPerformancePerNode       entire node's cpu+gpu performance\n- hpc:hasOperatingSystem        Link to OS software ID: RHEL version 8, the one runs on the computer\n- hpc:osFamily  Linux, MacOS, Windows\n- hpc:hasCompiler       Link to one or more compilers: software IDs\n- hpc:gpuInterconnect   bus types connecting CPU and GPUs: NVILINK or others\n- hpc:power     Power consumption in kW\n- hpc:powerEfficiency   Power efficiency [GFlops/Watts]\n- hpc:hasRmax   The maximum achieved performance [TFlop/s]\n- hpc:hasRpeak  The theoretical peak performance [TFlop/s]\n- hpc:dateCommissioned  The year the workstation is built\n- hpc:site      Facility/institution name hosting HPC machine\n- hpc:city      located city\n- hpc:state     located state\n- hpc:country   located country\n- hpc:continent located continent\n- hpc:vendor    company manufacturing it\n- hpc:segment   The field using HPC system (research, academic, industry, vendor)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Agent"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ConvolutionalNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#FeedforwardNeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Coprocessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties of a coprocessor:\n\n- hpc:coprocessorPeakPerformancePerNode\tPeak performance per node\n- hpc:coprocessorMemorySize\tMemory size available to the coprocessor.  e.g. GPU global memory\n- hpc:coprocessorCores\tnumber of cores in a coprocessor\n- hpc:coprocessorSpeed\tFrequency of coprocessors"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Processor"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CorrectnessTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The most generic kind of creative work, including papers, books, movies, photographs, software programs, etc.\n\nIt inherits all properties from hpc:Thing, with the following additional properties:\n\n- hpc:license\tCreative Commons Attribution License and its variants, or similar choices\n- hpc:version\tVersion number\n- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.\n- hpc:subject  List of subjects or topics: performance modeling, image classification, text generation, etc.\n- hpc:creator    People/organization who created the artifact\n- hpc:contributor    Link to contributors  (in URI) of the artifact\n- hpc:project    Associated projects\n- hpc:keyword    keywords\n- hpc:discipline  Disciplines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Artifact"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataClearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DataProcessing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataFiltering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DataProcessing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataFormatting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DataProcessing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataGathering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataMerging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DataProcessing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataProcessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "more complex artifact templates used as input and output of a plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtifactTemplate"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DataVerifying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DataProcessing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DatabaseManagementSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Data"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Debugger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DebuggingTool"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Debugging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DebuggingTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DecisionTree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DeepNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#DimensionReduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#UnsupervisedLearning"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#EmptyCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#EmptyCollection"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Executing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Experiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A kind of scientifc activity or process. It is an action or series of actions performed on or caused by artifacts, and resulting in new artifacts.\nNew properties\n\n- hpc:hadInput\t             Experiment-level input data (values, files, directory), same as hpc:used\n- hpc:hadOutput\tExperiment-level generated data, same as hpc:generated\n- hpc:usedWorkflow\tlink to IDs of workflow objects\n- hpc:wasConductedBy\tPerson who conducted this activity\n- hpc:associatedSoftware\tsoftware used to conduct this activity\n- hpc:associatedHardware\thardware used to conduct this activity\n- hpc:wasStartedBy                 Agent started this activity\n- hpc:wasEndedBy                   Agent ended this activity\n- hpc:project\tAssociated projects, an activity can be funded by several projects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Activity"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#FeedforwardNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#File",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A file stored in a computer system. \n\nInheriting all properties from Artifact, with additional properties of this File class: \n\n- hpc:version\tVersion number\n- hps:isPubliclyAccessible\tDataset is Public or Private. True means is public.\n- hpc:subject\tRelated subject keywords\n- hpc:contributor\tList of contributors\n- hpc:project\tList of associated projects\n- hpc:size\ttar. .gz, csv, excel, etc\n- hpc:format\tFile size in bytes\n- hpc:md5\tmd5 checksum of the file"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Artifact"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Fortran",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#GPU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "NVIDIA GPU\n\nIt has the follow properties:\n\nPerformance properties (defined in the performance component)\n- hpc:cycle     cycle count of profiled code\n- hpc:executionTime     total execution time for this kernel.e.g\n- hpc:numberOfCalls     Number of calls to this kernel\n- hpc:averageExecutionTime      average kernel execution time(ms)\n- hpc:minExecutionTime  Minimal kernel execution time\n- hpc:maxExecutionTime  Maximal kernel execution time\n- hpc:executionTimePercentage   percentage of time spent in this kernel (%)\n- hpc:memoryThroughputRate      GPU memory throughput w.r.t. theoretical peak (%)\n- hpc:dramUtilizationRate       achieved DRAM utilization w.r.t. the theoretical maximum\n- hpc:streamingProcessorUtilizationRate SM throughput w.r.t. theoretical peak (%)\n- hpc:l1CacheUtilizationRate    achieved L1/Tex cache utilization w.r.t. the theoretical maximum\n- hpc:l2CacheUtilizationRate    achieved L2 cache utilization w.r.t. the theoretical maximum\n- hpc:achievedGPUOccupancy      Achieved profiled occupancy\n- hpc:achievedActiveWarpsPerSM  profiled active warps per SM\n- hpc:cpuPageFault      CPU page fault count\n- hpc:gpuPageFault      GPU page fault count\n- hpc:hostToDeviceTransferSize  Host to Device transfer size\n- hpc:deviceToHostTransferSize  Device to Host transfer size\n\nHardware properties (defined in the GPU component)\n- hpc:dramFrequency     Frequency of DRAM\n- hpc:streamingMultiprocessorFrequency  Frequency of Streaming multiprocessor\n- hpc:activeCyclesOfStreamingMultiprocessor     Active cycle counts from SM\n- hpc:theoreticalActiveWarpsPerSM       Theoretical Active Warps per SM\n- hpc:theoreticalGPUOccupancy   Theoretical Occupancy\n- hpc:maxGPUThreadBlockSizeLimitedBySM  Max block limited by SM\n- hpc:maxGPUThreadBlockSizeLimitedByRegister    Max block limited by registers\n- hpc:maxGPUThreadBlockSizeLimitedBySharedMemory        Max block limited by shared memory\n- hpc:maxGPUThreadBlockSizeLimitedByWarps       Max block limited by warps\n\nConfiguration properties (defined in the GPU component)\n- hpc:gpuThreadBlockSize        Launch block size\n- hpc:gpuThreadGridSize Launch grid size\n- hpc:registersPerThread        Launch register//thread\n- hpc:gpuSharedMemoryConfigurationSize  Launch shared memory configuration size\n- hpc:gpuDriverSharedMemorySizePerBlock \n- hpc:gpuDynamicSharedMemorySizePerBlock\n- hpc:gpuStaticSharedMemorySizePerBlock Launch static shared memory\n- hpc:gpuThreadCount    GPU thread count\n- hpc:gpuWavesPerSM     Launch wave per SM\n- hpc:gpuUnifiedMemoryRemoteMapSize     Unified memory remote map"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Accelerator"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#GPUSharedMemory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#GeneralLinearModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#GeneralizedLinearModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Hardware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties\n\n- hpc:vendor\tcompany manufacturing it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#HiddenMarkovModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#HierarchicalClustering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Clustering"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#IBM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Company" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Intel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Company" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Iterating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Executing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Java",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#K-meansClustering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Clustering"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#L1Cache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Cache"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#L2Cache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Cache"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#L3Cache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Cache"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Library",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LinearDiscriminantAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DimensionReduction"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LinearRegression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearning"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LinearRegressionModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Linking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Linux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Unix"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Location"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LogisticRegressionModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#GeneralizedLinearModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#LongShortTermMemory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#RecurrentNeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MPI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MachineLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Data"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MachineLearningSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MarkovProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#SupervisedLearning"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MicrosoftWindows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#OperatingSystem"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ModelEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ModelTraining",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MultiStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of multiple steps. This can be viewed as both a step and a plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Plan"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Step"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#MultipleLinearRegressionModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LinearRegressionModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#National_Laboratory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Organization"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Nvidia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#Company" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#OpenACC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#OpenMP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#OperatingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Agent"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Organization"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#POSIXThreads",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ParameterTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "single parameter template"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtifactTemplate"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PerformanceAnalysisTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Software"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Perl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties of a person\n\n- hpc:familyName\tfamily name\n- hpc:givenName\tgiven name\n- hpc:gender\tmale, female\n- hpc:title\tMr. Mrs, Ms, Dr. etc.\n- hpc:jobTitle\tcould be multiple\n- hpc:affiliation\tcould be multiple\n- hpc:homepage\tURL of the person's homepage, either personal or work\n- hpc:memberOf\ta member of an organization\n- hpc:conducted\tLink to experiment IDs a person conducted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Agent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Person"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Plan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Plan of series actions to be done. A plan takes in conceptual artifacts( called artifact templates) and generate artifact templates.  A plan can be used by multiple activites which consume and generate concrete artifacts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PrincipalComponentAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#DimensionReduction"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#PrincipalInvestigator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Person"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Processor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties of a processor\n\n- hpc:processorTech\tProcessor codename/model\n- hpc:processorGeneration\tProcessor generation information\n- hpc:processorCorePerSocket\tnumber of cores in a socket\n- hpc:cpuFrequency\tFrequency of CPUs\n- hpc:singleCPUMemoryBandwidth\tPeak memory bandwidth\n- hpc:processorPeakPerformancePerNode\tPeak performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Profiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Programmer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Person"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A research or development project. \n\nIt inherits all properties from hpc:Thing, with the following additional properties:\t\n\t\n- hpc:awardID\tAwardID\n- hpc:hasPI\tProject's principal investigator's id\n- hpc:awardInstitution    The institution awarded. A PI may have multiple instutitions, not all are awarded.\n- hpc:awardAmount\tAnnual funding in dollar amount\n- hpc:fundedBy\tOrganization funding this project, link to Organization table\n- hpc:startDate\tProject start date\n- hpc:endDate\tProject end date\n- hpc:programArea\te.g. DOE program areas such as computer science, energy, nuclear physics, fusion, biology, etc.\n- hpc:dataset\tLink to one or more datasets\n- hpc:aiModel\tLink to one of more AI models\n- hpc:data\tLink to data\n- hpc:publication\tLink to publications (DOIs, or URL)\n- hpc:member\tLink to project members, reverse of hpc:memberOf\n- hpc:experiment\tLink to experiments within this project, inverse of hpc:project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Python",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#RandomForest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#RecurrentNeuralNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtificialNeuralNetwork"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Register",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Reinforcementlearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearning"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Server",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Computer"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ShellScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SimpleLinearRegressionModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#LinearRegressionModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties\n\n- hpc:programLanguage\tlist of languages used one to multiple\n- hpc:operatingSystem\tLink to OS classes supported\n- hpc:firstReleaseDate\tfirst release date\n- hpc:latestReleaseDate\tlatest release date\n- hpc:vendor\tLink to vendors\n- hpc:runsOn\tLink to a type of machine running the software, such as X86, IBM, Mac = hpc:supportedMachine\n- hpc:hasInput \tartifact used as input for software\n- hpc:hasOutput \tartifact generated by software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Agent"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/ns/prov#SoftwareAgent"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SpectralClustering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Clustering"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Step",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A step within a Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Thing"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#StreamingMultiprocessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SuperComputer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Cluster"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SupervisedLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearning"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#SupportVectorMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearningModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TableColumn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#CSVDataset"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#TableRow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#CSVDataset"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A top level concept with the following properties\n\n- hpc:hasIDType Type of the ID\n- hpc:name  Name of the thing\n- hpc:alternateName An alias for this item\n- hpc:description Short description\n- hpc:url URL of official website of a thing, if any\n- hpc:submitter  Person who submits this info.\n- hpc:submitDate Date of submission"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Trainning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Action"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#UPC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingModel"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#University",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Organization"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Unix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#OperatingSystem"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#UnsupervisedLearning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#MachineLearning"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Vendor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Organization"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Warp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Workflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "similar to opmw:WorkflowTemplate. A subclass of Plan.\n\nProperties\n- hpc:hasInput\t Workflow is a subclass of a plan: it has input artifact or artifact template, same as hpc:uses\n- hpc:hasOutput   generated data (datasets, AI models), same as hpc:generates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Data"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#Plan"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#Workstation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Computer"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#accuracy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#actedOnBehalfOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some agent acted on behalf of another agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#affiliate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#after",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#before"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#aiModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a project has an ai model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#data"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#alternateName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#associatedSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#awardAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#awardInstitution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A funded project has an award insititution."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#before",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#benchmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link to the associated benchmark software ID"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#city",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#codeVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#computeNodeCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#conducted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an agent conducted an activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasConductedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#consistsOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#continent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "located continent"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAttributeTo"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#coprocessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a computer has a coprocessor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#processor"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#coprocessorCores",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#coprocessorCountPerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#coprocessorMemorySize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#coprocessorMemorySizePerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#coprocessorPeakPerformancePerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#coprocessorSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The frequency of a coprocessor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#frequency"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#correspondsToArtifactTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Artifact of an activity corresponds to a artifact template of a plan. Similar to opmv:correspondsToTemplateArtifact."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#correspondsToPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some activity corresponds to (follows) a plan."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#correspondsToStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some activity corresponds to a step of a plan. Similar to ompw:correspondsToTemplateProcess."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#count",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a computer has a cpu object linked"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#processor"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuCoreCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuCorePerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuCorePerSocket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#frequency"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuMemorySizePerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuPeakPerformancePerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#contributor"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a project has data (dataset, aiModel ,etc). Derived from experiment generating or using the data."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a project has a dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#data"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "date-related properties for a resource"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#dateCommissioned",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#discipline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The discipline to which a subject vocabulary belongs."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#dramFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#frequency"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#endDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#familyName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#feed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "link to software which use this data as input: inverse of hpc:input or hpc:use"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#file",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a data object has an associated file"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#File"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#fileFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#fileName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#fileSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#firstReleaseDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An AI models can be saved model, protobuf, onnx, h5, etc. format."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#frequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#fundedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a project is funded by some agencies"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#generated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some activie generated some artifact"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#hadOutput"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasGeneratedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#generatedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An artifact was generated at a certain data-time stamp."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#generates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some activity/experiment generates some data (workflow, dataset, ai models, etc. )"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasGeneratedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#givenName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#graphLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the top level object properties for any links between AST nodes"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hadInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link to ids of input datasets used to generate this model (dataset)"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasUsedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hadMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection had some member entity(thing)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hadOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasGeneratedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hadPrimarySource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFrom"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#harddriveSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasCompiler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasHPCGPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#id"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasIDType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#idType"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A plan or step has some input artifact template"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtifactTemplate"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#uses"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#isInputOf"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The location information of a computer or an organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Location"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#member"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#memberOf"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link a cluster to its login or compute nodes."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasOperatingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link from a machine to OS software ID: RHEL version 8, the one runs on the computer"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#operatingSystem"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A plan or step has some artifact template"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtifactTemplate"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#isOutputOf"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasPI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasVendor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#idType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#inputDataSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#interconnect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#interconnectFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#invalidated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInvalidatedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#invalidatedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An artifact was destructed or expired at certain time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isArtifactTemplateOfPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "some artifact template belongs to a plan as input or output. simiar to opmw:isVariableOfTemplate"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isDecomposedAsPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "MultiStep is decomposed to a Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "some artifact template is derived from another artifact template, after some steps."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some artifact template is generated by a plan or step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtifactTemplate"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#isOutputOf"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isInputOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "some artifact template is an input of a plan or step"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isOutputOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "some artifact template is output of a plan or step"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "is a part of bigger organization entities, used to support parent-child organization relation"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isPlanned",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isPreceededBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A step is preceeded by another step."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Step"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isPubliclyAccessible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If Data is public or Private. True means is public."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isStepOfPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a step is a step of a plan. Similar to opmw:isStepOfTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Plan"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isSubPlanOfPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A plan is a sub plan of another plan.  Linking MultiStep to its parent Plan."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isTunable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#isVariableTemplateOfPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "similar to opmw:isVariableOfPlan.  Links a variable template to its plan"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#jobTile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#keyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A property used to tag a resource with a keyword that is likely to be used in search queries."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#lassen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://hpc-fair.github.io/ontology#SuperComputer" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#latestReleaseDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#loginNodeCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#macOS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Unix"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#machineLearningFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#mangledName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mangled name of a named programming language construct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#md5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#memberOf"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#memoryAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#memoryBandwidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#singleCPUMemoryBandwidth"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#memorySize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#next",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#prev"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#numberOfCalls",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#operatingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#osFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Linux, MacOS, Windows etc."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#params",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "configurable parameters for an AI model"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#percentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#performance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Power consumption in kW, Watt, GigaWatt etc. qudt:QuantityValue"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#powerEfficiency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Power efficiency e.g. GFlops/Watts"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#prev",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#processor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a computer node links to its processor node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#processorGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Processor generation information (used in Top500)"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#processorPeakPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Processor peak performance per node, co-processs are excluded."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#processorTech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Processor codename/model"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#programArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#programLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#programmingLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "software is written in some programming language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ProgrammingLanguage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "something has a project associated"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#publication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#qualifiedName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "C++ qualified names for a function, variable, classs, namespace, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#name"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#ranOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some software ran on some machine."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#runsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "software runs on some machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Computer"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#supportedMachine"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#segment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The field using HPC system (research, academic, industry, vendor)"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#singleCPUMemoryBandwidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#site",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Facitility/institution name hosting HPC machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "software used by a hardware devices."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#startDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "link to related subjects or topics: performance modeling, image classification, text generation, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#submitDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#date"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#submitter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person submits data into our system"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#supportedMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "some software package supports some type of machines"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#supportedOperatingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a software package supports some OS types"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#supportsAccelerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#systemArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the system architecture (MPP, cluster or others)"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#systemModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "high-level description of system model used by Top500\nSupercomputer Fugaku\nIBM Power System AC922\nSunway MPP\nHPE Cray EX235n\nNVIDIA DGX A100"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#targetApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "target application an AI model supports"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#targetMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "link to concrete computers an AI model supports to model"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#threadCountPerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Title of an article, etc."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#top500FirstAppearance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#top500Rank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#top500nhalf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Problem size for achieving half of Rmax"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#top500nmax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Problem size for achieving Rmax"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterCPUCoreCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#count"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterCPUPeakPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterCoProcressorPeakPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterCoprocessorCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterGPUPeakPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterMemorySize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterPeakPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalClusterProcessorPeakPerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#totalPeakPerformancePerNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#performance"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#website"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#used",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Activity/Experiment used some artifact as input"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasUsedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A plan or step uses some artifact template as input"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#ArtifactTemplate"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#usesWorkflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some activity/experiment uses a workflow (plan). This is similar to opmw:correspondsToTemplate which link an execution instance to its workflow template (plan)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#correspondsToPlan"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#vendor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasAWH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWithHardware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasAWS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWithSoftware"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An activity was associated with some agent who had a role in conducting the activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWithHardware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "some activity was associated with some hardware, such as runOn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWith"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWithSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWith"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasAttributeTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some artifact was attributed to an agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasConductedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "some activity was conducted by an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasAssociatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasControlledBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasControlledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some artifact was derived from another, after some processing. Simiar to prov-o:wasDerivedFrom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFromDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some AI models were derived from datasets in the workflow pipeline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFrom"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFromSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "program analysis information (such as a call graph) was derivd from an input software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFromDataset"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasEndedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An activity is deemed to have been ended by an entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link from Artifact to the activity/experiments generating the data"
+  }, {
+    "@value" : "Some artifact was generated by some activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasInformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Similar to prov:wasInformedBy. It indicates activity a1 happened before activity a2. And a2 used some artifact generated by a1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  }, {
+    "@id" : "https://hpc-fair.github.io/ontology#wasPreceededBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasInvalidatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Artifact was invalidated by some activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasPreceededBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Some activity was preceeded by another activity."
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasQuotedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFrom"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasRevisionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasDerivedFrom"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasStartedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An activity was started by some agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#wasUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link from artifact to experiment using it, reverse of hpc:used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#website",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#workflow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Project has some workflow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#data"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#zip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+} ]

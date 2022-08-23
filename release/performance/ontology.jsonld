@@ -1,0 +1,205 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "The HPC-FAIR research team"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The HPC-FAIR for Performance portion of the ontology provides data annotation properties relating to different aspects that affect the execution of a program. Timing, profiling, and diagnostic information are able to be encoded with these properties."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "HPC Ontology for Performance"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "the Creative Commons Attribution 4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "hpc"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#achievedActiveWarpsPerSM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#achievedGPUOccupancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#occupancy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#activeCyclesOfStreamingMultiprocessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#cycle"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#averageExecutionTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#executionTime"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#codeVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cpuPageFault",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#pageFault"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#cycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#dataTransferSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Memory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#size"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#deviceToHostTransferSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#dataTransferSize"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#dramUtilizationRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#percentage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#executionTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#executionTimePercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#percentage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#gpuPageFault",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#pageFault"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasRmax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The maximum achieved performance [TFlop/s]"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hasRpeak",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The theoretical peak performance [TFlop/s]"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#hostToDeviceTransferSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#dataTransferSize"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#l1CacheUitlizationRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#percentage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#l2CacheUtilizationRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#percentage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#labeledCodeVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#codeVariant"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#maxExecutionTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#executionTime"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#memoryOccupancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#occupancy"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#memoryThroughputRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#percentage"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#minExecutionTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#executionTime"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#occupancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#overhead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#pageFault",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#Memory"
+  } ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#percentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://hpc-fair.github.io/ontology#streamingProcessorUtilizationRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://hpc-fair.github.io/ontology#percentage"
+  } ]
+} ]

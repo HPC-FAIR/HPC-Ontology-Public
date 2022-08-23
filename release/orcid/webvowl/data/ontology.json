@@ -1,0 +1,1468 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://hpc-fair.github.io/ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/dc/elements/1.1" ],
+    "title" : {
+      "undefined" : "HPC Ontology for ORCID"
+    },
+    "iri" : "No IRI set",
+    "author" : [ "The HPC-FAIR research team" ],
+    "description" : {
+      "undefined" : "The HPC-FAIR ORCID portion of the ontology provides declarations to semantically describe aspects of an academic or technical publication, such as authorship, affiliations, and information about the publication venue."
+    },
+    "comments" : {
+      "undefined" : "The HPC-FAIR ORCID portion of the ontology provides declarations to semantically describe aspects of an academic or technical publication, such as authorship, affiliations, and information about the publication venue."
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "the Creative Commons Attribution 4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "The HPC-FAIR research team",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "hpc",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "HPC Ontology for ORCID",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology/program",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#PosterPaper",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PosterPaper"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DoctoralThesis",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DoctoralThesis"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Employment",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Employment"
+    },
+    "comment" : {
+      "undefined" : "Employment is a kind of activity so it inherits all properties of Acitvity, with additional properties:\n- organization   organization employing a person\n- department     department employing a person\n- jobTitle           job title of the employment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Person",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ProceedingsPaper",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProceedingsPaper"
+    },
+    "subClasses" : [ "33", "34" ],
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#BachelorsThesis",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BachelorsThesis"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Activity",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "26", "40" ],
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Organization",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Article",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Article"
+    },
+    "subClasses" : [ "60", "61", "62", "63" ],
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#NewspaperArticle",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NewspaperArticle"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Education",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Education"
+    },
+    "comment" : {
+      "undefined" : "Education is a kind of activity so it inherits all properties of Acitvity, with additional properties:\n- organization   insitution provding the education\n- department     department associated\n- degree             degree levels: bachelor, master, Ph.D, etc\n- major               major of study"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Presentation",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "A set of slides",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Presentation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MagazineArticle",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MagazineArticle"
+    },
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#WebContent",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WebContent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Thesis",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thesis"
+    },
+    "subClasses" : [ "10", "79", "38" ],
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ReviewArticle",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReviewArticle"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ReferenceBook",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReferenceBook"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#CreativeWork",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Textbook",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Textbook"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#WorkshopPaper",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkshopPaper"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#JournalArticle",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JournalArticle"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ConferencePaper",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConferencePaper"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Publication",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "fabio:Expression",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Publication"
+    },
+    "subClasses" : [ "77", "59", "32", "4", "71", "69", "47" ],
+    "comment" : {
+      "undefined" : "Publications like books, academic papers, posters, position papers, technical reports, dissertations, whitepapers, etc. Anything bibliographical content.\n\n\nProperties inherited from hpc:CreativeWork\t\n- hpc:license\tCreative Commons Attribution License and its variants, or similar choices\n- hpc:version\tVersion number\n- hps:isPubliclyAccessible      Dataset is Public or Private. True means is public.\t\n- hpc:subject\tList of subjects or topics: performance modeling, image classification, text generation, etc.\n- hpc:creator    People/organization who created the artifact\t\n- hpc:contributor    Link to contributors  (in URI) of the artifact\t\n- hpc:project    Associated projects\t\n- hpc:keyword\tkeywords\n- hpc:discipline\tdisciplines\n\n\nExtra properties for Publication\n\n- hpc:author\tlink to authors one by one\n- hpc:title\ttitle\n- hpc:hasPublicationYear\tYear of publication\n- hpc:doi\tdoi\n- hpc:isPartOf \tconnect the expression to higher level objects like a journal issue\n- hpc:issueIdentifier\tJournal issue ID\n- hpc:volume\tJournal volume ID\n- hpc:journal\tJournal name or Journal ID\n- hpc:publisher\tSame as dcterms:publisher, connect to an organization or its name\n- hpc:publicationDate\tpublication year, date information\n- hpc:startingPage\tstarting page number\n- hpc:endingPage\tending page number"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MastersThesis",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MastersThesis"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#Book",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Book"
+    },
+    "subClasses" : [ "53", "11", "101" ],
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#SpecificationDocument",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpecificationDocument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "5" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://hpc-fair.github.io/ontology#grid",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "grid"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Global Research Identifier Database\thttps://www.grid.ac/"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#endingPage",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "endingPage"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#issueIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "issueIdentifier"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "An identifier used to identify a specific issue of a magazine, a journal or other resource."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#legalEntityIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "legalEntityIdentifier",
+      "undefined" : "LEI"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "LEI\tLegal Entity Identifier\thttps://www.gleif.org/en/about-lei/introducing-the-legal-entity-identifier-lei"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#scopusAuthorIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "scopusAuthorIdentifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#doi",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "doi"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "doi: Digital object identifier\thttps://doi.org/"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#eid",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "eid"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Scopus Identifier"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#uniqueEntityIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "uniqueEntityIdentifier",
+      "undefined" : "UEI"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "UEI\tUnique Entity Identifier\thttps://www.gsa.gov/about-us/organization/federal-acquisition-service/office-of-systems-management/integrated-award-environment-iae/iae-systems-information-kit/unique-entity-identifier-update"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ringgold",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "ringgold"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "https://www.ringgold.com/ organization identifiers"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#education",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "education"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Link a person with his/her education history (Education objects)"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
+  }, {
+    "range" : "5",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#publicationDate",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "publicationDate"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Publication date of a publication"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "48"
+  }, {
+    "range" : "47",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#authors",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "authors"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "link to an orderded list of authors"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
+  }, {
+    "range" : "47",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#researchID",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "researchID"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#email",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "email"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "a person or organization has one more more emails"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#arxiv",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "arxiv"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "arxiv\tarxiv: ArXiv\thttps://arxiv.org/abs/"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#author",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "author"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Link a paper to one of its author"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#creator",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "creator"
+    },
+    "domain" : "2",
+    "subproperty" : [ "64" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "5",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "5",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "5",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "73",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "11",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "5",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "5",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "11",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#isni",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "isni"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "International Standard Name Identifier\thttps://isni.org/\t\tperson"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "80"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#startingPage",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "startingPage"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#personIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "personIdentifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#workIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "workIdentifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "84"
+  }, {
+    "range" : "59",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#address",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "address"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#biography",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "biography"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "87"
+  }, {
+    "range" : "59",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "27",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "59",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "59",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "32",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#organizationIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "organizationIdentifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#dataUniversalNumberingSystemID",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "dataUniversalNumberingSystemID",
+      "undefined" : "DUNS"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "DUNS\tData Universal Numbering System\thttps://www.dnb.com/duns-number.html"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#arXivAuthorIdentifier",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "arXivAuthorIdentifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#volume",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "volume"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "An identifier for a particular volume of a resource, such as a journal or a multi-volume book."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#date",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "date"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#cit",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "cit"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "cit: CiteSeer"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "104"
+  }, {
+    "range" : "47",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#issn",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "issn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "issn: International Standard Serial Number. Includes print and electronic ISSN.\thttps://portal.issn.org/resource/ISSN/"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#ror",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "ror"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "research organization identifier\thttps://ror.org/"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#publicationYear",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "publicationYear"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#isbn",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "isbn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "isbn: International Standard Book Number\thttps://www.worldcat.org/isbn/"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://purl.org/dc/elements/1.1/identifier",
+    "baseIri" : "http://purl.org/dc/elements/1.1",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#employment",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "employment"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "Link a person with his/her employment history (Employment objects)"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#asin",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "asin"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "asin: Amazon Standard Identification Number\thttp://www.amazon.com/dp/"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "115"
+  } ]
+}

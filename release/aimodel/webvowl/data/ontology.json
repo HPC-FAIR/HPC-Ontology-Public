@@ -1,0 +1,312 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://hpc-fair.github.io/ontology", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "HPC Ontology for AI Models"
+    },
+    "iri" : "No IRI set",
+    "author" : [ "The HPC-FAIR research team" ],
+    "description" : {
+      "undefined" : "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them."
+    },
+    "comments" : {
+      "undefined" : "The HPC-FAIR AI Model portion of the ontology provides properties and classes relating to describing different machine learning models, such as their composition and various features within them."
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "the Creative Commons Attribution 4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "The HPC-FAIR research team",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "hpc",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://hpc-fair.github.io/ontology#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "HPC Ontology for AI Models",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://hpc-fair.github.io/ontology#Artifact",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Artifact"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DecisionTreeNode",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DecisionTreeNode"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#DecisionTree",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DecisionTree"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#MachineLearningModel",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MachineLearningModel"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://hpc-fair.github.io/ontology#hasChildNode",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasChildNode"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "If a decision tree node has child nodes or not."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#treeNodeLevel",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "treeNodeLevel"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The level of a tree, starting from 0 for the root node"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#decisionFeature",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "decisionFeature"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "For a decision tree node, the feature used as the left operand of the decision condition."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#function",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "function"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "a call graph (or other program analysis info object) has a function node."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#relationValue",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "relationValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#graphLink",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "graphLink"
+    },
+    "domain" : "1",
+    "subproperty" : [ "16", "17", "18", "9" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#trueNode",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "trueNode"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "link from a decision tree node to its true child node"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#decisionLabel",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "decisionLabel"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The final decision for a leaf node in a decisiontree"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://hpc-fair.github.io/ontology#falseNode",
+    "baseIri" : "https://hpc-fair.github.io/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "falseNode"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "link from a decision tree node to its false child node"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "18"
+  } ]
+}
