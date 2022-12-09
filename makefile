@@ -7,6 +7,7 @@ ONTOLOGY_FILES = \
 aimodel.ttl \
 core.ttl \
 gpu.ttl \
+orcid.ttl \
 performance.ttl \
 program.ttl
 
@@ -25,6 +26,7 @@ ${ONTOLOGY_WEB_INDEX_FILES}:release/%/index-en.html:development/%.ttl
 #	java -jar third-party-tools/widoco-1.4.15-jar-with-dependencies.jar ${WIDOCO_OPTIONS} -ontFile $< -outFolder release/aimodel
 #
 
+# merge all ttl file into a single file  
 #development/hpc-ontology.ttl:development/core/core.ttl development/aimodel/ai-models.ttl development/gpu/gpu.ttl development/performance/performance.ttl development/program/program.ttl
 development/hpc-ontology.ttl: $(ONTOLOGY_FILES_With_Path)
 	cat $^ > $@
