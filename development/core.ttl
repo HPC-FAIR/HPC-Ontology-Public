@@ -1218,6 +1218,36 @@ hpc:zip rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
+###  http://www.co-ode.org/ontologies/ont.owl#Decoder
+<http://www.co-ode.org/ontologies/ont.owl#Decoder> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#Transformer> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Encoder
+<http://www.co-ode.org/ontologies/ont.owl#Encoder> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#Transformer> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#EncoderDecoder
+<http://www.co-ode.org/ontologies/ont.owl#EncoderDecoder> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#Transformer> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#GraphNeuralNetwork
+<http://www.co-ode.org/ontologies/ont.owl#GraphNeuralNetwork> rdf:type owl:Class ;
+                                                              rdfs:subClassOf hpc:ArtificialNeuralNetwork .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#MessagePassingNeuralNetwork
+<http://www.co-ode.org/ontologies/ont.owl#MessagePassingNeuralNetwork> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.co-ode.org/ontologies/ont.owl#GraphNeuralNetwork> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Transformer
+<http://www.co-ode.org/ontologies/ont.owl#Transformer> rdf:type owl:Class ;
+                                                       rdfs:subClassOf hpc:ArtificialNeuralNetwork .
+
+
 ###  http://www.w3.org/2004/02/skos/core#Concept
 skos:Concept rdf:type owl:Class .
 
@@ -1937,6 +1967,11 @@ hpc:MultiStep rdf:type owl:Class ;
               rdfs:comment "A collection of multiple steps. This can be viewed as both a step and a plan" .
 
 
+###  https://hpc-fair.github.io/ontology#MultilayerPerceptron
+hpc:MultilayerPerceptron rdf:type owl:Class ;
+                         rdfs:subClassOf hpc:FeedforwardNeuralNetwork .
+
+
 ###  https://hpc-fair.github.io/ontology#MultipleLinearRegressionModel
 hpc:MultipleLinearRegressionModel rdf:type owl:Class ;
                                   rdfs:subClassOf hpc:LinearRegressionModel .
@@ -2147,6 +2182,11 @@ hpc:ShellScript rdf:type owl:Class ;
 ###  https://hpc-fair.github.io/ontology#SimpleLinearRegressionModel
 hpc:SimpleLinearRegressionModel rdf:type owl:Class ;
                                 rdfs:subClassOf hpc:LinearRegressionModel .
+
+
+###  https://hpc-fair.github.io/ontology#SingleLayerPerceptron
+hpc:SingleLayerPerceptron rdf:type owl:Class ;
+                          rdfs:subClassOf hpc:FeedforwardNeuralNetwork .
 
 
 ###  https://hpc-fair.github.io/ontology#Software
