@@ -2,6 +2,9 @@
 
 Public release of the HPC ontology source files, LLNL-MI-829145.
 
+The current web release is hosted at
+* https://hpc-fair.github.io/ontology/
+
 # Steps to Build and Publish a New Release
 
 ## Build the release
